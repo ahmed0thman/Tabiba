@@ -5,12 +5,14 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/fav.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/assets/libs/material-icon/material-icon.css" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/styles/styles.css">
   <title>Tabiba</title>
 </head>
 
 <body>
-  <header id="header">
+  <!-- Start Main Header -->
+  <header id="header" class="transition duration-300 ease-in-out">
     <div class="wrapper">
       <div class="d-flex justify-content-between align-items-center">
         <a href="/" class="logo">
@@ -39,15 +41,133 @@
             </li>
           </ul>
         </nav>
-        <div class="d-flex gap-3 align-items-center">
-          <a class="btn btn-green-500 btn-login" href="/">تسجيل الدخول</a>
-          <span class="btn-menu d-md-none nav-toggler">
-            <img src="/images/icons/bars.svg" alt="">
-          </span>
+        <div class="d-none d-md-flex gap-3 items-center">
+          <!-- Visible when not logged in -->
+          <a class="btn d-none btn-green-500 btn-login" href="/">تسجيل الدخول</a>
+          <!-- Visible when logged in -->
+          <a class="flex items-center gap-3 ">
+            <p class="text-gray-700 font-medium">Hend Hussein</p>
+            <img class="w-11" src="/images/profile.png" alt="">
+          </a>
+
+
         </div>
+        <button
+          class="nav-toggler md:hidden flex items-center text-gray-600 transition duration-300 ease-in-out hover:text-pink-500 focus:outline-none"
+          id="menu-button">
+          <span class="material-icons">menu</span>
+        </button>
+        <!-- Start Mobile Menu -->
+        <div id="mobileMenu" class="">
+          <div class="flex relative pt-5 pb-2 px-4 h-full w-10/12 flex-col gap-4 bg-white">
+            <span class="cursor-pointer btn-close absolute top-3 left-4 nav-toggler text-black">
+            </span>
+            <a class="flex items-center gap-6">
+              <img src="/images/profile.png" alt="">
+              <p class="text-gray-700 font-medium">Hend Hussein</p>
+            </a>
+            <ul class="menu">
+              <li>
+                <a href="" class="menu-item rounded-full">
+
+                  <span class="material-icons">
+                    settings
+                  </span>
+
+                  <p>اعدادات الحساب</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="menu-item rounded-full">
+
+                  <span class="material-icons">
+                    login
+                  </span>
+
+                  <p>تسجيل دخول</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="menu-item rounded-full">
+
+                  <span class="material-icons">
+                    thumb_up
+                  </span>
+
+                  <p>تابع طبيبة</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="menu-item rounded-full">
+
+                  <span class="material-icons">
+                    help
+                  </span>
+
+                  <p>الدعم</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="" class="menu-item rounded-full">
+
+                  <span class="material-icons">
+                    mail
+                  </span>
+
+                  <p>تواصل معنا</p>
+                </a>
+              </li>
+            </ul>
+            <ul class="menu mt-auto">
+              <li>
+                <a href="" class="menu-item rounded-full ">
+
+                  <span class="material-icons text-danger">
+                    logout
+                  </span>
+
+                  <p>تسجيل خروج</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Mobile Menu -->
       </div>
     </div>
   </header>
+  <!-- End Main Header -->
+
+  <!-- Start Mobile Nav -->
+  <nav id="navMobile"
+    class="transition duration-300 ease-in-out fixed  md:hidden bottom-0 left-0 right-0 bg-white shadow-t border-t border-gray-200 z-50">
+    <div class="container mx-auto px-2">
+      <div class="flex justify-around items-center h-16">
+        <a class="nav-item active " href="#">
+          <span class="material-icons">home</span>
+          <span class="text-xs">الرئيسية</span>
+        </a>
+        <a class="nav-item " href="#">
+          <span class="material-icons">local_hospital</span>
+          <span class="text-xs">طبيبة</span>
+        </a>
+        <a class="nav-item " href="#">
+          <span class="material-icons">business_center</span>
+          <span class="text-xs">مركز</span>
+        </a>
+        <a class="nav-item " href="#">
+          <span class="material-icons">article</span>
+          <span class="text-xs">مدونة</span>
+        </a>
+        <a class="nav-item " href="#">
+          <span class="material-icons">forum</span>
+          <span class="text-xs">منتدى</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- End Mobile Nav -->
   <main id="main">
     <section class="hero">
       <img id="heroPattern" src="/images/patterns/pattern-hero.svg" alt="" class="pattern-hero">
@@ -129,7 +249,7 @@
           </div>
           <div class="sub-hero-tag">
             <div id="subHeroText" class="sub-hero-text">
-              <span>مرحبا بك في</span>
+              <span>مرحباً بكِ في</span>
               <a class="btn">
                 منتدى
               </a>
@@ -157,7 +277,7 @@
               غالبية المدونات على ميزة تعليق، بحيث يمكن للأشخاص التجاوب مع الأفكار التي يتم طرحها.
 
               <a class="btn">
-                منتدى
+                مدونة
               </a>
             </div>
 
@@ -204,7 +324,7 @@
 
 
   </main>
-  <footer id="footer">
+  <footer id="footer" class="pt-16 md:pt-40">
     <section id="newsLetter" class="m-0 p-0">
       <div class="wrapper">
         <div class="news-letter">
@@ -221,8 +341,8 @@
       </div>
     </section>
     <div class="wrapper">
-      <div class="row px-sm-5">
-        <div class="col-12 col-sm-6 col-lg-3">
+      <div class="row justify-content-center justify-content-md-start px-sm-5">
+        <div class="d-none d-md-block col-12 col-sm-6 col-lg-3">
           <div class="footer-list">
             <h4 class="list-title">الدعم</h4>
             <ul>
@@ -232,7 +352,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="d-none d-md-block col-12 col-sm-6 col-lg-3">
           <div class="footer-list">
             <h4 class="list-title">الحساب</h4>
             <ul>
@@ -248,7 +368,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="d-none d-md-block col-12 col-sm-6 col-lg-3">
           <div class="footer-list">
             <h4 class="list-title">رابط سريع</h4>
             <ul>
@@ -264,7 +384,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="d-none d-md-block col-12 col-sm-6 col-lg-3">
           <div class="d-flex flex-column align-items-center gap-4">
             <a href="/">
               <img class="logo" src="/images/icons/logo-white.png" alt="logo">

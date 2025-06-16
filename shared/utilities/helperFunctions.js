@@ -1,4 +1,4 @@
-import { animate } from "../../assets/libs/motion/motion.min.js";
+import { animate } from "/assets/libs/motion/motion.min.js";
 
 // export async function renderHtml(containerId, viewName, viewPath) {
 //   const container = document.getElementById(containerId);
