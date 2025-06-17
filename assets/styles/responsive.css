@@ -33,46 +33,6 @@
     font-size: 16px;
     font-weight: 400;
   }
-
-  .card-course {
-    .course-info {
-      .course-title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-      }
-      .instructor {
-        font-weight: 400;
-      }
-
-      .price {
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      .price-old {
-        font-size: 14px;
-      }
-    }
-  }
-
-  .card-instructor {
-    .instructor-info {
-      .instructor-title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;
-      }
-      .instructor-quote {
-        font-size: 14px;
-        font-weight: 400;
-      }
-
-      .instructor-domain {
-        font-size: 1rem;
-        font-weight: 600;
-      }
-    }
-  }
 }
 
 @media (max-width: 576px) {

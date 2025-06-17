@@ -252,7 +252,7 @@ header {
 
     .logo {
       img {
-        width: 100px;
+        width: 120px;
       }
     }
 
@@ -329,6 +329,8 @@ header {
 }
 
 #navMobile {
+  background-color: #ffffffd4;
+  backdrop-filter: blur(4px);
   .nav-item {
     color: #4b556399;
     display: flex;

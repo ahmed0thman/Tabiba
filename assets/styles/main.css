@@ -162,6 +162,8 @@
       .hero-qoute {
         padding: 0.75rem;
         font-size: 12px;
+        bottom: 0;
+        translate: -50% 50%;
         img {
           width: 26px;
         }
@@ -530,7 +532,7 @@
         .sub-hero-text {
           gap: 0.7rem;
           .btn {
-            font-size: 16px;
+            font-size: 1.35rem;
           }
           img {
             width: 4rem;
@@ -625,7 +627,7 @@
           line-height: 28px;
 
           .btn {
-            font-size: 1rem;
+            font-size: 1.15rem;
             padding: 0.5rem 4rem;
           }
         }
@@ -793,6 +795,38 @@
 
 /* End Home Page */
 /* ------------------------------------------------------------------- */
+
+/* Start Tabiba Page */
+.filter {
+  flex-grow: 1;
+  display: flex;
+  padding-inline: 1rem;
+
+  select {
+    background-position: left 0.75rem center !important;
+    background-image: url("/images/icons/chevron-down.svg") !important;
+    background-size: 1rem !important;
+
+    border: 0;
+    color: #7b7b7b;
+    font-size: 1rem;
+    font-weight: 300;
+    &:not(:last-child) {
+      border-inline-end: 1px solid rgba(123, 123, 123, 0.5) !important;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-inline: 0.5rem;
+
+    select {
+      padding-inline: 1rem;
+      padding-inline-end: 2rem;
+      font-size: 0.875rem;
+    }
+  }
+}
+/* End Tabiba Page */
 
 /* Start Account Page */
 

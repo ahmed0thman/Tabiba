@@ -35,10 +35,10 @@ scroll((progress, info) => {
   lastDirection = direction; // Update lastDirection
 
   if (direction === "down") {
-    header.classList.add("translate-y-[-100%]");
+    // header.classList.add("translate-y-[-100%]");
     navMobile.classList.add("translate-y-[100%]");
   } else if (direction === "up") {
-    header.classList.remove("translate-y-[-100%]");
+    // header.classList.remove("translate-y-[-100%]");
     navMobile.classList.remove("translate-y-[100%]");
   }
 });

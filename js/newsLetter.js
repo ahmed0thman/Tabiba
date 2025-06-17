@@ -1,5 +1,4 @@
 import { animateOnView } from "/shared/utilities/helperFunctions.js";
-import { animate } from "/assets/libs/motion/motion.min.js";
 // start News Letter Section
 const newsLetter = document.getElementById("newsLetter");
 
