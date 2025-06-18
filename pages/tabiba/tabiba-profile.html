@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="/assets/libs/material-icon/material-icon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <title>Tabiba</title>
+  </head>
+
+  <body>
+    <!-- Start Main Header -->
+    <header id="header" class="transition duration-300 ease-in-out">
+      <div class="wrapper">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="/" class="logo">
+            <img src="/images/icons/logo.png" alt="Logo" />
+          </a>
+          <nav id="navMenu">
+            <span class="btn-close-menu d-md-none nav-toggler"> x </span>
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/">الرئيسية</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/pages/tabiba/tabiba.html">طبيبة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/center/center.html">مركز</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">مدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">منتدى</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-none d-md-flex gap-3 items-center">
+            <!-- Visible when not logged in -->
+            <a class="btn d-none btn-green-500 btn-login" href="/"
+              >تسجيل الدخول</a
+            >
+            <!-- Visible when logged in -->
+            <a class="flex items-center gap-3">
+              <p class="text-gray-700 font-medium">Hend Hussein</p>
+              <img class="w-11" src="/images/profile.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="nav-toggler md:hidden flex items-center text-gray-600 transition duration-300 ease-in-out hover:text-pink-500 focus:outline-none"
+            id="menu-button"
+          >
+            <span class="material-icons">menu</span>
+          </button>
+          <!-- Start Mobile Menu -->
+          <div id="mobileMenu" class="">
+            <div
+              class="flex relative pt-5 pb-2 px-4 h-full w-10/12 flex-col gap-4 bg-white"
+            >
+              <span
+                class="cursor-pointer btn-close absolute top-3 left-4 nav-toggler text-black"
+              >
+              </span>
+              <a class="flex items-center gap-6">
+                <img src="/images/profile.png" alt="" />
+                <p class="text-gray-700 font-medium">Hend Hussein</p>
+              </a>
+              <ul class="menu">
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> settings </span>
+
+                    <p>اعدادات الحساب</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> login </span>
+
+                    <p>تسجيل دخول</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> thumb_up </span>
+
+                    <p>تابع طبيبة</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> help </span>
+
+                    <p>الدعم</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> mail </span>
+
+                    <p>تواصل معنا</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu mt-auto">
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons text-danger"> logout </span>
+
+                    <p>تسجيل خروج</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Mobile Menu -->
+        </div>
+      </div>
+    </header>
+    <!-- End Main Header -->
+
+    <!-- Start Mobile Nav -->
+    <nav
+      id="navMobile"
+      class="transition duration-300 ease-in-out fixed md:hidden bottom-0 left-0 right-0 shadow-t border-t border-gray-200 z-50"
+    >
+      <div class="container mx-auto px-2">
+        <div class="flex justify-around items-center h-16">
+          <a class="nav-item active" href="/pages/tabiba/tabiba.html">
+            <span class="material-icons">local_hospital</span>
+            <span class="text-xs">طبيبة</span>
+          </a>
+          <a class="nav-item" href="/pages/center/center.html">
+            <span class="material-icons">business_center</span>
+            <span class="text-xs">مركز</span>
+          </a>
+          <a class="nav-item" href="/">
+            <span class="material-icons text-3xl">home</span>
+            <span class="text-xs font-medium">الرئيسية</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="material-icons">article</span>
+            <span class="text-xs">مدونة</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="material-icons">forum</span>
+            <span class="text-xs">منتدى</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Mobile Nav -->
+    <main id="main">
+      <!-- If user is already subscribed to the news letter, set the mb-> mb-4 -->
+      <div class="wrapper px-3 mb-[6rem]">
+        <section
+          id="profileView"
+          class="grid grid-cols-10 auto-rows-auto gap-x-4 pt-1 md:!pt-3 lg:!pt-6"
+        >
+          <!-- Start Profile Main Card -->
+          <div
+            class="col-span-10 lg:col-span-6 lg:row-start-1 lg:row-span-3 profile-card"
+          >
+            <!-- Card Cover -->
+            <img src="/images/Doctor-Banner.png" alt="" class="profile-cover" />
+            <!-- Card Content -->
+            <div
+              class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-3 md:!px-6 md:!py-6"
+            >
+              <!-- Card Main Info -->
+              <div class="flex gap-2 md:!gap-4">
+                <!-- Profile Picture -->
+                <div class="h-0">
+                  <img
+                    src="/images/female-profile.jpg"
+                    class="rounded-full border-2 border-white max-w-32 translate-y-[-50%] object-contain object-center"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col gap-1">
+                  <!-- Profile Name -->
+                  <h1
+                    class="text-pink-500 font-medium sm:text-xl sm:font-semibold md:text-2xl"
+                  >
+                    د/هدير سالم
+                  </h1>
+                  <div class="flex items-center gap-2 sm:!gap-6 md:!gap-10">
+                    <!-- Doctor Title -->
+                    <span class="text-green-400 text-xs sm:text-base"
+                      >استشاري</span
+                    >
+                    <!-- Doctor Specialization -->
+                    <span class="text-gray-500 text-xs sm:text-base">
+                      طب النساء والتوليد
+                    </span>
+                  </div>
+                </div>
+                <!-- Doctor Stats -->
+                <div
+                  class="flex items-start gap-1 !ms-auto text-xs sm:text-sm md:text-base"
+                >
+                  <!-- Total Visitors -->
+                  <div class="flex items-center">
+                    <span class="text-gray-500">230</span>
+                    <span class="material-icons text-gray-500/50"
+                      >how_to_reg</span
+                    >
+                  </div>
+                  <!-- Rating -->
+                  <div class="flex items-center">
+                    <span class="text-gray-500">(4.7)</span>
+                    <span class="material-icons text-yellow-400">star</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card About -->
+              <div class="flex gap-3 mt-4 flex-grow-1">
+                <span class="material-icons-outlined text-green-400">
+                  info
+                </span>
+                <div class="flex flex-col gap-4">
+                  <div class="flex flex-col gap-2">
+                    <span class="text-gray-500 font-medium"
+                      >معلومات عن الدكتور</span
+                    >
+                    <p class="text-gray-500 text-sm leading-7">
+                      أخصائية امراض النساء و التوليد و العقم و الحقن المجهري
+                      اخصائية بمستشفى شربين العام حاليا ومستشفى المنصورة العام
+                      الجديده سابقا ومستشفى الشاطبي للنساء والتوليد الإسكندرية
+                      سابقا دبلومة امراض النساء
+                    </p>
+                  </div>
+                  <!-- Card Rate and Comments -->
+                  <div class="flex flex-col gap-3 mt-auto">
+                    <div class="flex justify-between gap-2">
+                      <button class="text-green-500">اظهر التقييمات</button>
+                      <button
+                        class="btn btn-green-500 py-2 px-4 text-sm rounded-3"
+                      >
+                        إضافة تقييم
+                      </button>
+                    </div>
+
+                    <!-- Comments Preview -->
+                    <div class="flex flex-col gap-1">
+                      <!-- Comment Card -->
+                      <div
+                        class="bg-gray-200/40 py-3 px-4 rounded-se-xl rounded-es-xl"
+                      >
+                        <!-- Comment Header -->
+                        <div class="flex justify-between items-center">
+                          <div class="flex gap-2 items-center">
+                            <!-- Commenter Name -->
+                            <span class="text-gray-500 text-xs font-semibold">
+                              هند حسين
+                            </span>
+
+                            <!-- Comment Date -->
+                            <span class="text-gray-500 text-xs">
+                              20/4/2024
+                            </span>
+                          </div>
+                          <!-- Commenter Rate -->
+                          <div class="flex items-center text-yellow-400">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                          </div>
+                        </div>
+
+                        <!-- Comment Body -->
+                        <p class="text-gray-500 text-sm mt-2 mb-3">
+                          “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل
+                          اوي علي المستوي الشخصي والعملي “
+                        </p>
+                      </div>
+                      <!-- Comment Reply Card -->
+                      <div
+                        class="bg-gray-200/50 py-3 px-4 rounded-ss-xl rounded-ee-xl"
+                      >
+                        <!-- Comment Header -->
+                        <div class="flex justify-between items-center">
+                          <div class="flex gap-2 items-center">
+                            <!-- Commenter Name -->
+                            <span class="text-gray-500 text-xs font-semibold">
+                              د/هدير سالم
+                            </span>
+
+                            <!-- Comment Date -->
+                            <span class="text-gray-500 text-xs">
+                              20/4/2024
+                            </span>
+                          </div>
+                        </div>
+
+                        <!-- Comment Body -->
+                        <p class="text-gray-500 text-sm mt-2 mb-1">
+                          “ اتشرفنا بيك “
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Profile Main Card -->
+
+          <!-- Start Profile Gallery -->
+          <div
+            class="col-span-10 row-start-12 md:col-start-6 md:col-span-5 lg:row-start-1 lg:row-span-2 lg:col-start-7 lg:col-span-4"
+          >
+            <div class="h-100 space-y-4">
+              <div id="Images" class="swiper w-100 h-4/5">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/images/hero-img.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div id="Thumbnails" thumbsSlider="" class="swiper h-1/5">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/hero-img.png" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                  <div class="swiper-slide opacity-50">
+                    <img src="/images/clinic.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div
+            class="col-span-10 md:col-start-1 md:col-span-5 row-start-7 md:row-span-2 lg:row-start-4 lg:row-span-2 lg:col-start-1 lg:col-span-6 mt-8"
+          >
+            <h2 class="text-gray-700 text-xl font-medium mb-3">
+              الخدمات المقدمة
+            </h2>
+            <!-- Nav tabs -->
+            <div class="bg-white rounded-[1.2rem]">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    خدمات
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    خدمات أخرى
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content max-h-[220px] overflow-auto" dir="ltr">
+                <div
+                  class="tab-pane active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <!-- Services Items -->
+                  <div class="flex flex-col divide-y divide-gray-100/50 p-3">
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <!-- Services Items -->
+                  <div class="flex flex-col divide-y divide-gray-100/50 p-3">
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Addresses -->
+          <div
+            class="col-span-10 row-start-4 row-span-2 lg:row-start-3 lg:row-span-2 lg:col-start-7 lg:col-span-4 pt-8 lg:pt-12"
+          >
+            <!-- Clinics Accordion -->
+            <div class="accordion" id="accordionExample">
+              <!-- Clinic Element -->
+              <div class="accordion-item">
+                <!-- Clinic Name -->
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="material-icons text-green-500">home</span>
+                      <span>عيادة مركز النخبة الطبي</span>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <!-- Clinic Info -->
+                    <div class="flex flex-col gap-3">
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500">room</span>
+                        <span>
+                          المنصورة - شارع قناة السويس أعلى مركز النخبة
+                        </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500"
+                          >phone_iphone</span
+                        >
+                        <span> اظهر بيانات الإتصال </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500">paid</span>
+                        <span> 560 جنية </span>
+                      </div>
+                    </div>
+                    <!-- Clinic Week Schedules -->
+                    <div class="flex flex-col mt-3 gap-1">
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Clinic Element -->
+              <div class="accordion-item">
+                <!-- Clinic Name -->
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="material-icons text-green-500">home</span>
+                      <span>عيادة مركز النخبة الطبي</span>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <!-- Clinic Info -->
+                    <div class="flex flex-col gap-3">
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500">room</span>
+                        <span>
+                          المنصورة - شارع قناة السويس أعلى مركز النخبة
+                        </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500"
+                          >phone_iphone</span
+                        >
+                        <span> اظهر بيانات الإتصال </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500">paid</span>
+                        <span> 560 جنية </span>
+                      </div>
+                    </div>
+                    <!-- Clinic Week Schedules -->
+                    <div class="flex flex-col mt-3 gap-1">
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clinic Element -->
+              <div class="accordion-item">
+                <!-- Clinic Name -->
+                <h2 class="accordion-header" id="headingTree">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTree"
+                    aria-expanded="true"
+                    aria-controls="collapseTree"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span class="material-icons text-green-500">home</span>
+                      <span>عيادة مركز النخبة الطبي</span>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <!-- Clinic Info -->
+                    <div class="flex flex-col gap-3">
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500">room</span>
+                        <span>
+                          المنصورة - شارع قناة السويس أعلى مركز النخبة
+                        </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500"
+                          >phone_iphone</span
+                        >
+                        <span> اظهر بيانات الإتصال </span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <span class="material-icons text-green-500">paid</span>
+                        <span> 560 جنية </span>
+                      </div>
+                    </div>
+                    <!-- Clinic Week Schedules -->
+                    <div class="flex flex-col mt-3 gap-1">
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                      <!-- Schedule Item -->
+                      <div
+                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
+                      >
+                        <!-- Week Day -->
+                        <span class="text-green-500">السبت</span>
+                        <!-- Day Schedules -->
+                        <div
+                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
+                        >
+                          <span>من 11 ص ل 4 م</span>
+                          و
+                          <span>من 11 ص ل 4 م</span>
+                        </div>
+                        <button
+                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
+                        >
+                          احجزي
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="footer" class="pt-40">
+      <section id="newsLetter" class="m-0 p-0">
+        <div class="wrapper">
+          <div class="news-letter">
+            <h2>اشترك في نشرتنا الإخبارية</h2>
+            <form>
+              <div class="input-with-button">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="البريد الإلكتروني"
+                />
+                <button class="btn">اشتراك</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <div
+          class="d-none d-md-flex row justify-content-center justify-content-md-start px-sm-5"
+        >
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">الدعم</h4>
+              <ul>
+                <li>مصر</li>
+                <li>exclusive@gmail.com</li>
+                <li>+201112228899</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">الحساب</h4>
+              <ul>
+                <li>
+                  <a href="">تسجيل الدخول / تسجيل جديد</a>
+                </li>
+                <li>
+                  <a href="">منتدى</a>
+                </li>
+                <li>
+                  <a href="">مدونة</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">رابط سريع</h4>
+              <ul>
+                <li>
+                  <a href="">الرئيسية</a>
+                </li>
+                <li>
+                  <a href="">طبيبة</a>
+                </li>
+                <li>
+                  <a href="">مركز</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="d-flex flex-column align-items-center gap-4">
+              <a href="/">
+                <img
+                  class="logo"
+                  src="/images/icons/logo-white.png"
+                  alt="logo"
+                />
+              </a>
+              <p class="text-white fs-5">تابعنا على منصاتنا</p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-4"
+              >
+                <a class="p-1" href="">
+                  <img src="/images/icons/linkedin.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/instagram.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/twitter.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="copyRight">حقوق النشر محفوظة © منصة طبيبة 2025</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script src="/assets/libs/swiper/swiper.min.js"></script>
+    <script type="module" src="/js/imageGallery.js"></script>
+  </body>
+</html>

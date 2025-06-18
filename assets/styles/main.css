@@ -320,7 +320,7 @@
 }
 /* End Main Categories  */
 
-/* Sub Hero section */
+/* Sub Hero sections */
 .sub-hero {
   padding-block: 0;
   background-color: var(--color-green-500);
@@ -796,7 +796,7 @@
 /* End Home Page */
 /* ------------------------------------------------------------------- */
 
-/* Start Tabiba Page */
+/* Start Filter Style */
 .filter {
   flex-grow: 1;
   display: flex;
@@ -826,8 +826,43 @@
     }
   }
 }
-/* End Tabiba Page */
+/* End Filter Style */
 
+/* Start Tabiba and Center Styles */
+
+/* End Tabiba and Center Styles */
+#profileView {
+  .profile-card {
+    background-color: #fff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    img.profile-cover {
+      aspect-ratio: 700 / 125;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.nav.nav-tabs {
+  .nav-item {
+    flex: 1;
+    border-bottom: 2px solid #e7e8ea;
+    display: flex;
+    justify-content: center;
+    .nav-link {
+      color: #7b7b7b;
+      border: 0 !important;
+      margin: 0 !important;
+    }
+
+    &:has(.active) {
+      border-bottom: 2px solid var(--color-pink-500);
+    }
+  }
+}
 /* Start Account Page */
 
 @keyframes wave-animation {
