@@ -43,7 +43,6 @@
 // });
 
 var ThumbnailsSwiper = new Swiper("#Thumbnails", {
-  loop: true,
   breakpoints: {
     0: {
       slidesPerView: 3,

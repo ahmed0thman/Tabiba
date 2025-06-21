@@ -1,6 +1,6 @@
 header {
   background: linear-gradient(142deg, #f2faff 0%, #fff 58.83%);
-  padding: 1rem 5rem;
+  padding: 0.5rem 5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -201,7 +201,7 @@ header {
   }
 
   @media (max-width: 768px) {
-    padding: 0.75rem 0.5rem;
+    padding: 0.25rem 0.5rem;
     nav {
       display: none;
       background-color: var(--color-maron-500);
@@ -252,7 +252,7 @@ header {
 
     .logo {
       img {
-        width: 120px;
+        width: 130px;
       }
     }
 
@@ -284,10 +284,10 @@ header {
 
 #mobileMenu {
   position: fixed;
-  top: 56px;
+  top: 50px;
   inset-inline-start: 0;
   width: 100vw;
-  height: calc(100vh - 56px);
+  bottom: 0;
   z-index: 50;
   transition: all 0.33s ease-out;
   transition-delay: 100ms;

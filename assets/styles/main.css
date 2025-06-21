@@ -860,6 +860,10 @@
 
     &:has(.active) {
       border-bottom: 2px solid var(--color-pink-500);
+
+      .nav-link {
+        color: var(--color-pink-500);
+      }
     }
   }
 }

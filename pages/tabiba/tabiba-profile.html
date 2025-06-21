@@ -134,24 +134,24 @@
     >
       <div class="container mx-auto px-2">
         <div class="flex justify-around items-center h-16">
-          <a class="nav-item active" href="/pages/tabiba/tabiba.html">
-            <span class="material-icons">local_hospital</span>
+          <a class="nav-item" href="/pages/tabiba/tabiba.html">
+            <span class="material-icons text-4xl">local_hospital</span>
             <span class="text-xs">طبيبة</span>
           </a>
           <a class="nav-item" href="/pages/center/center.html">
-            <span class="material-icons">business_center</span>
+            <span class="material-icons text-4xl">monitor_heart</span>
             <span class="text-xs">مركز</span>
           </a>
-          <a class="nav-item" href="/">
-            <span class="material-icons text-3xl">home</span>
+          <a class="nav-item active" href="/">
+            <span class="material-icons text-4xl">home</span>
             <span class="text-xs font-medium">الرئيسية</span>
           </a>
           <a class="nav-item" href="#">
-            <span class="material-icons">article</span>
+            <span class="material-icons text-4xl">article</span>
             <span class="text-xs">مدونة</span>
           </a>
           <a class="nav-item" href="#">
-            <span class="material-icons">forum</span>
+            <span class="material-icons text-4xl">forum</span>
             <span class="text-xs">منتدى</span>
           </a>
         </div>
@@ -173,66 +173,74 @@
             <img src="/images/Doctor-Banner.png" alt="" class="profile-cover" />
             <!-- Card Content -->
             <div
-              class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-3 md:!px-6 md:!py-6"
+              class="card-content flex-grow-1 flex flex-col md:!gap-5 py-3 px-3 md:!px-6 md:!py-6 relative"
             >
               <!-- Card Main Info -->
-              <div class="flex gap-2 md:!gap-4">
+              <div class="flex sm:gap-2 md:!gap-4">
                 <!-- Profile Picture -->
                 <div class="h-0">
                   <img
                     src="/images/female-profile.jpg"
-                    class="rounded-full border-2 border-white max-w-32 translate-y-[-50%] object-contain object-center"
+                    class="rounded-full border-2 border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-12 sm:translate-y-[-50%] object-contain object-center"
                     alt=""
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <!-- Profile Name -->
-                  <h1
-                    class="text-pink-500 font-medium sm:text-xl sm:font-semibold md:text-2xl"
+                <!-- Doctor main info and stats -->
+                <div class="flex sm:gap-2 flex-grow-1">
+                  <!-- Doctor Name, specialization, and title -->
+                  <div class="flex flex-col gap-1">
+                    <!-- Profile Name -->
+                    <h1
+                      class="text-pink-500 font-medium text-base sm:text-xl sm:font-semibold md:text-2xl"
+                    >
+                      د/هدير سالم
+                    </h1>
+                    <div
+                      class="flex flex-wrap items-center gap-2 sm:!gap-6 md:!gap-10"
+                    >
+                      <!-- Doctor Title -->
+                      <span class="text-green-400 text-xs sm:text-base"
+                        >استشاري</span
+                      >
+                      <!-- Doctor Specialization -->
+                      <span class="text-gray-500 text-xs sm:text-base">
+                        طب النساء والتوليد
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Doctor Stats -->
+                  <div
+                    class="absolute top-4 !end-2 flex flex-col sm:static sm:flex-row items-start gap-1 sm:!ms-auto text-xs sm:text-sm md:text-base"
                   >
-                    د/هدير سالم
-                  </h1>
-                  <div class="flex items-center gap-2 sm:!gap-6 md:!gap-10">
-                    <!-- Doctor Title -->
-                    <span class="text-green-400 text-xs sm:text-base"
-                      >استشاري</span
-                    >
-                    <!-- Doctor Specialization -->
-                    <span class="text-gray-500 text-xs sm:text-base">
-                      طب النساء والتوليد
-                    </span>
-                  </div>
-                </div>
-                <!-- Doctor Stats -->
-                <div
-                  class="flex items-start gap-1 !ms-auto text-xs sm:text-sm md:text-base"
-                >
-                  <!-- Total Visitors -->
-                  <div class="flex items-center">
-                    <span class="text-gray-500">230</span>
-                    <span class="material-icons text-gray-500/50"
-                      >how_to_reg</span
-                    >
-                  </div>
-                  <!-- Rating -->
-                  <div class="flex items-center">
-                    <span class="text-gray-500">(4.7)</span>
-                    <span class="material-icons text-yellow-400">star</span>
+                    <!-- Total Visitors -->
+                    <div class="flex items-center">
+                      <span class="text-gray-500">230</span>
+                      <span class="material-icons text-gray-500/50"
+                        >how_to_reg</span
+                      >
+                    </div>
+                    <!-- Rating -->
+                    <div class="flex items-center">
+                      <span class="text-gray-500">(4.7)</span>
+                      <span class="material-icons text-yellow-400">star</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- Card About -->
-              <div class="flex gap-3 mt-4 flex-grow-1">
+              <div class="flex gap-3 !mt-3 sm:!mt-4 flex-grow-1">
                 <span class="material-icons-outlined text-green-400">
                   info
                 </span>
                 <div class="flex flex-col gap-4">
-                  <div class="flex flex-col gap-2">
-                    <span class="text-gray-500 font-medium"
+                  <div class="flex flex-col sm:gap-2">
+                    <span class="text-gray-500 text-sm sm:text-base font-medium"
                       >معلومات عن الدكتور</span
                     >
-                    <p class="text-gray-500 text-sm leading-7">
+                    <p
+                      class="text-gray-500 text-xs sm:text-sm leading-6 sm:leading-7"
+                    >
                       أخصائية امراض النساء و التوليد و العقم و الحقن المجهري
                       اخصائية بمستشفى شربين العام حاليا ومستشفى المنصورة العام
                       الجديده سابقا ومستشفى الشاطبي للنساء والتوليد الإسكندرية
@@ -244,7 +252,7 @@
                     <div class="flex justify-between gap-2">
                       <button class="text-green-500">اظهر التقييمات</button>
                       <button
-                        class="btn btn-green-500 py-2 px-4 text-sm rounded-3"
+                        class="btn btn-green-500 text-xs py-2 px-3 sm:py-2 sm:px-4 sm:text-sm rounded-3"
                       >
                         إضافة تقييم
                       </button>
@@ -254,15 +262,17 @@
                     <div class="flex flex-col gap-1">
                       <!-- Comment Card -->
                       <div
-                        class="bg-gray-200/40 py-3 px-4 rounded-se-xl rounded-es-xl"
+                        class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
                       >
                         <!-- Comment Header -->
-                        <div class="flex justify-between items-center">
+                        <div
+                          class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                        >
                           <div class="flex gap-2 items-center">
                             <!-- Commenter Name -->
-                            <span class="text-gray-500 text-xs font-semibold">
+                            <p class="text-gray-500 text-sm font-semibold">
                               هند حسين
-                            </span>
+                            </p>
 
                             <!-- Comment Date -->
                             <span class="text-gray-500 text-xs">
@@ -270,7 +280,9 @@
                             </span>
                           </div>
                           <!-- Commenter Rate -->
-                          <div class="flex items-center text-yellow-400">
+                          <div
+                            class="flex items-center text-xs sm:text-sm text-yellow-400"
+                          >
                             <span class="material-icons">star</span>
                             <span class="material-icons">star</span>
                             <span class="material-icons">star</span>
@@ -280,14 +292,16 @@
                         </div>
 
                         <!-- Comment Body -->
-                        <p class="text-gray-500 text-sm mt-2 mb-3">
+                        <p
+                          class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+                        >
                           “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل
                           اوي علي المستوي الشخصي والعملي “
                         </p>
                       </div>
                       <!-- Comment Reply Card -->
                       <div
-                        class="bg-gray-200/50 py-3 px-4 rounded-ss-xl rounded-ee-xl"
+                        class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
                       >
                         <!-- Comment Header -->
                         <div class="flex justify-between items-center">
@@ -305,7 +319,9 @@
                         </div>
 
                         <!-- Comment Body -->
-                        <p class="text-gray-500 text-sm mt-2 mb-1">
+                        <p
+                          class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+                        >
                           “ اتشرفنا بيك “
                         </p>
                       </div>
@@ -317,75 +333,527 @@
           </div>
           <!-- End Profile Main Card -->
 
-          <!-- Start Profile Gallery -->
+          <!-- Start Gallery and Clinics Accordion -->
+
           <div
-            class="col-span-10 row-start-12 md:col-start-6 md:col-span-5 lg:row-start-1 lg:row-span-2 lg:col-start-7 lg:col-span-4"
+            class="col-span-10 row-start-3 row-span-4 mt-4 flex flex-col-reverse md:flex-row lg:flex-col gap-3 lg:absolute !end-4 lg:!mt-0 lg:top-6 lg:w-[38%]"
           >
-            <div class="h-100 space-y-4">
-              <div id="Images" class="swiper w-100 h-4/5">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="/images/hero-img.png" />
+            <!-- Start Profile Gallery -->
+            <div class="max-h-[500px] md:max-w-[50%] lg:max-w-max">
+              <div class="h-100 space-y-4 gallery-swiper">
+                <div id="Images" class="swiper w-100 h-4/5">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/images/hero-img.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/images/clinic.jpg" />
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="/images/clinic.jpg" />
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div id="Thumbnails" thumbsSlider="" class="swiper h-1/5">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/hero-img.png" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
+                    <div class="swiper-slide opacity-50">
+                      <img src="/images/clinic.jpg" />
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
               </div>
-              <div id="Thumbnails" thumbsSlider="" class="swiper h-1/5">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/hero-img.png" />
+            </div>
+            <!-- Clinics and Addresses -->
+            <div class="flex-grow-1">
+              <!-- Clinics Accordion -->
+              <div class="accordion" id="accordionExample">
+                <!-- Clinic Element -->
+                <div class="accordion-item">
+                  <!-- Clinic Name -->
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <div class="flex items-center gap-2 text-sm sm:text-base">
+                        <span class="material-icons text-green-500">home</span>
+                        <span>عيادة مركز النخبة الطبي</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <!-- Clinic Info -->
+                      <div class="flex flex-col gap-3 text-sm sm:text-base">
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >room</span
+                          >
+                          <span>
+                            المنصورة - شارع قناة السويس أعلى مركز النخبة
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >phone_iphone</span
+                          >
+                          <span> 01234034230 </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >paid</span
+                          >
+                          <span> 560 جنية </span>
+                        </div>
+                      </div>
+                      <!-- Clinic Week Schedules -->
+                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
+                </div>
+
+                <!-- Clinic Element -->
+                <div class="accordion-item">
+                  <!-- Clinic Name -->
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      <div class="flex items-center gap-2 text-sm sm:text-base">
+                        <span class="material-icons text-green-500">home</span>
+                        <span>عيادة مركز النخبة الطبي</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <!-- Clinic Info -->
+                      <div class="flex flex-col gap-3 text-sm sm:text-base">
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >room</span
+                          >
+                          <span>
+                            المنصورة - شارع قناة السويس أعلى مركز النخبة
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >phone_iphone</span
+                          >
+                          <span> 01234034230 </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >paid</span
+                          >
+                          <span> 560 جنية </span>
+                        </div>
+                      </div>
+                      <!-- Clinic Week Schedules -->
+                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
-                  </div>
-                  <div class="swiper-slide opacity-50">
-                    <img src="/images/clinic.jpg" />
+                </div>
+
+                <!-- Clinic Element -->
+                <div class="accordion-item">
+                  <!-- Clinic Name -->
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="true"
+                      aria-controls="collapseThree"
+                    >
+                      <div class="flex items-center gap-2 text-sm sm:text-base">
+                        <span class="material-icons text-green-500">home</span>
+                        <span>عيادة مركز النخبة الطبي</span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <!-- Clinic Info -->
+                      <div class="flex flex-col gap-3 text-sm sm:text-base">
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >room</span
+                          >
+                          <span>
+                            المنصورة - شارع قناة السويس أعلى مركز النخبة
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >phone_iphone</span
+                          >
+                          <span> 01234034230 </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >paid</span
+                          >
+                          <span> 560 جنية </span>
+                        </div>
+                      </div>
+                      <!-- Clinic Week Schedules -->
+                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 sm:static sm:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Services -->
+          <!-- End Gallery and Clinics Accordion -->
+
+          <!-- Start Services -->
           <div
-            class="col-span-10 md:col-start-1 md:col-span-5 row-start-7 md:row-span-2 lg:row-start-4 lg:row-span-2 lg:col-start-1 lg:col-span-6 mt-8"
+            class="col-span-10 md:col-start-1 md:col-span-5 row-start-7 md:row-span-2 lg:row-start-4 lg:row-span-2 lg:col-start-1 lg:col-span-6 mt-12"
           >
             <h2 class="text-gray-700 text-xl font-medium mb-3">
               الخدمات المقدمة
@@ -396,12 +864,12 @@
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
-                    id="home-tab"
+                    id="services-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#home"
+                    data-bs-target="#services"
                     type="button"
                     role="tab"
-                    aria-controls="home"
+                    aria-controls="services"
                     aria-selected="true"
                   >
                     خدمات
@@ -410,12 +878,12 @@
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link"
-                    id="profile-tab"
+                    id="otherServieces-tab"
                     data-bs-toggle="tab"
-                    data-bs-target="#profile"
+                    data-bs-target="#otherServieces"
                     type="button"
                     role="tab"
-                    aria-controls="profile"
+                    aria-controls="otherServieces"
                     aria-selected="false"
                   >
                     خدمات أخرى
@@ -427,9 +895,9 @@
               <div class="tab-content max-h-[220px] overflow-auto" dir="ltr">
                 <div
                   class="tab-pane active"
-                  id="home"
+                  id="services"
                   role="tabpanel"
-                  aria-labelledby="home-tab"
+                  aria-labelledby="services-tab"
                 >
                   <!-- Services Items -->
                   <div class="flex flex-col divide-y divide-gray-100/50 p-3">
@@ -443,360 +911,73 @@
                 </div>
                 <div
                   class="tab-pane"
-                  id="profile"
+                  id="otherServieces"
                   role="tabpanel"
-                  aria-labelledby="profile-tab"
+                  aria-labelledby="otherServieces-tab"
                 >
                   <!-- Services Items -->
                   <div class="flex flex-col divide-y divide-gray-100/50 p-3">
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="text-gray-700 text-center py-2">أشعة</div>
+                    <div class="text-gray-700 text-center py-2">أشعة</div>
+                    <div class="text-gray-700 text-center py-2">أشعة</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Addresses -->
-          <div
-            class="col-span-10 row-start-4 row-span-2 lg:row-start-3 lg:row-span-2 lg:col-start-7 lg:col-span-4 pt-8 lg:pt-12"
-          >
-            <!-- Clinics Accordion -->
-            <div class="accordion" id="accordionExample">
-              <!-- Clinic Element -->
-              <div class="accordion-item">
-                <!-- Clinic Name -->
-                <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    <div class="flex items-center gap-2">
-                      <span class="material-icons text-green-500">home</span>
-                      <span>عيادة مركز النخبة الطبي</span>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <!-- Clinic Info -->
-                    <div class="flex flex-col gap-3">
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500">room</span>
-                        <span>
-                          المنصورة - شارع قناة السويس أعلى مركز النخبة
-                        </span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500"
-                          >phone_iphone</span
-                        >
-                        <span> اظهر بيانات الإتصال </span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500">paid</span>
-                        <span> 560 جنية </span>
-                      </div>
-                    </div>
-                    <!-- Clinic Week Schedules -->
-                    <div class="flex flex-col mt-3 gap-1">
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Clinic Element -->
-              <div class="accordion-item">
-                <!-- Clinic Name -->
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="true"
-                    aria-controls="collapseTwo"
-                  >
-                    <div class="flex items-center gap-2">
-                      <span class="material-icons text-green-500">home</span>
-                      <span>عيادة مركز النخبة الطبي</span>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <!-- Clinic Info -->
-                    <div class="flex flex-col gap-3">
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500">room</span>
-                        <span>
-                          المنصورة - شارع قناة السويس أعلى مركز النخبة
-                        </span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500"
-                          >phone_iphone</span
-                        >
-                        <span> اظهر بيانات الإتصال </span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500">paid</span>
-                        <span> 560 جنية </span>
-                      </div>
-                    </div>
-                    <!-- Clinic Week Schedules -->
-                    <div class="flex flex-col mt-3 gap-1">
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- End Services -->
 
-              <!-- Clinic Element -->
-              <div class="accordion-item">
-                <!-- Clinic Name -->
-                <h2 class="accordion-header" id="headingTree">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTree"
-                    aria-expanded="true"
-                    aria-controls="collapseTree"
-                  >
-                    <div class="flex items-center gap-2">
-                      <span class="material-icons text-green-500">home</span>
-                      <span>عيادة مركز النخبة الطبي</span>
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseTree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <!-- Clinic Info -->
-                    <div class="flex flex-col gap-3">
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500">room</span>
-                        <span>
-                          المنصورة - شارع قناة السويس أعلى مركز النخبة
-                        </span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500"
-                          >phone_iphone</span
-                        >
-                        <span> اظهر بيانات الإتصال </span>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <span class="material-icons text-green-500">paid</span>
-                        <span> 560 جنية </span>
-                      </div>
-                    </div>
-                    <!-- Clinic Week Schedules -->
-                    <div class="flex flex-col mt-3 gap-1">
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                      <!-- Schedule Item -->
-                      <div
-                        class="flex items-center gap-2 p-2 border border-gray-500/50 rounded-md"
-                      >
-                        <!-- Week Day -->
-                        <span class="text-green-500">السبت</span>
-                        <!-- Day Schedules -->
-                        <div
-                          class="flex-grow-1 flex gap-1 items-center justify-center text-sm"
-                        >
-                          <span>من 11 ص ل 4 م</span>
-                          و
-                          <span>من 11 ص ل 4 م</span>
-                        </div>
-                        <button
-                          class="btn btn-green-500 px-4 py-1 text-sm font-semibold"
-                        >
-                          احجزي
-                        </button>
-                      </div>
-                    </div>
+          <!-- Insurance Contractors -->
+          <div
+            class="col-span-10 md:col-start-6 md:col-span-5 row-start-9 md:row-span-1 lg:row-start-6 lg:row-span-1 lg:col-start-1 lg:col-span-6 mt-8"
+          >
+            <h2 class="text-gray-700 text-xl font-medium mb-3">
+              شركات التأمين
+            </h2>
+
+            <div class="bg-white rounded-[1.2rem] py-3 contractors-swiper">
+              <div id="contractors" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/images/arabic.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/contractor2.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/arabic.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/arabic.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/contractor2.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/arabic.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/contractor2.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/arabic.png" alt="" />
+                    <p>جلوب ميد</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/contractor2.png" alt="" />
+                    <p>جلوب ميد</p>
                   </div>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </section>
@@ -903,5 +1084,6 @@
     <script type="module" src="/main.js"></script>
     <script src="/assets/libs/swiper/swiper.min.js"></script>
     <script type="module" src="/js/imageGallery.js"></script>
+    <script type="module" src="/js/contractor.js"></script>
   </body>
 </html>
