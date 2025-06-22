@@ -8,6 +8,10 @@
       href="/assets/libs/material-icon/material-icon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="/assets/libs/star-rating/css/star-rating.min.css"
+    />
     <link rel="stylesheet" href="/assets/libs/swiper/swiper.min.css" />
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <title>Tabiba</title>
@@ -134,7 +138,7 @@
     >
       <div class="container mx-auto px-2">
         <div class="flex justify-around items-center h-16">
-          <a class="nav-item" href="/pages/tabiba/tabiba.html">
+          <a class="nav-item active" href="/pages/tabiba/tabiba.html">
             <span class="material-icons text-4xl">local_hospital</span>
             <span class="text-xs">طبيبة</span>
           </a>
@@ -142,7 +146,7 @@
             <span class="material-icons text-4xl">monitor_heart</span>
             <span class="text-xs">مركز</span>
           </a>
-          <a class="nav-item active" href="/">
+          <a class="nav-item" href="/">
             <span class="material-icons text-4xl">home</span>
             <span class="text-xs font-medium">الرئيسية</span>
           </a>
@@ -250,9 +254,15 @@
                   <!-- Card Rate and Comments -->
                   <div class="flex flex-col gap-3 mt-auto">
                     <div class="flex justify-between gap-2">
-                      <button class="text-green-500">اظهر التقييمات</button>
                       <button
-                        class="btn btn-green-500 text-xs py-2 px-3 sm:py-2 sm:px-4 sm:text-sm rounded-3"
+                        class="text-green-500 btn-modal-toggler"
+                        data-target="modalComments"
+                      >
+                        اظهر التقييمات
+                      </button>
+                      <button
+                        class="btn btn-green-500 text-xs py-2 px-3 sm:py-2 sm:px-4 sm:text-sm rounded-3 btn-modal-toggler"
+                        data-target="modalAddComment"
                       >
                         إضافة تقييم
                       </button>
@@ -473,7 +483,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -496,7 +507,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -519,7 +531,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -542,7 +555,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -620,7 +634,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -643,7 +658,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -666,7 +682,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -689,7 +706,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -767,7 +785,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -790,7 +809,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -813,7 +833,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -836,7 +857,8 @@
                             <span>من 11 ص ل 4 م</span>
                           </div>
                           <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold"
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
                           >
                             احجزي
                           </button>
@@ -1081,9 +1103,587 @@
       </div>
     </footer>
 
+    <!-- Modal Comments -->
+    <div id="modalComments" class="modal" data-behavior="closable">
+      <div class="modal-view py-3 flex flex-col">
+        <button
+          data-target="modalComments"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto !me-2"
+        ></button>
+        <!-- Comments Container -->
+        <div class="flex flex-col flex-grow-1 !gap-5 overflow-y-auto px-3">
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal form confirm reservation -->
+    <div id="modalConfrimReservation" class="modal">
+      <div class="modal-view p-4 flex flex-col">
+        <button
+          data-target="modalConfrimReservation"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto"
+        ></button>
+        <div class="flex flex-col items-center gap-6">
+          <img src="/images/icons/success.png" alt="" />
+          <div class="flex flex-col gap-3 items-center">
+            <h3 class="text-xl font-bold">قومي بتأكيد الحجز الان!</h3>
+            <form class="flex justify-center gap-3 items-center">
+              <button class="btn btn-green-500">تأكيد الحجز</button>
+              <span
+                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500 btn-modal-toggler"
+                data-target="modalConfrimReservation"
+                data-action="close"
+              >
+                إلغاء الحجز
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal form Add Comment and rating -->
+    <div id="modalAddComment" class="modal" data-behavior="closable">
+      <div class="modal-view w-11/12 max-w-[360px] p-4 flex flex-col relative">
+        <button
+          data-target="modalAddComment"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 absolute !end-3"
+        ></button>
+        <div class="flex flex-col gap-4">
+          <h3 class="text-xl font-bold">تقيمك يفرقلنا</h3>
+          <div class="space-y-1">
+            <p>كيف كانت تجربتك ؟</p>
+            <span class="text-sm text-black/40">
+              برجاء إعطاء تقييمك وأيضا رأيك.</span
+            >
+          </div>
+          <form class="flex flex-col items-center gap-3">
+            <select name="rate" class="star-rating">
+              <option value="-1">اختر تقييم</option>
+              <option value="1">سيئ</option>
+              <option value="2">مقبول</option>
+              <option value="3">جيد</option>
+              <option value="4">جيد جدا</option>
+              <option value="5">ممتاز</option>
+            </select>
+
+            <textarea
+              name="comment"
+              id=""
+              class="form-control focus:shadow-none focus:ring-gray-500/50 focus:border-none placeholder:text-gray-500/40 placeholder:text-sm text-lg max-h-28"
+              placeholder="اكتب تعليقك هنا ...."
+              rows="4"
+            ></textarea>
+            <button class="btn btn-green-500 mt-3 py-2 w-100">إرسال</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
     <script src="/assets/libs/swiper/swiper.min.js"></script>
+    <script src="/assets/libs/star-rating/star-rating.min.js"></script>
     <script type="module" src="/js/imageGallery.js"></script>
     <script type="module" src="/js/contractor.js"></script>
+    <script type="module" src="/js/addRate.js"></script>
   </body>
 </html>
