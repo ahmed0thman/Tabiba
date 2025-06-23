@@ -31,10 +31,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="/">الرئيسية</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="/pages/tabiba/tabiba.html">طبيبة</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="/pages/center/center.html">مركز</a>
               </li>
 
@@ -138,11 +138,11 @@
     >
       <div class="container mx-auto px-2">
         <div class="flex justify-around items-center h-16">
-          <a class="nav-item active" href="/pages/tabiba/tabiba.html">
+          <a class="nav-item" href="/pages/tabiba/tabiba.html">
             <span class="material-icons text-4xl">local_hospital</span>
             <span class="text-xs">طبيبة</span>
           </a>
-          <a class="nav-item" href="/pages/center/center.html">
+          <a class="nav-item active" href="/pages/center/center.html">
             <span class="material-icons text-4xl">monitor_heart</span>
             <span class="text-xs">مركز</span>
           </a>
@@ -167,7 +167,7 @@
       <div class="wrapper px-3 mb-[6rem]">
         <section
           id="profileView"
-          class="grid grid-cols-10 auto-rows-auto gap-x-4 pt-1 md:!pt-3 lg:!pt-6 h-fit"
+          class="grid grid-cols-10 auto-rows-auto gap-x-4 pt-1 h-fit md:!pt-3 lg:!pt-6"
         >
           <!-- Start Profile Main Card -->
           <div
@@ -184,35 +184,31 @@
                 <!-- Profile Picture -->
                 <div class="h-0">
                   <img
-                    src="/images/female-profile.jpg"
+                    src="/images/cairo-scan.png"
                     class="rounded-full border-2 bg-white border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-12 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
                     alt=""
                   />
                 </div>
-                <!-- Doctor main info and stats -->
+                <!-- Center main info and stats -->
                 <div class="flex sm:gap-2 flex-grow-1">
-                  <!-- Doctor Name, specialization, and title -->
+                  <!-- Center Name, specialization, and title -->
                   <div class="flex flex-col gap-1">
                     <!-- Profile Name -->
                     <h1
                       class="text-pink-500 font-medium text-base sm:text-xl sm:font-semibold md:text-2xl"
                     >
-                      د/هدير سالم
+                      كايرو سكان
                     </h1>
                     <div
                       class="flex flex-wrap items-center gap-2 sm:!gap-6 md:!gap-10"
                     >
-                      <!-- Doctor Title -->
-                      <span class="text-green-400 text-xs sm:text-base"
-                        >استشاري</span
-                      >
-                      <!-- Doctor Specialization -->
+                      <!-- Center Specialization -->
                       <span class="text-gray-500 text-xs sm:text-base">
-                        طب النساء والتوليد
+                        مركز أشعة وتحاليل
                       </span>
                     </div>
                   </div>
-                  <!-- Doctor Stats -->
+                  <!-- Center Stats -->
                   <div
                     class="absolute top-4 !end-2 flex flex-col sm:static sm:flex-row items-start gap-1 sm:!ms-auto text-xs sm:text-sm md:text-base"
                   >
@@ -239,16 +235,20 @@
                 </span>
                 <div class="flex flex-col gap-4">
                   <div class="flex flex-col sm:gap-2">
-                    <span class="text-gray-500 text-sm sm:text-base font-medium"
-                      >معلومات عن الدكتور</span
+                    <span
+                      class="text-gray-500 text-sm sm:text-base font-medium"
                     >
+                      نبذة عن المركز
+                    </span>
                     <p
                       class="text-gray-500 text-xs sm:text-sm leading-6 sm:leading-7"
                     >
-                      أخصائية امراض النساء و التوليد و العقم و الحقن المجهري
-                      اخصائية بمستشفى شربين العام حاليا ومستشفى المنصورة العام
-                      الجديده سابقا ومستشفى الشاطبي للنساء والتوليد الإسكندرية
-                      سابقا دبلومة امراض النساء
+                      كايرو سكان للأشعة والتحاليل هي واحدة من أبرز المؤسسات
+                      الطبية الخاصة في مصر، تأسست عام 1983 بهدف إحداث نقلة نوعية
+                      في مجال الأشعة التشخيصية والتداخلية. تقدم كايرو سكان خدمات
+                      طبية متكاملة تشمل أحدث تقنيات التصوير الطبي والتحاليل
+                      المعملية، مع التركيز على الجودة والدقة في التشخيص تعتمد
+                      كايرو سكان على
                     </p>
                   </div>
                   <!-- Card Rate and Comments -->
@@ -305,8 +305,9 @@
                         <p
                           class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
                         >
-                          “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل
-                          اوي علي المستوي الشخصي والعملي “
+                          “ بصراحة، أنا جربت كايرو سكان كذا مرة سواء للأشعة أو
+                          التحاليل، \الناس هناك محترمة جدًا، من أول الاستقبال
+                          لحد الدكتور اللي بيشرحلك النتايج.“
                         </p>
                       </div>
                       <!-- Comment Reply Card -->
@@ -318,7 +319,7 @@
                           <div class="flex gap-2 items-center">
                             <!-- Commenter Name -->
                             <span class="text-gray-500 text-xs font-semibold">
-                              د/هدير سالم
+                              كايرو سكان
                             </span>
 
                             <!-- Comment Date -->
@@ -343,13 +344,13 @@
           </div>
           <!-- End Profile Main Card -->
 
-          <!-- Start Gallery and Clinics Accordion -->
+          <!-- Start Gallery, Branches Accordion, and Locations -->
 
           <div
-            class="col-span-10 row-start-3 row-span-4 mt-4 flex flex-col-reverse md:flex-row lg:flex-col gap-3 lg:col-span-4 lg:row-start-1 lg:row-end-7 lg:!mt-0 h-fit"
+            class="col-span-10 row-start-3 row-span-4 mt-4 flex flex-col-reverse md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col gap-3 lg:col-span-4 lg:row-start-1 lg:row-end-7 lg:!mt-0 h-fit"
           >
             <!-- Start Profile Gallery -->
-            <div class="max-h-[500px] md:max-w-[50%] lg:max-w-max">
+            <div class="flex-1 max-h-[500px] md:max-w-[50%] lg:max-w-max">
               <div class="h-100 space-y-4 gallery-swiper">
                 <div id="Images" class="swiper w-100 h-4/5">
                   <div class="swiper-wrapper">
@@ -411,13 +412,13 @@
                 </div>
               </div>
             </div>
-            <!-- Clinics and Addresses -->
-            <div class="flex-grow-1">
-              <!-- Clinics Accordion -->
+            <!-- Centers Accordion -->
+            <div class="flex-1 lg:mt-5">
+              <!-- Centers Accordion -->
               <div class="accordion" id="accordionExample">
-                <!-- Clinic Element -->
+                <!-- Center Element -->
                 <div class="accordion-item">
-                  <!-- Clinic Name -->
+                  <!-- Center Name -->
                   <h2 class="accordion-header" id="headingOne">
                     <button
                       class="accordion-button"
@@ -428,9 +429,11 @@
                       aria-controls="collapseOne"
                     >
                       <div class="flex items-center gap-2 text-sm sm:text-base">
-                        <span class="material-icons text-green-500">home</span>
-                        <span class="!text-start"
-                          >عيادة مركز النخبة الطبي
+                        <span class="material-icons text-green-500">
+                          room
+                        </span>
+                        <span class="!text-start">
+                          المنصورة - شارع قناة السويس أعلى مكتبة الشاذلي
                         </span>
                       </div>
                     </button>
@@ -442,16 +445,8 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <!-- Clinic Info -->
+                      <!-- Center Info -->
                       <div class="flex flex-col gap-3 text-sm sm:text-base">
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >room</span
-                          >
-                          <span>
-                            المنصورة - شارع قناة السويس أعلى مركز النخبة
-                          </span>
-                        </div>
                         <div class="flex items-center gap-2">
                           <span class="material-icons text-green-500"
                             >phone_iphone</span
@@ -459,13 +454,13 @@
                           <span> 01234034230 </span>
                         </div>
                         <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >paid</span
-                          >
-                          <span> 560 جنية </span>
+                          <img src="/images/icons/females.png" alt="" />
+                          <span class="text-green-500">
+                            مواعيد الطاقم النسائي
+                          </span>
                         </div>
                       </div>
-                      <!-- Clinic Week Schedules -->
+                      <!-- Center Week Schedules -->
                       <div class="flex flex-col mt-3 gap-3 sm:gap-1">
                         <!-- Schedule Item -->
                         <div
@@ -568,9 +563,9 @@
                   </div>
                 </div>
 
-                <!-- Clinic Element -->
+                <!-- Center Element -->
                 <div class="accordion-item">
-                  <!-- Clinic Name -->
+                  <!-- Center Name -->
                   <h2 class="accordion-header" id="headingTwo">
                     <button
                       class="accordion-button"
@@ -581,8 +576,12 @@
                       aria-controls="collapseTwo"
                     >
                       <div class="flex items-center gap-2 text-sm sm:text-base">
-                        <span class="material-icons text-green-500">home</span>
-                        <span class="!text-start">عيادة مركز النخبة الطبي</span>
+                        <span class="material-icons text-green-500">
+                          room
+                        </span>
+                        <span class="!text-start">
+                          المنصورة - شارع قناة السويس أعلى مكتبة الشاذلي
+                        </span>
                       </div>
                     </button>
                   </h2>
@@ -593,16 +592,8 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <!-- Clinic Info -->
+                      <!-- Center Info -->
                       <div class="flex flex-col gap-3 text-sm sm:text-base">
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >room</span
-                          >
-                          <span>
-                            المنصورة - شارع قناة السويس أعلى مركز النخبة
-                          </span>
-                        </div>
                         <div class="flex items-center gap-2">
                           <span class="material-icons text-green-500"
                             >phone_iphone</span
@@ -610,13 +601,13 @@
                           <span> 01234034230 </span>
                         </div>
                         <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >paid</span
-                          >
-                          <span> 560 جنية </span>
+                          <img src="/images/icons/females.png" alt="" />
+                          <span class="text-green-500">
+                            مواعيد الطاقم النسائي
+                          </span>
                         </div>
                       </div>
-                      <!-- Clinic Week Schedules -->
+                      <!-- Center Week Schedules -->
                       <div class="flex flex-col mt-3 gap-3 sm:gap-1">
                         <!-- Schedule Item -->
                         <div
@@ -719,9 +710,9 @@
                   </div>
                 </div>
 
-                <!-- Clinic Element -->
+                <!-- Center Element -->
                 <div class="accordion-item">
-                  <!-- Clinic Name -->
+                  <!-- Center Name -->
                   <h2 class="accordion-header" id="headingThree">
                     <button
                       class="accordion-button"
@@ -732,8 +723,12 @@
                       aria-controls="collapseThree"
                     >
                       <div class="flex items-center gap-2 text-sm sm:text-base">
-                        <span class="material-icons text-green-500">home</span>
-                        <span class="!text-start">عيادة مركز النخبة الطبي</span>
+                        <span class="material-icons text-green-500">
+                          room
+                        </span>
+                        <span class="!text-start">
+                          المنصورة - شارع قناة السويس أعلى مكتبة الشاذلي
+                        </span>
                       </div>
                     </button>
                   </h2>
@@ -744,16 +739,8 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <!-- Clinic Info -->
+                      <!-- Center Info -->
                       <div class="flex flex-col gap-3 text-sm sm:text-base">
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >room</span
-                          >
-                          <span>
-                            المنصورة - شارع قناة السويس أعلى مركز النخبة
-                          </span>
-                        </div>
                         <div class="flex items-center gap-2">
                           <span class="material-icons text-green-500"
                             >phone_iphone</span
@@ -761,13 +748,13 @@
                           <span> 01234034230 </span>
                         </div>
                         <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >paid</span
-                          >
-                          <span> 560 جنية </span>
+                          <img src="/images/icons/females.png" alt="" />
+                          <span class="text-green-500">
+                            مواعيد الطاقم النسائي
+                          </span>
                         </div>
                       </div>
-                      <!-- Clinic Week Schedules -->
+                      <!-- Center Week Schedules -->
                       <div class="flex flex-col mt-3 gap-3 sm:gap-1">
                         <!-- Schedule Item -->
                         <div
@@ -871,9 +858,114 @@
                 </div>
               </div>
             </div>
+
+            <!-- Governments Locations -->
+            <div class="flex-grow-1 mt-3 lg:!mt-1">
+              <h2 class="text-gray-700 text-xl font-medium mb-3">عناوينا</h2>
+              <div
+                class="flex-grow-1 bg-white border border-gray-200 rounded-[1.2rem] overflow-hidden"
+              >
+                <!-- Governments -->
+                <div
+                  class="overflow-y-auto max-h-40 sm:max-h-48 lg:max-h-64 my-3 p-2 sm:!p-4"
+                >
+                  <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 gap-2"
+                  >
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <!-- add class 'text-green-500' for the active one-->
+                      <span class="text-green-500">القاهرة</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span> الدقهلية</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span>القاهرة</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span> الدقهلية</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span>القاهرة</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span> الدقهلية</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span>القاهرة</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span> الدقهلية</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span>القاهرة</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                    >
+                      <span> الدقهلية</span>
+                      <span class="material-icons text-green-500"
+                        >arrow_back</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- End Gallery and Clinics Accordion -->
+          <!-- End Gallery and Centers Accordion -->
 
           <!-- Start Services -->
           <div

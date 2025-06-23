@@ -57,11 +57,11 @@ var ThumbnailsSwiper = new Swiper("#Thumbnails", {
       spaceBetween: 10,
     },
     700: {
-      slidesPerView: 6,
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     900: {
-      slidesPerView: 7,
+      slidesPerView: 5,
       spaceBetween: 10,
     },
     1024: {
