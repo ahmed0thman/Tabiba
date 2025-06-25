@@ -19,7 +19,7 @@
 
 @media (max-width: 768px) {
   main {
-    padding-top: 60px;
+    margin-top: 60px;
   }
   section {
     margin-bottom: 2rem;

@@ -42,7 +42,7 @@
                 <a class="nav-link" href="">مدونة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">منتدى</a>
+                <a class="nav-link" href="/pages/forum/forum.html">منتدى</a>
               </li>
             </ul>
           </nav>
@@ -154,7 +154,7 @@
             <span class="material-icons text-4xl">article</span>
             <span class="text-xs">مدونة</span>
           </a>
-          <a class="nav-item" href="#">
+          <a class="nav-item" href="/pages/forum/forum.html">
             <span class="material-icons text-4xl">forum</span>
             <span class="text-xs">منتدى</span>
           </a>
@@ -346,11 +346,11 @@
           <!-- Start Gallery and Clinics Accordion -->
 
           <div
-            class="col-span-10 row-start-3 row-span-4 mt-4 flex flex-col-reverse md:flex-row lg:flex-col gap-3 lg:col-span-4 lg:row-start-1 lg:row-end-7 lg:!mt-0 h-fit"
+            class="col-span-10 row-start-3 row-span-4 !mt-4 flex flex-col-reverse md:flex-row lg:flex-col gap-3 lg:col-span-4 lg:row-start-1 lg:row-end-7 lg:!mt-0 h-fit"
           >
             <!-- Start Profile Gallery -->
-            <div class="max-h-[500px] md:max-w-[50%] lg:max-w-max">
-              <div class="h-100 space-y-4 gallery-swiper">
+            <div class="md:max-w-[50%] lg:max-w-max">
+              <div class="h-full space-y-4 gallery-swiper">
                 <div id="Images" class="swiper w-100 h-4/5">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -412,7 +412,7 @@
               </div>
             </div>
             <!-- Clinics and Addresses -->
-            <div class="flex-grow-1">
+            <div class="flex-grow-1 lg:mt-5">
               <!-- Clinics Accordion -->
               <div class="accordion" id="accordionExample">
                 <!-- Clinic Element -->
@@ -466,7 +466,9 @@
                         </div>
                       </div>
                       <!-- Clinic Week Schedules -->
-                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                      <div
+                        class="flex flex-col mt-3 gap-3 sm:gap-1 sm:max-h-64 py-2 overflow-y-auto"
+                      >
                         <!-- Schedule Item -->
                         <div
                           class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
@@ -617,7 +619,9 @@
                         </div>
                       </div>
                       <!-- Clinic Week Schedules -->
-                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                      <div
+                        class="flex flex-col mt-3 gap-3 sm:gap-1 sm:max-h-64 py-2 overflow-y-auto"
+                      >
                         <!-- Schedule Item -->
                         <div
                           class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
@@ -768,7 +772,9 @@
                         </div>
                       </div>
                       <!-- Clinic Week Schedules -->
-                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                      <div
+                        class="flex flex-col mt-3 gap-3 sm:gap-1 sm:max-h-64 py-2 overflow-y-auto"
+                      >
                         <!-- Schedule Item -->
                         <div
                           class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"

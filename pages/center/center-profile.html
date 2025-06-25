@@ -42,7 +42,7 @@
                 <a class="nav-link" href="">مدونة</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">منتدى</a>
+                <a class="nav-link" href="/pages/forum/forum.html">منتدى</a>
               </li>
             </ul>
           </nav>
@@ -154,7 +154,7 @@
             <span class="material-icons text-4xl">article</span>
             <span class="text-xs">مدونة</span>
           </a>
-          <a class="nav-item" href="#">
+          <a class="nav-item" href="/pages/forum/forum.html">
             <span class="material-icons text-4xl">forum</span>
             <span class="text-xs">منتدى</span>
           </a>
@@ -347,11 +347,11 @@
           <!-- Start Gallery, Branches Accordion, and Locations -->
 
           <div
-            class="col-span-10 row-start-3 row-span-4 mt-4 flex flex-col-reverse md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col gap-3 lg:col-span-4 lg:row-start-1 lg:row-end-7 lg:!mt-0 h-fit"
+            class="col-span-10 row-start-3 row-span-4 !mt-4 flex flex-col-reverse md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col gap-3 lg:col-span-4 lg:row-start-1 lg:row-end-7 lg:!mt-0 h-fit"
           >
             <!-- Start Profile Gallery -->
-            <div class="flex-1 max-h-[500px] md:max-w-[50%] lg:max-w-max">
-              <div class="h-100 space-y-4 gallery-swiper">
+            <div class="flex-1 md:max-w-[50%] lg:max-w-max">
+              <div class="h-full space-y-4 gallery-swiper">
                 <div id="Images" class="swiper w-100 h-4/5">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -461,7 +461,9 @@
                         </div>
                       </div>
                       <!-- Center Week Schedules -->
-                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                      <div
+                        class="flex flex-col mt-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                      >
                         <!-- Schedule Item -->
                         <div
                           class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
@@ -608,7 +610,9 @@
                         </div>
                       </div>
                       <!-- Center Week Schedules -->
-                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                      <div
+                        class="flex flex-col mt-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                      >
                         <!-- Schedule Item -->
                         <div
                           class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
@@ -755,7 +759,57 @@
                         </div>
                       </div>
                       <!-- Center Week Schedules -->
-                      <div class="flex flex-col mt-3 gap-3 sm:gap-1">
+                      <div
+                        class="flex flex-col mt-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                      >
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
+                          >
+                            احجزي
+                          </button>
+                        </div>
+                        <!-- Schedule Item -->
+                        <div
+                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
+                        >
+                          <!-- Week Day -->
+                          <span
+                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            >السبت</span
+                          >
+                          <!-- Day Schedules -->
+                          <div
+                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
+                          >
+                            <span>من 11 ص ل 4 م</span>
+                            و
+                            <span>من 11 ص ل 4 م</span>
+                          </div>
+                          <button
+                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
+                            data-target="modalConfrimReservation"
+                          >
+                            احجزي
+                          </button>
+                        </div>
                         <!-- Schedule Item -->
                         <div
                           class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
@@ -867,7 +921,7 @@
               >
                 <!-- Governments -->
                 <div
-                  class="overflow-y-auto max-h-40 sm:max-h-48 lg:max-h-64 my-3 p-2 sm:!p-4"
+                  class="overflow-y-auto max-h-40 sm:max-h-48 lg:max-h-[17rem] my-3 p-2 sm:!p-4"
                 >
                   <div
                     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 gap-2"

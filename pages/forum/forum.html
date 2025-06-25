@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="/assets/libs/material-icon/material-icon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <title>Tabiba</title>
+  </head>
+
+  <body>
+    <!-- Start Main Header -->
+    <header id="header" class="transition duration-300 ease-in-out">
+      <div class="wrapper">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="/" class="logo">
+            <img src="/images/icons/logo.png" alt="Logo" />
+          </a>
+          <nav id="navMenu">
+            <span class="btn-close-menu d-md-none nav-toggler"> x </span>
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/tabiba/tabiba.html">طبيبة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/center/center.html">مركز</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">مدونة</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="">منتدى</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-none d-md-flex gap-3 items-center">
+            <!-- Visible when not logged in -->
+            <a class="btn d-none btn-green-500 btn-login" href="/"
+              >تسجيل الدخول</a
+            >
+            <!-- Visible when logged in -->
+            <a class="flex items-center gap-3">
+              <p class="text-gray-700 font-medium">Hend Hussein</p>
+              <img class="w-11" src="/images/profile.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="nav-toggler md:hidden flex items-center text-gray-600 transition duration-300 ease-in-out hover:text-pink-500 focus:outline-none"
+            id="menu-button"
+          >
+            <span class="material-icons">menu</span>
+          </button>
+          <!-- Start Mobile Menu -->
+          <div id="mobileMenu" class="">
+            <div
+              class="flex relative pt-5 pb-2 px-4 h-full w-10/12 flex-col gap-4 bg-white"
+            >
+              <span
+                class="cursor-pointer btn-close absolute top-3 left-4 nav-toggler text-black"
+              >
+              </span>
+              <a class="flex items-center gap-6">
+                <img src="/images/profile.png" alt="" />
+                <p class="text-gray-700 font-medium">Hend Hussein</p>
+              </a>
+              <ul class="menu">
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> settings </span>
+
+                    <p>اعدادات الحساب</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> login </span>
+
+                    <p>تسجيل دخول</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> thumb_up </span>
+
+                    <p>تابع طبيبة</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> help </span>
+
+                    <p>الدعم</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons"> mail </span>
+
+                    <p>تواصل معنا</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu mt-auto">
+                <li>
+                  <a href="" class="menu-item rounded-full">
+                    <span class="material-icons text-danger"> logout </span>
+
+                    <p>تسجيل خروج</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Mobile Menu -->
+        </div>
+      </div>
+    </header>
+    <!-- End Main Header -->
+
+    <!-- Start Mobile Nav -->
+    <nav
+      id="navMobile"
+      class="transition duration-300 ease-in-out fixed md:hidden bottom-0 left-0 right-0 shadow-t border-t border-gray-200 z-50"
+    >
+      <div class="container mx-auto px-2">
+        <div class="flex justify-around items-center h-16">
+          <a class="nav-item" href="/pages/tabiba/tabiba.html">
+            <span class="material-icons text-4xl">local_hospital</span>
+            <span class="text-xs">طبيبة</span>
+          </a>
+          <a class="nav-item" href="/pages/center/center.html">
+            <span class="material-icons text-4xl">monitor_heart</span>
+            <span class="text-xs">مركز</span>
+          </a>
+          <a class="nav-item" href="/">
+            <span class="material-icons text-4xl">home</span>
+            <span class="text-xs font-medium">الرئيسية</span>
+          </a>
+          <a class="nav-item" href="#">
+            <span class="material-icons text-4xl">article</span>
+            <span class="text-xs">مدونة</span>
+          </a>
+          <a class="nav-item active" href="/pages/forum/forum.html">
+            <span class="material-icons text-4xl">forum</span>
+            <span class="text-xs">منتدى</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Mobile Nav -->
+    <main id="main" class="overflow-visible">
+      <!-- If user is already subscribed to the news letter, set the mb to mb-4 -->
+      <div class="wrapper px-3 md:pt-3 mb-[6rem]">
+        <!-- Start Forum Header and Tabs Navigation -->
+        <div class="bg-white rounded-md !pt-6 mx-auto">
+          <h1 class="flex justify-center gap-3 items-center px-12 flex-wrap">
+            <img
+              src="/images/icons/female.svg"
+              alt=""
+              class="w-9 aspect-square"
+            />
+            <span
+              class="text-green-500 leading-7 sm:text-lg md:text-xl lg:text-2xl font-semibold text-center"
+              >انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!</span
+            >
+          </h1>
+          <!-- Forum Tabs Navigations Buttons List -->
+          <div class="bg-white rounded-[1.2rem]">
+            <ul
+              class="nav nav-tabs flex-nowrap text-sm sm:text-base mt-5"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item !border-b-0" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="newsfeed-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#newsfeed"
+                  type="button"
+                  role="tab"
+                  aria-controls="newsfeed"
+                  aria-selected="true"
+                >
+                  <div
+                    class="flex justify-center items-center !gap-1 md:!gap-3"
+                  >
+                    <span class="material-icons">cached</span>
+                    <span>الأحدث</span>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item !border-b-0" role="presentation">
+                <button
+                  class="nav-link"
+                  id="myPosts-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#myPosts"
+                  type="button"
+                  role="tab"
+                  aria-controls="myPosts"
+                  aria-selected="false"
+                >
+                  <div
+                    class="flex justify-center items-center !gap-1 md:!gap-3"
+                  >
+                    <span class="material-icons-outlined"> web_stories </span>
+                    <span>منشوراتي</span>
+                  </div>
+                </button>
+              </li>
+              <li class="nav-item !border-b-0" role="presentation">
+                <button
+                  class="nav-link"
+                  id="bookmarks-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#bookmarks"
+                  type="button"
+                  role="tab"
+                  aria-controls="bookmarks"
+                  aria-selected="false"
+                >
+                  <div
+                    class="flex justify-center items-center !gap-1 md:!gap-3"
+                  >
+                    <span class="material-icons-outlined"> bookmarks </span>
+                    <span>المحفوظات</span>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Forum Header and Tabs Navigation -->
+
+        <!-- Start Forum Tabs Content -->
+
+        <!-- Start Forum Body -->
+        <div class="mt-8 flex gap-4">
+          <!-- Start Tab panes -->
+          <div class="flex-grow-1 tab-content overflow-auto w-8/12" dir="ltr">
+            <!-- Start News Feed Tab -->
+            <div
+              class="tab-pane active"
+              id="newsfeed"
+              role="tabpanel"
+              aria-labelledby="newsfeed-tab"
+            >
+              <!-- Form - Add new post -->
+              <div
+                class="bg-white rounded-md p-4 flex flex-col sm:flex-row sm:items-start gap-2"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/images/profile-pink.svg"
+                    alt=""
+                    class="rounded-full !w-10 sm:w-16 sm:-translate-y-2"
+                  />
+                  <span
+                    class="sm:hidden bg-white px-4 py-1 rounded-full text-pink-500 shadow-md ring-2 ring-pink-500/50 text-sm"
+                    >مرحبا هند !</span
+                  >
+                </div>
+                <form class="flex flex-col gap-4 flex-grow-1">
+                  <textarea
+                    name="postbody"
+                    id=""
+                    rows="4"
+                    placeholder="ما الذي ترغبين بالتحدث عنه ..."
+                    class="bg-gray-50 text-sm sm:text-base text-gray-500 placeholder:text-gray-500/60 rounded-xl border-0 focus:shadow-sm focus:shadow-pink-500/20 focus:ring-0"
+                  ></textarea>
+                  <div class="flex justify-between items-center gap-2">
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="anonymous" id="anonymous" />
+                      <label
+                        class="text-gray-500 text-sm sm:text-base font-medium"
+                        for="anonymous"
+                        >شخص مجهول</label
+                      >
+                    </span>
+                    <button
+                      class="btn btn-green-500 text-sm sm:text-base py-2 rounded-lg"
+                    >
+                      نشر
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Start Posts List  -->
+              <div class="space-y-4 mt-6">
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="hidden material-icons text-pink-500"
+                        >favorite</span
+                      >
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+              </div>
+              <!-- End Posts List  -->
+            </div>
+            <!-- End News Feed Tab -->
+
+            <!-- Start News Feed Tab -->
+            <div
+              class="tab-pane active"
+              id="myPosts"
+              role="tabpanel"
+              aria-labelledby="myPosts-tab"
+            >
+              <!-- Start Posts List  -->
+              <div class="space-y-4">
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="hidden material-icons text-pink-500"
+                        >favorite</span
+                      >
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+                      <!-- if post not saved -->
+                      <button
+                        class="hidden material-icons-outlined text-3xl text-gray-500"
+                      >
+                        bookmark_border
+                      </button>
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+              </div>
+              <!-- End Posts List  -->
+            </div>
+            <!-- End News Feed Tab -->
+
+            <!-- Start Bookmarks Tab -->
+            <div
+              class="tab-pane"
+              id="bookmarks"
+              role="tabpanel"
+              aria-labelledby="bookmarks-tab"
+            >
+              <!-- Start Posts List  -->
+              <div class="space-y-4">
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="hidden material-icons text-pink-500"
+                        >favorite</span
+                      >
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+
+                <!-- Start Post Item -->
+                <div class="bg-white rounded-md">
+                  <!-- Post Content -->
+                  <div class="p-4 mb-6 space-y-5">
+                    <!-- Post Header -->
+                    <div class="flex gap-3 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-12"
+                      />
+                      <!-- Post user and date -->
+                      <div class="flex flex-col gap-1 flex-grow-1">
+                        <!-- user name -->
+                        <p class="text-gray-700 font-medium">هند حسين</p>
+                        <!-- post date -->
+                        <p class="text-gray-500 text-sm">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </p>
+                      </div>
+
+                      <!-- Button save post -->
+
+                      <!-- if post is saved -->
+                      <button
+                        class="material-icons-outlined text-3xl text-pink-500"
+                      >
+                        bookmark
+                      </button>
+                    </div>
+                    <!-- Post Body -->
+                    <p
+                      class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+                    >
+                      مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع
+                      الحمل الأول. كانت هناك الكثير من الأسئلة والمخاوف في
+                      البداية، لكن وجود طبيبة داعمة ومجتمع متفهم ساعدني كثيراً.
+                      إذا كان لديكن أي نصائح أو تجارب مشابهة، شاركوني بها!
+                    </p>
+                  </div>
+
+                  <!-- Post Desc -->
+                  <div
+                    class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+                  >
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <span class="material-icons">comment</span>
+                      <span>
+                        <span>5</span>
+                        <span>تعليق</span>
+                      </span>
+                    </button>
+                    <button
+                      class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                      data-target="modalPostComments"
+                    >
+                      <!-- if post not liked -->
+                      <span class="hidden material-icons">favorite_border</span>
+                      <!-- if post is liked -->
+                      <span class="material-icons text-pink-500">favorite</span>
+                      <span>
+                        <span>5</span>
+                        <span>إعجاب</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Post Item -->
+              </div>
+              <!-- End Posts List  -->
+            </div>
+            <!-- End Bookmarks Tab -->
+          </div>
+
+          <!-- End Tab Panes -->
+
+          <!-- Start Forum Highlights -->
+          <div class="space-y-4 hidden md:block sticky top-24 h-fit">
+            <!-- Doctors Highlights Card -->
+            <div
+              class="bg-white flex flex-col items-center gap-6 p-6 rounded-md max-w-72"
+            >
+              <!-- Doctors Thumnnails -->
+              <div class="flex items-end justify-center gap-1">
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square w-14 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+              </div>
+              <!-- Highlight Title -->
+              <h2 class="text-xl font-semibold text-gray-700">
+                احجزي طبيبة الآن
+              </h2>
+              <!-- Highlight Text -->
+              <p class="text-gray-500 font-medium text-center">
+                راحة المريضة تبدأ من أول لقاء — طاقم نسائي بالكامل لخدمة ورعاية
+                السيدات بكل خصوصية واهتمام.
+              </p>
+              <!-- href to tabiba search -->
+              <a
+                href="/pages/tabiba/tabiba.html"
+                class="btn btn-green-500 text-xl font-semibold rounded-xl mt-6 py-2 px-16"
+              >
+                دخول
+              </a>
+            </div>
+
+            <!-- Centers Highlights Card -->
+            <div
+              class="bg-white flex flex-col items-center gap-6 p-6 rounded-md max-w-72"
+            >
+              <!-- Doctors Thumnnails -->
+              <div class="flex items-end justify-center gap-1">
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square w-14 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+              </div>
+              <!-- Highlight Title -->
+              <h2 class="text-xl font-semibold text-gray-700">
+                احجزي أشعة وتحاليل الآن
+              </h2>
+              <!-- Highlight Text -->
+              <p class="text-gray-500 font-medium text-center">
+                راحة المريضة تبدأ من أول لقاء — طاقم نسائي بالكامل لخدمة ورعاية
+                السيدات بكل خصوصية واهتمام.
+              </p>
+              <!-- href to tabiba search -->
+              <a
+                href="/pages/tabiba/tabiba.html"
+                class="btn btn-green-500 text-xl font-semibold rounded-xl mt-6 py-2 px-16"
+              >
+                دخول
+              </a>
+            </div>
+          </div>
+          <!-- End Forum Highlights -->
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="pt-40">
+      <section id="newsLetter" class="m-0 p-0">
+        <div class="wrapper">
+          <div class="news-letter">
+            <h2>اشترك في نشرتنا الإخبارية</h2>
+            <form>
+              <div class="input-with-button">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="البريد الإلكتروني"
+                />
+                <button class="btn">اشتراك</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <div
+          class="d-none d-md-flex row justify-content-center justify-content-md-start px-sm-5"
+        >
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">الدعم</h4>
+              <ul>
+                <li>مصر</li>
+                <li>exclusive@gmail.com</li>
+                <li>+201112228899</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">الحساب</h4>
+              <ul>
+                <li>
+                  <a href="">تسجيل الدخول / تسجيل جديد</a>
+                </li>
+                <li>
+                  <a href="">منتدى</a>
+                </li>
+                <li>
+                  <a href="">مدونة</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">رابط سريع</h4>
+              <ul>
+                <li>
+                  <a href="">الرئيسية</a>
+                </li>
+                <li>
+                  <a href="">طبيبة</a>
+                </li>
+                <li>
+                  <a href="">مركز</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="d-flex flex-column align-items-center gap-4">
+              <a href="/">
+                <img
+                  class="logo"
+                  src="/images/icons/logo-white.png"
+                  alt="logo"
+                />
+              </a>
+              <p class="text-white fs-5">تابعنا على منصاتنا</p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-4"
+              >
+                <a class="p-1" href="">
+                  <img src="/images/icons/linkedin.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/instagram.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/twitter.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="copyRight">حقوق النشر محفوظة © منصة طبيبة 2025</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Comments -->
+    <div id="modalPostComments" class="modal" data-behavior="closable">
+      <div class="modal-view max-w-[900px] pt-4 pb-2 flex flex-col relative">
+        <button
+          data-target="modalPostComments"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler object-scale-down aspect-square rounded-full p-2 mb-3 absolute !end-4 top-2"
+        ></button>
+        <!-- Start Post Item -->
+        <div class="bg-white rounded-md border-b border-b-gray-500/2">
+          <!-- Post Content -->
+          <div class="p-4 space-y-5">
+            <!-- Post Header -->
+            <div class="flex gap-3 items-center">
+              <img
+                src="/images/profile-pink.svg"
+                alt=""
+                class="rounded-full w-12"
+              />
+              <!-- Post user and date -->
+              <div class="flex flex-col gap-1 flex-grow-1">
+                <!-- user name -->
+                <p class="text-gray-700 font-medium">هند حسين</p>
+                <!-- post date -->
+                <p class="text-gray-500 text-sm">
+                  <span>منذ</span>
+                  <span>4</span>
+                  <span>ساعات</span>
+                </p>
+              </div>
+
+              <!-- Button save post -->
+
+              <!-- if post is saved -->
+              <button class="material-icons-outlined text-3xl text-pink-500">
+                bookmark
+              </button>
+            </div>
+            <!-- Post Body -->
+            <p
+              class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+            >
+              مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع الحمل
+              الأول. كانت هناك الكثير من الأسئلة والمخاوف في البداية، لكن وجود
+              طبيبة داعمة ومجتمع متفهم ساعدني كثيراً. إذا كان لديكن أي نصائح أو
+              تجارب مشابهة، شاركوني بها!
+            </p>
+          </div>
+
+          <!-- Post Desc -->
+          <div
+            class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+          >
+            <button class="flex-1 flex items-center justify-center gap-2">
+              <span class="material-icons">comment</span>
+              <span>
+                <span>5</span>
+                <span>تعليق</span>
+              </span>
+            </button>
+            <button
+              class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+              data-target="modalPostComments"
+            >
+              <!-- if post not liked -->
+              <span class="hidden material-icons">favorite_border</span>
+              <!-- if post is liked -->
+              <span class="material-icons text-pink-500">favorite</span>
+              <span>
+                <span>5</span>
+                <span>إعجاب</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <!-- End Post Item -->
+
+        <!-- Comments list -->
+        <div class="flex flex-col flex-grow-1 !gap-5 overflow-y-auto px-3 py-3">
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/images/profile-pink.svg"
+                    alt=""
+                    class="rounded-full w-8"
+                  />
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs">
+                    <span>منذ</span>
+                    <span>4</span>
+                    <span>ساعات</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
+                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+              </p>
+            </div>
+            <!-- Reply List -->
+            <div class="space-y-1 !ms-4 sm:!ms-8">
+              <!-- Comment Reply Card -->
+              <div
+                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+              >
+                <!-- Comment Header -->
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img
+                      src="/images/profile-pink.svg"
+                      alt=""
+                      class="rounded-full w-8"
+                    />
+                    <!-- Commenter Name -->
+                    <span class="text-gray-500 text-xs font-semibold">
+                      مريم محمود
+                    </span>
+
+                    <!-- Comment Date -->
+                    <span class="text-gray-500 text-xs">
+                      <span>منذ</span>
+                      <span>4</span>
+                      <span>ساعات</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Comment Body -->
+                <p
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                >
+                  انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                </p>
+              </div>
+              <!-- Form Add Reply -->
+
+              <form class="flex items-center gap-2">
+                <input
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                  placeholder="أضيفي رد"
+                />
+
+                <button class="w-7">
+                  <img src="/images/icons/send.svg" alt="" class="" />
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/images/profile-pink.svg"
+                    alt=""
+                    class="rounded-full w-8"
+                  />
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs">
+                    <span>منذ</span>
+                    <span>4</span>
+                    <span>ساعات</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
+                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+              </p>
+            </div>
+            <!-- Reply List -->
+            <div class="space-y-1 !ms-4 sm:!ms-8">
+              <!-- Comment Reply Card -->
+              <div
+                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+              >
+                <!-- Comment Header -->
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img
+                      src="/images/profile-pink.svg"
+                      alt=""
+                      class="rounded-full w-8"
+                    />
+                    <!-- Commenter Name -->
+                    <span class="text-gray-500 text-xs font-semibold">
+                      مريم محمود
+                    </span>
+
+                    <!-- Comment Date -->
+                    <span class="text-gray-500 text-xs">
+                      <span>منذ</span>
+                      <span>4</span>
+                      <span>ساعات</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Comment Body -->
+                <p
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                >
+                  انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                </p>
+              </div>
+              <!-- Form Add Reply -->
+
+              <form class="flex items-center gap-2">
+                <input
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                  placeholder="أضيفي رد"
+                />
+
+                <button class="w-7">
+                  <img src="/images/icons/send.svg" alt="" class="" />
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/images/profile-pink.svg"
+                    alt=""
+                    class="rounded-full w-8"
+                  />
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs">
+                    <span>منذ</span>
+                    <span>4</span>
+                    <span>ساعات</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
+                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+              </p>
+            </div>
+            <!-- Reply List -->
+            <div class="space-y-1 !ms-4 sm:!ms-8">
+              <!-- Comment Reply Card -->
+              <div
+                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+              >
+                <!-- Comment Header -->
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img
+                      src="/images/profile-pink.svg"
+                      alt=""
+                      class="rounded-full w-8"
+                    />
+                    <!-- Commenter Name -->
+                    <span class="text-gray-500 text-xs font-semibold">
+                      مريم محمود
+                    </span>
+
+                    <!-- Comment Date -->
+                    <span class="text-gray-500 text-xs">
+                      <span>منذ</span>
+                      <span>4</span>
+                      <span>ساعات</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Comment Body -->
+                <p
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                >
+                  انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                </p>
+              </div>
+              <!-- Form Add Reply -->
+
+              <form class="flex items-center gap-2">
+                <input
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                  placeholder="أضيفي رد"
+                />
+
+                <button class="w-7">
+                  <img src="/images/icons/send.svg" alt="" class="" />
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="/images/profile-pink.svg"
+                    alt=""
+                    class="rounded-full w-8"
+                  />
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs">
+                    <span>منذ</span>
+                    <span>4</span>
+                    <span>ساعات</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
+                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+              </p>
+            </div>
+            <!-- Reply List -->
+            <div class="space-y-1 !ms-4 sm:!ms-8">
+              <!-- Comment Reply Card -->
+              <div
+                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+              >
+                <!-- Comment Header -->
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-2 items-center">
+                    <img
+                      src="/images/profile-pink.svg"
+                      alt=""
+                      class="rounded-full w-8"
+                    />
+                    <!-- Commenter Name -->
+                    <span class="text-gray-500 text-xs font-semibold">
+                      مريم محمود
+                    </span>
+
+                    <!-- Comment Date -->
+                    <span class="text-gray-500 text-xs">
+                      <span>منذ</span>
+                      <span>4</span>
+                      <span>ساعات</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Comment Body -->
+                <p
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                >
+                  انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                </p>
+              </div>
+              <!-- Form Add Reply -->
+
+              <form class="flex items-center gap-2">
+                <input
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                  placeholder="أضيفي رد"
+                />
+
+                <button class="w-7">
+                  <img src="/images/icons/send.svg" alt="" class="" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Add Comment -->
+
+        <form
+          class="border-t border-t-gray-500/2 p-3 pb-0 flex items-center gap-2"
+        >
+          <input
+            type="text"
+            name="comment"
+            id="comment"
+            class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 rounded-md focus:ring-0 placeholder:text-gray-300"
+            placeholder="أضيفي تعليق"
+          />
+
+          <button class="w-8">
+            <img src="/images/icons/send.svg" alt="" class="" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/filter.js"></script>
+  </body>
+</html>

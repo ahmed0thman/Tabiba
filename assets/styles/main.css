@@ -859,13 +859,17 @@
     }
 
     &:has(.active) {
-      border-bottom: 2px solid var(--color-pink-500);
+      border-bottom: 2px solid var(--color-pink-500) !important;
 
       .nav-link {
         color: var(--color-pink-500);
       }
     }
   }
+}
+
+.tab-pane {
+  direction: ltr;
 }
 /* Start Account Page */
 
