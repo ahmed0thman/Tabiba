@@ -1665,123 +1665,93 @@
     <!-- Modal Comments -->
     <div id="modalPostComments" class="modal" data-behavior="closable">
       <div class="modal-view max-w-[900px] pt-4 pb-2 flex flex-col relative">
-        <button
-          data-target="modalPostComments"
-          data-action="close"
-          class="btn-close focus:shadow-none btn-modal-toggler object-scale-down aspect-square rounded-full p-2 mb-3 absolute !end-4 top-2"
-        ></button>
-        <!-- Start Post Item -->
-        <div class="bg-white rounded-md border-b border-b-gray-500/2">
-          <!-- Post Content -->
-          <div class="p-4 space-y-5">
-            <!-- Post Header -->
-            <div class="flex gap-3 items-center">
-              <img
-                src="/images/profile-pink.svg"
-                alt=""
-                class="rounded-full w-12"
-              />
-              <!-- Post user and date -->
-              <div class="flex flex-col gap-1 flex-grow-1">
-                <!-- user name -->
-                <p class="text-gray-700 font-medium">هند حسين</p>
-                <!-- post date -->
-                <p class="text-gray-500 text-sm">
-                  <span>منذ</span>
-                  <span>4</span>
-                  <span>ساعات</span>
-                </p>
+        <div class="flex-grow-1 overflow-y-auto">
+          <button
+            data-target="modalPostComments"
+            data-action="close"
+            class="btn-close focus:shadow-none btn-modal-toggler object-scale-down aspect-square rounded-full p-2 mb-3 absolute !end-4 top-2"
+          ></button>
+          <!-- Start Post Item -->
+          <div class="bg-white rounded-md border-b border-b-gray-500/2">
+            <!-- Post Content -->
+            <div class="p-4 space-y-5">
+              <!-- Post Header -->
+              <div class="flex gap-3 items-center">
+                <img
+                  src="/images/profile-pink.svg"
+                  alt=""
+                  class="rounded-full w-12"
+                />
+                <!-- Post user and date -->
+                <div class="flex flex-col gap-1 flex-grow-1">
+                  <!-- user name -->
+                  <p class="text-gray-700 font-medium">هند حسين</p>
+                  <!-- post date -->
+                  <p class="text-gray-500 text-sm">
+                    <span>منذ</span>
+                    <span>4</span>
+                    <span>ساعات</span>
+                  </p>
+                </div>
+
+                <!-- Button save post -->
+
+                <!-- if post is saved -->
+                <button class="material-icons-outlined text-3xl text-pink-500">
+                  bookmark
+                </button>
               </div>
+              <!-- Post Body -->
+              <p
+                class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
+              >
+                مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع الحمل
+                الأول. كانت هناك الكثير من الأسئلة والمخاوف في البداية، لكن وجود
+                طبيبة داعمة ومجتمع متفهم ساعدني كثيراً. إذا كان لديكن أي نصائح
+                أو تجارب مشابهة، شاركوني بها!
+              </p>
+            </div>
 
-              <!-- Button save post -->
-
-              <!-- if post is saved -->
-              <button class="material-icons-outlined text-3xl text-pink-500">
-                bookmark
+            <!-- Post Desc -->
+            <div
+              class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+            >
+              <button class="flex-1 flex items-center justify-center gap-2">
+                <span class="material-icons">comment</span>
+                <span>
+                  <span>5</span>
+                  <span>تعليق</span>
+                </span>
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                data-target="modalPostComments"
+              >
+                <!-- if post not liked -->
+                <span class="hidden material-icons">favorite_border</span>
+                <!-- if post is liked -->
+                <span class="material-icons text-pink-500">favorite</span>
+                <span>
+                  <span>5</span>
+                  <span>إعجاب</span>
+                </span>
               </button>
             </div>
-            <!-- Post Body -->
-            <p
-              class="text-gray-700 text-sm sm:text-base font-medium leading-7 md:px-14"
-            >
-              مرحباً جميعاً، أنا جديدة هنا وأرغب في مشاركة تجربتي مع الحمل
-              الأول. كانت هناك الكثير من الأسئلة والمخاوف في البداية، لكن وجود
-              طبيبة داعمة ومجتمع متفهم ساعدني كثيراً. إذا كان لديكن أي نصائح أو
-              تجارب مشابهة، شاركوني بها!
-            </p>
           </div>
+          <!-- End Post Item -->
 
-          <!-- Post Desc -->
-          <div
-            class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
-          >
-            <button class="flex-1 flex items-center justify-center gap-2">
-              <span class="material-icons">comment</span>
-              <span>
-                <span>5</span>
-                <span>تعليق</span>
-              </span>
-            </button>
-            <button
-              class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
-              data-target="modalPostComments"
-            >
-              <!-- if post not liked -->
-              <span class="hidden material-icons">favorite_border</span>
-              <!-- if post is liked -->
-              <span class="material-icons text-pink-500">favorite</span>
-              <span>
-                <span>5</span>
-                <span>إعجاب</span>
-              </span>
-            </button>
-          </div>
-        </div>
-        <!-- End Post Item -->
-
-        <!-- Comments list -->
-        <div class="flex flex-col flex-grow-1 !gap-5 overflow-y-auto px-3 py-3">
-          <!-- Comment Item -->
-          <div class="space-y-1">
-            <!-- Comment Card -->
-            <div
-              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
-            >
-              <!-- Comment Header -->
+          <!-- Comments list -->
+          <div class="flex flex-col !gap-5 px-3 py-3">
+            <!-- Comment Item -->
+            <div class="space-y-1">
+              <!-- Comment Card -->
               <div
-                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
-              >
-                <div class="flex gap-2 items-center">
-                  <img
-                    src="/images/profile-pink.svg"
-                    alt=""
-                    class="rounded-full w-8"
-                  />
-                  <!-- Commenter Name -->
-                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
-
-                  <!-- Comment Date -->
-                  <span class="text-gray-500 text-xs">
-                    <span>منذ</span>
-                    <span>4</span>
-                    <span>ساعات</span>
-                  </span>
-                </div>
-              </div>
-
-              <!-- Comment Body -->
-              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
-                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
-              </p>
-            </div>
-            <!-- Reply List -->
-            <div class="space-y-1 !ms-4 sm:!ms-8">
-              <!-- Comment Reply Card -->
-              <div
-                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
               >
                 <!-- Comment Header -->
-                <div class="flex justify-between items-center">
+                <div
+                  class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                >
                   <div class="flex gap-2 items-center">
                     <img
                       src="/images/profile-pink.svg"
@@ -1789,9 +1759,7 @@
                       class="rounded-full w-8"
                     />
                     <!-- Commenter Name -->
-                    <span class="text-gray-500 text-xs font-semibold">
-                      مريم محمود
-                    </span>
+                    <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
 
                     <!-- Comment Date -->
                     <span class="text-gray-500 text-xs">
@@ -1804,70 +1772,74 @@
 
                 <!-- Comment Body -->
                 <p
-                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
                 >
                   انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
                 </p>
               </div>
-              <!-- Form Add Reply -->
+              <!-- Reply List -->
+              <div class="space-y-1 !ms-4 sm:!ms-8">
+                <!-- Comment Reply Card -->
+                <div
+                  class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                >
+                  <!-- Comment Header -->
+                  <div class="flex justify-between items-center">
+                    <div class="flex gap-2 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-8"
+                      />
+                      <!-- Commenter Name -->
+                      <span class="text-gray-500 text-xs font-semibold">
+                        مريم محمود
+                      </span>
 
-              <form class="flex items-center gap-2">
-                <input
-                  type="text"
-                  name="comment"
-                  id="comment"
-                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
-                  placeholder="أضيفي رد"
-                />
+                      <!-- Comment Date -->
+                      <span class="text-gray-500 text-xs">
+                        <span>منذ</span>
+                        <span>4</span>
+                        <span>ساعات</span>
+                      </span>
+                    </div>
+                  </div>
 
-                <button class="w-7">
-                  <img src="/images/icons/send.svg" alt="" class="" />
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <!-- Comment Item -->
-          <div class="space-y-1">
-            <!-- Comment Card -->
-            <div
-              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
-            >
-              <!-- Comment Header -->
-              <div
-                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
-              >
-                <div class="flex gap-2 items-center">
-                  <img
-                    src="/images/profile-pink.svg"
-                    alt=""
-                    class="rounded-full w-8"
-                  />
-                  <!-- Commenter Name -->
-                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
-
-                  <!-- Comment Date -->
-                  <span class="text-gray-500 text-xs">
-                    <span>منذ</span>
-                    <span>4</span>
-                    <span>ساعات</span>
-                  </span>
+                  <!-- Comment Body -->
+                  <p
+                    class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  >
+                    انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                  </p>
                 </div>
-              </div>
+                <!-- Form Add Reply -->
 
-              <!-- Comment Body -->
-              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
-                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
-              </p>
+                <form class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    name="comment"
+                    id="comment"
+                    class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                    placeholder="أضيفي رد"
+                  />
+
+                  <button class="w-7">
+                    <img src="/images/icons/send.svg" alt="" class="" />
+                  </button>
+                </form>
+              </div>
             </div>
-            <!-- Reply List -->
-            <div class="space-y-1 !ms-4 sm:!ms-8">
-              <!-- Comment Reply Card -->
+
+            <!-- Comment Item -->
+            <div class="space-y-1">
+              <!-- Comment Card -->
               <div
-                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
               >
                 <!-- Comment Header -->
-                <div class="flex justify-between items-center">
+                <div
+                  class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                >
                   <div class="flex gap-2 items-center">
                     <img
                       src="/images/profile-pink.svg"
@@ -1875,9 +1847,7 @@
                       class="rounded-full w-8"
                     />
                     <!-- Commenter Name -->
-                    <span class="text-gray-500 text-xs font-semibold">
-                      مريم محمود
-                    </span>
+                    <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
 
                     <!-- Comment Date -->
                     <span class="text-gray-500 text-xs">
@@ -1890,70 +1860,74 @@
 
                 <!-- Comment Body -->
                 <p
-                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
                 >
                   انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
                 </p>
               </div>
-              <!-- Form Add Reply -->
+              <!-- Reply List -->
+              <div class="space-y-1 !ms-4 sm:!ms-8">
+                <!-- Comment Reply Card -->
+                <div
+                  class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                >
+                  <!-- Comment Header -->
+                  <div class="flex justify-between items-center">
+                    <div class="flex gap-2 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-8"
+                      />
+                      <!-- Commenter Name -->
+                      <span class="text-gray-500 text-xs font-semibold">
+                        مريم محمود
+                      </span>
 
-              <form class="flex items-center gap-2">
-                <input
-                  type="text"
-                  name="comment"
-                  id="comment"
-                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
-                  placeholder="أضيفي رد"
-                />
+                      <!-- Comment Date -->
+                      <span class="text-gray-500 text-xs">
+                        <span>منذ</span>
+                        <span>4</span>
+                        <span>ساعات</span>
+                      </span>
+                    </div>
+                  </div>
 
-                <button class="w-7">
-                  <img src="/images/icons/send.svg" alt="" class="" />
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <!-- Comment Item -->
-          <div class="space-y-1">
-            <!-- Comment Card -->
-            <div
-              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
-            >
-              <!-- Comment Header -->
-              <div
-                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
-              >
-                <div class="flex gap-2 items-center">
-                  <img
-                    src="/images/profile-pink.svg"
-                    alt=""
-                    class="rounded-full w-8"
-                  />
-                  <!-- Commenter Name -->
-                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
-
-                  <!-- Comment Date -->
-                  <span class="text-gray-500 text-xs">
-                    <span>منذ</span>
-                    <span>4</span>
-                    <span>ساعات</span>
-                  </span>
+                  <!-- Comment Body -->
+                  <p
+                    class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  >
+                    انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                  </p>
                 </div>
-              </div>
+                <!-- Form Add Reply -->
 
-              <!-- Comment Body -->
-              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
-                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
-              </p>
+                <form class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    name="comment"
+                    id="comment"
+                    class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                    placeholder="أضيفي رد"
+                  />
+
+                  <button class="w-7">
+                    <img src="/images/icons/send.svg" alt="" class="" />
+                  </button>
+                </form>
+              </div>
             </div>
-            <!-- Reply List -->
-            <div class="space-y-1 !ms-4 sm:!ms-8">
-              <!-- Comment Reply Card -->
+
+            <!-- Comment Item -->
+            <div class="space-y-1">
+              <!-- Comment Card -->
               <div
-                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
               >
                 <!-- Comment Header -->
-                <div class="flex justify-between items-center">
+                <div
+                  class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                >
                   <div class="flex gap-2 items-center">
                     <img
                       src="/images/profile-pink.svg"
@@ -1961,9 +1935,7 @@
                       class="rounded-full w-8"
                     />
                     <!-- Commenter Name -->
-                    <span class="text-gray-500 text-xs font-semibold">
-                      مريم محمود
-                    </span>
+                    <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
 
                     <!-- Comment Date -->
                     <span class="text-gray-500 text-xs">
@@ -1976,70 +1948,74 @@
 
                 <!-- Comment Body -->
                 <p
-                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
                 >
                   انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
                 </p>
               </div>
-              <!-- Form Add Reply -->
+              <!-- Reply List -->
+              <div class="space-y-1 !ms-4 sm:!ms-8">
+                <!-- Comment Reply Card -->
+                <div
+                  class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                >
+                  <!-- Comment Header -->
+                  <div class="flex justify-between items-center">
+                    <div class="flex gap-2 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-8"
+                      />
+                      <!-- Commenter Name -->
+                      <span class="text-gray-500 text-xs font-semibold">
+                        مريم محمود
+                      </span>
 
-              <form class="flex items-center gap-2">
-                <input
-                  type="text"
-                  name="comment"
-                  id="comment"
-                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
-                  placeholder="أضيفي رد"
-                />
+                      <!-- Comment Date -->
+                      <span class="text-gray-500 text-xs">
+                        <span>منذ</span>
+                        <span>4</span>
+                        <span>ساعات</span>
+                      </span>
+                    </div>
+                  </div>
 
-                <button class="w-7">
-                  <img src="/images/icons/send.svg" alt="" class="" />
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <!-- Comment Item -->
-          <div class="space-y-1">
-            <!-- Comment Card -->
-            <div
-              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
-            >
-              <!-- Comment Header -->
-              <div
-                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
-              >
-                <div class="flex gap-2 items-center">
-                  <img
-                    src="/images/profile-pink.svg"
-                    alt=""
-                    class="rounded-full w-8"
-                  />
-                  <!-- Commenter Name -->
-                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
-
-                  <!-- Comment Date -->
-                  <span class="text-gray-500 text-xs">
-                    <span>منذ</span>
-                    <span>4</span>
-                    <span>ساعات</span>
-                  </span>
+                  <!-- Comment Body -->
+                  <p
+                    class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  >
+                    انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                  </p>
                 </div>
-              </div>
+                <!-- Form Add Reply -->
 
-              <!-- Comment Body -->
-              <p class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3">
-                انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
-              </p>
+                <form class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    name="comment"
+                    id="comment"
+                    class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                    placeholder="أضيفي رد"
+                  />
+
+                  <button class="w-7">
+                    <img src="/images/icons/send.svg" alt="" class="" />
+                  </button>
+                </form>
+              </div>
             </div>
-            <!-- Reply List -->
-            <div class="space-y-1 !ms-4 sm:!ms-8">
-              <!-- Comment Reply Card -->
+
+            <!-- Comment Item -->
+            <div class="space-y-1">
+              <!-- Comment Card -->
               <div
-                class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
               >
                 <!-- Comment Header -->
-                <div class="flex justify-between items-center">
+                <div
+                  class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                >
                   <div class="flex gap-2 items-center">
                     <img
                       src="/images/profile-pink.svg"
@@ -2047,9 +2023,7 @@
                       class="rounded-full w-8"
                     />
                     <!-- Commenter Name -->
-                    <span class="text-gray-500 text-xs font-semibold">
-                      مريم محمود
-                    </span>
+                    <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
 
                     <!-- Comment Date -->
                     <span class="text-gray-500 text-xs">
@@ -2062,26 +2036,62 @@
 
                 <!-- Comment Body -->
                 <p
-                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
                 >
                   انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
                 </p>
               </div>
-              <!-- Form Add Reply -->
+              <!-- Reply List -->
+              <div class="space-y-1 !ms-4 sm:!ms-8">
+                <!-- Comment Reply Card -->
+                <div
+                  class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+                >
+                  <!-- Comment Header -->
+                  <div class="flex justify-between items-center">
+                    <div class="flex gap-2 items-center">
+                      <img
+                        src="/images/profile-pink.svg"
+                        alt=""
+                        class="rounded-full w-8"
+                      />
+                      <!-- Commenter Name -->
+                      <span class="text-gray-500 text-xs font-semibold">
+                        مريم محمود
+                      </span>
 
-              <form class="flex items-center gap-2">
-                <input
-                  type="text"
-                  name="comment"
-                  id="comment"
-                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
-                  placeholder="أضيفي رد"
-                />
+                      <!-- Comment Date -->
+                      <span class="text-gray-500 text-xs">
+                        <span>منذ</span>
+                        <span>4</span>
+                        <span>ساعات</span>
+                      </span>
+                    </div>
+                  </div>
 
-                <button class="w-7">
-                  <img src="/images/icons/send.svg" alt="" class="" />
-                </button>
-              </form>
+                  <!-- Comment Body -->
+                  <p
+                    class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-1"
+                  >
+                    انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                  </p>
+                </div>
+                <!-- Form Add Reply -->
+
+                <form class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    name="comment"
+                    id="comment"
+                    class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 py-2 text-sm rounded-md focus:ring-0 placeholder:text-gray-300"
+                    placeholder="أضيفي رد"
+                  />
+
+                  <button class="w-7">
+                    <img src="/images/icons/send.svg" alt="" class="" />
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
