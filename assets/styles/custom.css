@@ -44,6 +44,11 @@ p {
   padding: 0;
   margin: 0;
 }
+
+select {
+  min-width: 100px;
+}
+
 input:focus,
 select:focus,
 textarea:focus {
@@ -114,6 +119,9 @@ select {
   color: var(--color-green-500) !important;
 }
 
+.bg-green-500 {
+  background-color: var(--color-green-500) !important;
+}
 .text-green-400 {
   color: var(--color-green-400) !important;
 }
@@ -133,6 +141,9 @@ select {
     translate: 0 1px;
     /* box-shadow: 0 2px 6px; */
   }
+}
+a {
+  color: #6c7275;
 }
 
 button:not(.accordion-button, .nav-link) {
@@ -741,7 +752,7 @@ button:not(.accordion-button, .nav-link) {
         align-items: start;
         margin-bottom: 1rem;
         padding: 0;
-        gap: 4px;
+        gap: 12px;
         background-color: transparent !important;
         box-shadow: none;
         justify-content: space-between;
@@ -755,6 +766,13 @@ button:not(.accordion-button, .nav-link) {
           height: 12px;
           background-size: contain;
           translate: 0 50%;
+          rotate: 180deg !important;
+          transform: unset !important;
+          transition: 0.3s ease-out;
+        }
+
+        &:not(.collapsed)::after {
+          rotate: 0deg !important;
         }
       }
     }

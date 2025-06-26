@@ -23,7 +23,7 @@
           <nav id="navMenu">
             <span class="btn-close-menu d-md-none nav-toggler"> x </span>
             <ul>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="/">الرئيسية</a>
               </li>
               <li class="nav-item">
@@ -144,7 +144,7 @@
             <span class="material-icons text-4xl">monitor_heart</span>
             <span class="text-xs">مركز</span>
           </a>
-          <a class="nav-item active" href="/">
+          <a class="nav-item" href="/">
             <span class="material-icons text-4xl">home</span>
             <span class="text-xs font-medium">الرئيسية</span>
           </a>
@@ -161,171 +161,159 @@
     </nav>
     <!-- End Mobile Nav -->
     <main id="main">
-      <section class="hero">
-        <img
-          id="heroPattern"
-          src="/images/patterns/pattern-hero.svg"
-          alt=""
-          class="pattern-hero"
-        />
-        <div class="wrapper">
-          <div class="hero-content">
-            <div class="hero-img flex-grow-1">
-              <img id="heroVector" src="/images/hero-img.png" alt="" />
-
-              <div id="heroQoute" class="hero-qoute">
-                <img src="/images/qoute.svg" alt="" />
-                تمتعي بصحة أفضل مع طبيبة
-              </div>
-            </div>
-            <div id="heroTag" class="hero-tag flex-grow-1">
-              <h1 class="hero-text">
-                شريكك الموثوق في مجال الرعاية الصحية
-                <span class="text-pink-500"> طاقم نسائي بالكامل </span> بالكامل
-                مع طبيبة.
-              </h1>
-              <h4 class="hero-subtext">
-                هي منصتك الطبية المصممة خصيصًا
-                <span class="text-pink-500">لتوفير طاقم نسائي</span>
-                رعاية صحية موثوقة، سهلة، ومناسبة لاحتياجاتك اليومية.
-              </h4>
-              <h4 class="hero-subtext">
-                من خلال موقع
-                <span class="text-pink-500">"طبيبة"</span>
-                ، نوصلك طبيبات مختصين ونقدّم محتوى طبي موثوق يساعدك على فهم صحتك
-                بشكل أفضل واتخاذ قرارات سليمة. نحن هنا علشان نخلي الصحة أقرب لك،
-                في أي وقت ومن أي مكان.
-              </h4>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="categories" class="categories">
-        <div class="wrapper">
+      <!-- If user is already subscribed to the news letter, set the mb to mb-4 -->
+      <div class="wrapper px-3 md:pt-3 mb-[6rem]">
+        <!-- Start Profile Main Layout -->
+        <div class="flex gap-4 items-start">
+          <!-- Start Porfile Info and Navigation -->
           <div
-            id="Categories"
-            class="d-flex flex-wrap justify-content-center gap-3 gap-lg-4 my-4"
+            class="hidden md:flex flex-col gap-8 items-center !p-6 bg-white rounded-lg w-3/12 max-w-64 min-w-56"
           >
-            <div class="card-category-main">
-              <img
-                src="/images/icons/doctor-female-staff.png"
-                alt=""
-                class="card-icon"
-              />
-              <div class="card-content">
-                <h2 class="card-title">
-                  الكشف والمتابعة مع طبيبة لديها طاقم نسائي
-                </h2>
-                <p class="card-sub-title">
-                  في حالة الولادة والعمليات الجراحية يتم التأكد من توفير طبيبة
-                  تخدير وطاقم تمريض نسائي.
-                </p>
-              </div>
-
-              <a href="" class="btn btn-green-500">دخول</a>
-            </div>
-            <div class="card-category-main">
-              <img
-                src="/images/icons/female-staff.png"
-                alt=""
-                class="card-icon"
-              />
-              <div class="card-content">
-                <h2 class="card-title">
-                  الأشعة والتحاليل الطبية مع طاقم نسائي
-                </h2>
-                <p class="card-sub-title">
-                  يتم التنسيق مع مراكز التحاليل والأشعة لتوفير طبيبات الأشعة
-                  ورسم القلب وأخصائيات التحاليل.
-                </p>
-              </div>
-              <a href="" class="btn btn-green-500">دخول</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sub-hero z-10">
-        <div class="wrapper">
-          <div class="sub-hero-content">
-            <img
-              src="/images/vectors/vector-Modawana.png"
-              class="vector"
-              alt=""
-              id="vectorBL"
-            />
-            <img
-              src="/images/vectors/vector-Modawana.png"
-              class="vector"
-              alt=""
-              id="vectorTR"
-            />
-
-            <div id="subHeroVector" class="sub-hero-images">
-              <img class="z-10" src="/images/Modawana.png" alt="" />
-            </div>
-            <div class="sub-hero-tag">
-              <div id="subHeroText" class="sub-hero-text">
-                <span>مرحباً بكِ في</span>
-                <a href="/pages/forum/forum.html" class="btn"> منتدى </a>
-                <img src="/images/icons/T_logo_Ar-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sub-hero modawana">
-        <div class="wrapper">
-          <div class="sub-hero-content">
-            <div class="sub-hero-tag">
-              <div id="modawanaSubHeroText" class="sub-hero-text">
+            <!-- User name and Image -->
+            <div class="space-y-2 text-center">
+              <!-- Profile Image -->
+              <div class="relative">
                 <img
-                  src="/images/vectors/vector-montada.png"
-                  class="vector"
+                  src="/images/profile.png"
                   alt=""
+                  class="h-20 aspect-square rounded-full bg-green-500 object-fit-contain"
                 />
-                تعتبر المدونة عبارة عن يومية شخصية عبر الإنترنت يتم تحديثها
-                باستمرار وتهدف إلى مشاركة الآخرين. تحتوي غالبية المدونات على
-                ميزة تعليق، بحيث يمكن للأشخاص التجاوب مع الأفكار التي يتم طرحها.
-
-                <a class="btn"> مدونة </a>
+                <!-- Form upload new image -->
+                <form action="" class="absolute bottom-0">
+                  <label
+                    for="profileImage"
+                    class="material-icons-outlined text-white bg-green-500 text-lg aspect-square w-7 h-7 text-center content-center p-0 rounded-full border border-white cursor-pointer"
+                  >
+                    camera_alt
+                  </label>
+                  <input
+                    id="profileImage"
+                    name="profileImage"
+                    type="file"
+                    class="hidden"
+                  />
+                </form>
               </div>
+
+              <!-- Username -->
+              <p class="text-gray-700 text-xl font-semibold">هند حسين</p>
             </div>
 
-            <div id="modawanaSubHeroVector" class="sub-hero-images">
-              <img src="/images/Montada.png" alt="" />
+            <!-- Profile pages navigation links -->
+            <div class="space-y-2">
+              <!-- page link -->
+              <!-- add the "btn-green-500" class for the active page link -->
+              <a
+                href="/pages/profile/account.html"
+                class="btn text-gray-500 hover:text-gray-500 btn-green-500 w-full rounded-xl p-y-2 font-medium"
+              >
+                الحساب
+              </a>
+              <!-- page link -->
+              <!-- add the "btn-green-500" class for the active page link -->
+              <a
+                href="/pages/profile/reservations.html"
+                class="btn text-gray-500 hover:text-gray-500 w-full rounded-xl p-y-2 font-medium"
+              >
+                الحجوزات
+              </a>
+              <!-- page link -->
+              <!-- add the "btn-green-500" class for the active page link -->
+              <a
+                href="/pages/profile/favorites.html"
+                class="btn text-gray-500 hover:text-gray-500 w-full rounded-xl p-y-2 font-medium"
+              >
+                المفضلة
+              </a>
+              <!-- page link -->
+              <!-- add the "btn-green-500" class for the active page link -->
+              <button
+                class="btn text-gray-500 hover:text-gray-500 w-full rounded-xl p-y-2 font-medium btn-modal-toggler"
+                data-target="modalLogout"
+              >
+                تسجيل الخروج
+              </button>
             </div>
           </div>
-        </div>
-      </section>
+          <!-- End Porfile Navigation -->
 
-      <section class="platform-numbers">
-        <div class="wrapper">
-          <div id="platformNumbers" class="platform-numbers-wrapper">
-            <div class="platform-number">
-              <img src="/images/icons/doctor-female-vector.png" alt="" />
-              <h2 class="number">200+</h2>
-              <p class="number-desc">الطبيبات</p>
-            </div>
-            <div class="platform-number">
-              <img src="/images/icons/hands-plus-circle.png" alt="" />
-              <h2 class="number">50+</h2>
-              <p class="number-desc">الأقسام</p>
-            </div>
-            <div class="platform-number">
-              <img src="/images/icons/folder.png" alt="" />
-              <h2 class="number">10000+</h2>
-              <p class="number-desc">المستخدمين</p>
-            </div>
-            <div class="platform-number">
-              <img src="/images/icons/clinic-room.png" alt="" />
-              <h2 class="number">1000+</h2>
-              <p class="number-desc">مراكز الأشعة والتحاليل</p>
-            </div>
+          <!-- Start Profile Page Content -->
+          <div class="bg-white rounded-lg !p-4 lg:!p-6 flex-grow-1">
+            <form action="">
+              <div class="space-y-4 w-12/12 md:w-9/12 lg:w-6/12">
+                <!-- full name input -->
+                <div class="form-group">
+                  <label for="userFullName" class="form-label"> الإسم </label>
+                  <input
+                    type="text"
+                    id="userFullName"
+                    placeholder="ادخلي الإسم"
+                    class="form-control rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
+                  />
+                </div>
+                <!-- whatsapp number input -->
+                <div class="form-group">
+                  <label for="mobileWhatsapp" class="form-label">
+                    رقم الهاتف (واتساب)
+                  </label>
+                  <input
+                    type="text"
+                    id="mobileWhatsapp"
+                    placeholder="ادخلي رقم الهاتف"
+                    class="form-control rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
+                  />
+                </div>
+                <!-- Birth Date input -->
+                <div class="form-group">
+                  <label for="day" class="form-label"> تاريخ الميلاد </label>
+                  <div class="flex gap-1 items-center">
+                    <select
+                      type="text"
+                      id="day"
+                      class="flex-1 form-select rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
+                    >
+                      <option value="-1">يوم</option>
+                    </select>
+                    <select
+                      type="text"
+                      id="month"
+                      class="flex-1 form-select rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
+                    >
+                      <option value="-1">شهر</option>
+                    </select>
+                    <select
+                      type="text"
+                      id="year"
+                      class="flex-2 form-select rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
+                    >
+                      <option value="-1">سنه</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Age input -->
+                <div class="form-group">
+                  <label for="age" class="form-label"> السن </label>
+                  <input
+                    type="number"
+                    id="age"
+                    min="1"
+                    placeholder="السن"
+                    class="form-control rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="btn btn-green-500 block rounded-lg mt-8 py-2 !px-3 !ms-auto"
+              >
+                حفظ التغييرات
+              </button>
+            </form>
           </div>
+          <!-- End Profile Page Content -->
         </div>
-      </section>
+        <!-- End Profile Main Layout -->
+      </div>
     </main>
     <footer id="footer" class="pt-40">
       <section id="newsLetter" class="m-0 p-0">
@@ -368,7 +356,7 @@
                   <a href="">تسجيل الدخول / تسجيل جديد</a>
                 </li>
                 <li>
-                  <a href="/pages/forum/forum.html">منتدى</a>
+                  <a href="">منتدى</a>
                 </li>
                 <li>
                   <a href="">مدونة</a>
@@ -425,7 +413,35 @@
       </div>
     </footer>
 
+    <div id="modalLogout" class="modal">
+      <div class="modal-view p-4 flex flex-col">
+        <button
+          data-target="modalLogout"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto"
+        ></button>
+        <div class="flex flex-col items-center gap-6">
+          <div class="flex flex-col gap-3 items-center">
+            <h3 class="text-xl font-bold">هل تريدي تسجيل الخروج؟</h3>
+            <form
+              action="/pages/account/login.html"
+              class="flex justify-center gap-3 items-center"
+            >
+              <button class="btn btn-green-500">نعم أريد</button>
+              <span
+                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500 btn-modal-toggler"
+                data-target="modalLogout"
+                data-action="close"
+              >
+                لا أريد
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/js/home.js"></script>
+    <script type="module" src="/js/filter.js"></script>
   </body>
 </html>
