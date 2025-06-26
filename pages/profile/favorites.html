@@ -64,7 +64,7 @@
           <!-- Start Mobile Menu -->
           <div id="mobileMenu" class="">
             <div
-              class="flex relative pt-5 pb-2 px-4 h-full w-10/12 flex-col gap-4 bg-white"
+              class="flex relative pt-4 pb-2 px-4 h-full w-10/12 flex-col gap-3 bg-white overflow-y-auto"
             >
               <span
                 class="cursor-pointer btn-close absolute top-3 left-4 nav-toggler text-black"
@@ -74,53 +74,109 @@
                 <img src="/images/profile.png" alt="" />
                 <p class="text-gray-700 font-medium">Hend Hussein</p>
               </a>
-              <ul class="menu">
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> settings </span>
 
-                    <p>اعدادات الحساب</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> login </span>
+              <div class="flex-grow-1 flex flex-col divide-y">
+                <ul class="menu">
+                  <li>
+                    <a
+                      href="pages/account/login.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> login </span>
 
-                    <p>تسجيل دخول</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> thumb_up </span>
+                      <p>تسجيل دخول</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/account.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> settings </span>
 
-                    <p>تابع طبيبة</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> help </span>
+                      <p>اعدادات الحساب</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/reservations.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> date_range </span>
 
-                    <p>الدعم</p>
-                  </a>
-                </li>
+                      <p>الحجوزات</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/favorites.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> bookmark_added </span>
 
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> mail </span>
+                      <p>المفضلة</p>
+                    </a>
+                  </li>
+                </ul>
 
-                    <p>تواصل معنا</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="menu mt-auto">
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons text-danger"> logout </span>
+                <ul class="menu">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/facebook.svg" alt="" />
 
-                    <p>تسجيل خروج</p>
-                  </a>
-                </li>
-              </ul>
+                      <p>فيس بوك</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/instagram.svg" alt="" />
+
+                      <p>إنستغرام</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/twitter-x.svg" alt="" />
+
+                      <p>منصة إكس</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/linkedin.svg" alt="" />
+
+                      <p>لينكد إن</p>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="menu">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons"> mail </span>
+
+                      <p>contant@tabiba.com</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons"> dialpad </span>
+
+                      <p>+2012233132222</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="menu mt-auto">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons text-danger"> logout </span>
+
+                      <p>تسجيل خروج</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <!-- End Mobile Menu -->
@@ -176,7 +232,7 @@
                 <img
                   src="/images/profile.png"
                   alt=""
-                  class="h-20 aspect-square rounded-full bg-green-500 object-fit-contain"
+                  class="h-20 aspect-square rounded-full bg-green-500 object-fit-cover"
                 />
                 <!-- Form upload new image -->
                 <form action="" class="absolute bottom-0">
@@ -239,150 +295,311 @@
 
           <!-- Start Profile Page Content -->
           <div class="bg-white rounded-lg !p-4 lg:!p-6 flex-grow-1">
-            <div
-              class="grid justify-content-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:mt-8"
-            >
-              <!-- Start Result Card -->
-              <a
-                href="/pages/center/center-profile.html"
-                class="grid grid-rows-5 bg-white rounded-lg shadow-md"
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs mb-10" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="Doctors-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Doctors"
+                  type="button"
+                  role="tab"
+                  aria-controls="Doctors"
+                  aria-selected="true"
+                >
+                  الطبيبات
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="Centers-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Centers"
+                  type="button"
+                  role="tab"
+                  aria-controls="Centers"
+                  aria-selected="false"
+                >
+                  المراكز
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div
+                class="tab-pane active"
+                id="Doctors"
+                role="tabpanel"
+                aria-labelledby="Doctors-tab"
               >
-                <!-- Start Card Image -->
-                <div class="row-span-3">
-                  <img
-                    class="h-100 w-100 object-fit-contain"
-                    src="/images/cairo-scan.png"
-                    alt=""
-                  />
-                </div>
-                <!-- End Card Image -->
-                <!-- Start Card Content -->
-                <div class="row-span-2 flex flex-col p-3">
-                  <div class="flex items-center justify-between gap-3">
-                    <!-- Center Name -->
-                    <p class="text-pink-500 font-medium">كايرو سكان</p>
-
-                    <!-- visible if added to favorites -->
-                    <button class="material-icons text-red-500/80">
-                      favorite
-                    </button>
-                  </div>
-                  <!-- Center Specialization -->
-                  <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-                  <!-- Center Stats -->
-                  <div class="flex justify-end items-center gap-1 mt-auto">
-                    <!-- Total Visitors -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500 text-sm">230</span>
-                      <span class="material-icons text-gray-500/50"
-                        >how_to_reg</span
-                      >
+                <div
+                  class="grid grid-cols-1 justify-content-center sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 lg:mt-8"
+                >
+                  <!-- Start Result Card -->
+                  <a
+                    href="./tabiba-profile.html"
+                    class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md overflow-hidden"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="row-span-3">
+                      <img
+                        class="h-100 w-100 object-fit-cover"
+                        src="/images/female-profile.jpg"
+                        alt=""
+                      />
                     </div>
-                    <!-- Rating -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500 text-sm">(4.7)</span>
-                      <span class="material-icons text-yellow-400">star</span>
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div class="row-span-2 flex flex-col p-3">
+                      <div class="flex items-center gap-3 justify-between">
+                        <!-- Doctor Name -->
+                        <p class="text-pink-500 font-medium">د/هدير سالم</p>
+
+                        <!-- visible if added to favorites -->
+                        <button class="material-icons text-red-500/80">
+                          favorite
+                        </button>
+                      </div>
+                      <!-- Doctor Specialization -->
+                      <p class="text-gray-500 text-sm">طب النساء والتوليد</p>
+                      <!-- Doctor Title -->
+                      <p class="text-green-400 text-xs">استشاري</p>
+                      <!-- Doctor Stats -->
+                      <div class="flex justify-end items-center gap-1 mt-auto">
+                        <!-- Total Visitors -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">230</span>
+                          <span class="material-icons text-gray-500/50"
+                            >how_to_reg</span
+                          >
+                        </div>
+                        <!-- Rating -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">(4.7)</span>
+                          <span class="material-icons text-yellow-400"
+                            >star</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Result Card -->
+                  <!-- Start Result Card -->
+                  <a
+                    href="./tabiba-profile.html"
+                    class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md overflow-hidden"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="row-span-3">
+                      <img
+                        class="h-100 w-100 object-fit-cover"
+                        src="/images/female-profile.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div class="row-span-2 flex flex-col p-3">
+                      <div class="flex items-center gap-3 justify-between">
+                        <!-- Doctor Name -->
+                        <p class="text-pink-500 font-medium">د/هدير سالم</p>
+
+                        <!-- visible if added to favorites -->
+                        <button class="material-icons text-red-500/80">
+                          favorite
+                        </button>
+                      </div>
+                      <!-- Doctor Specialization -->
+                      <p class="text-gray-500 text-sm">طب النساء والتوليد</p>
+                      <!-- Doctor Title -->
+                      <p class="text-green-400 text-xs">استشاري</p>
+                      <!-- Doctor Stats -->
+                      <div class="flex justify-end items-center gap-1 mt-auto">
+                        <!-- Total Visitors -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">230</span>
+                          <span class="material-icons text-gray-500/50"
+                            >how_to_reg</span
+                          >
+                        </div>
+                        <!-- Rating -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">(4.7)</span>
+                          <span class="material-icons text-yellow-400"
+                            >star</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Result Card -->
                 </div>
-                <!-- End Card Content -->
-              </a>
-              <!-- End Result Card -->
-              <!-- Start Result Card -->
-              <a
-                href="/pages/center/center-profile.html"
-                class="grid grid-rows-5 bg-white rounded-lg shadow-md"
+              </div>
+
+              <!-- Favorite Centers Tab -->
+              <div
+                class="tab-pane"
+                id="Centers"
+                role="tabpanel"
+                aria-labelledby="Centers-tab"
               >
-                <!-- Start Card Image -->
-                <div class="row-span-3">
-                  <img
-                    class="h-100 w-100 object-fit-contain"
-                    src="/images/cairo-scan.png"
-                    alt=""
-                  />
-                </div>
-                <!-- End Card Image -->
-                <!-- Start Card Content -->
-                <div class="row-span-2 flex flex-col p-3">
-                  <div class="flex items-center justify-between gap-3">
-                    <!-- Center Name -->
-                    <p class="text-pink-500 font-medium">كايرو سكان</p>
-
-                    <!-- visible if added to favorites -->
-                    <button class="material-icons text-red-500/80">
-                      favorite
-                    </button>
-                  </div>
-                  <!-- Center Specialization -->
-                  <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-                  <!-- Center Stats -->
-                  <div class="flex justify-end items-center gap-1 mt-auto">
-                    <!-- Total Visitors -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500 text-sm">230</span>
-                      <span class="material-icons text-gray-500/50"
-                        >how_to_reg</span
-                      >
+                <div
+                  class="grid justify-content-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:mt-8"
+                >
+                  <!-- Start Result Card -->
+                  <a
+                    href="/pages/center/center-profile.html"
+                    class="grid grid-rows-5 bg-white rounded-lg shadow-md"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="row-span-3">
+                      <img
+                        class="h-100 w-100 object-fit-cover"
+                        src="/images/cairo-scan.png"
+                        alt=""
+                      />
                     </div>
-                    <!-- Rating -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500 text-sm">(4.7)</span>
-                      <span class="material-icons text-yellow-400">star</span>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Card Content -->
-              </a>
-              <!-- End Result Card -->
-              <!-- Start Result Card -->
-              <a
-                href="/pages/center/center-profile.html"
-                class="grid grid-rows-5 bg-white rounded-lg shadow-md"
-              >
-                <!-- Start Card Image -->
-                <div class="row-span-3">
-                  <img
-                    class="h-100 w-100 object-fit-contain"
-                    src="/images/cairo-scan.png"
-                    alt=""
-                  />
-                </div>
-                <!-- End Card Image -->
-                <!-- Start Card Content -->
-                <div class="row-span-2 flex flex-col p-3">
-                  <div class="flex items-center justify-between gap-3">
-                    <!-- Center Name -->
-                    <p class="text-pink-500 font-medium">كايرو سكان</p>
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div class="row-span-2 flex flex-col p-3">
+                      <div class="flex items-center justify-between gap-3">
+                        <!-- Center Name -->
+                        <p class="text-pink-500 font-medium">كايرو سكان</p>
 
-                    <!-- visible if added to favorites -->
-                    <button class="material-icons text-red-500/80">
-                      favorite
-                    </button>
-                  </div>
-                  <!-- Center Specialization -->
-                  <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
+                        <!-- visible if added to favorites -->
+                        <button class="material-icons text-red-500/80">
+                          favorite
+                        </button>
+                      </div>
+                      <!-- Center Specialization -->
+                      <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
 
-                  <!-- Center Stats -->
-                  <div class="flex justify-end items-center gap-1 mt-auto">
-                    <!-- Total Visitors -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500 text-sm">230</span>
-                      <span class="material-icons text-gray-500/50"
-                        >how_to_reg</span
-                      >
+                      <!-- Center Stats -->
+                      <div class="flex justify-end items-center gap-1 mt-auto">
+                        <!-- Total Visitors -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">230</span>
+                          <span class="material-icons text-gray-500/50"
+                            >how_to_reg</span
+                          >
+                        </div>
+                        <!-- Rating -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">(4.7)</span>
+                          <span class="material-icons text-yellow-400"
+                            >star</span
+                          >
+                        </div>
+                      </div>
                     </div>
-                    <!-- Rating -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500 text-sm">(4.7)</span>
-                      <span class="material-icons text-yellow-400">star</span>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Result Card -->
+                  <!-- Start Result Card -->
+                  <a
+                    href="/pages/center/center-profile.html"
+                    class="grid grid-rows-5 bg-white rounded-lg shadow-md"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="row-span-3">
+                      <img
+                        class="h-100 w-100 object-fit-cover"
+                        src="/images/cairo-scan.png"
+                        alt=""
+                      />
                     </div>
-                  </div>
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div class="row-span-2 flex flex-col p-3">
+                      <div class="flex items-center justify-between gap-3">
+                        <!-- Center Name -->
+                        <p class="text-pink-500 font-medium">كايرو سكان</p>
+
+                        <!-- visible if added to favorites -->
+                        <button class="material-icons text-red-500/80">
+                          favorite
+                        </button>
+                      </div>
+                      <!-- Center Specialization -->
+                      <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
+
+                      <!-- Center Stats -->
+                      <div class="flex justify-end items-center gap-1 mt-auto">
+                        <!-- Total Visitors -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">230</span>
+                          <span class="material-icons text-gray-500/50"
+                            >how_to_reg</span
+                          >
+                        </div>
+                        <!-- Rating -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">(4.7)</span>
+                          <span class="material-icons text-yellow-400"
+                            >star</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Result Card -->
+                  <!-- Start Result Card -->
+                  <a
+                    href="/pages/center/center-profile.html"
+                    class="grid grid-rows-5 bg-white rounded-lg shadow-md"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="row-span-3">
+                      <img
+                        class="h-100 w-100 object-fit-cover"
+                        src="/images/cairo-scan.png"
+                        alt=""
+                      />
+                    </div>
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div class="row-span-2 flex flex-col p-3">
+                      <div class="flex items-center justify-between gap-3">
+                        <!-- Center Name -->
+                        <p class="text-pink-500 font-medium">كايرو سكان</p>
+
+                        <!-- visible if added to favorites -->
+                        <button class="material-icons text-red-500/80">
+                          favorite
+                        </button>
+                      </div>
+                      <!-- Center Specialization -->
+                      <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
+
+                      <!-- Center Stats -->
+                      <div class="flex justify-end items-center gap-1 mt-auto">
+                        <!-- Total Visitors -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">230</span>
+                          <span class="material-icons text-gray-500/50"
+                            >how_to_reg</span
+                          >
+                        </div>
+                        <!-- Rating -->
+                        <div class="flex items-center">
+                          <span class="text-gray-500 text-sm">(4.7)</span>
+                          <span class="material-icons text-yellow-400"
+                            >star</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Result Card -->
                 </div>
-                <!-- End Card Content -->
-              </a>
-              <!-- End Result Card -->
+              </div>
             </div>
           </div>
           <!-- End Profile Page Content -->

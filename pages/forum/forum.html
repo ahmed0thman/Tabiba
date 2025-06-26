@@ -64,7 +64,7 @@
           <!-- Start Mobile Menu -->
           <div id="mobileMenu" class="">
             <div
-              class="flex relative pt-5 pb-2 px-4 h-full w-10/12 flex-col gap-4 bg-white"
+              class="flex relative pt-4 pb-2 px-4 h-full w-10/12 flex-col gap-3 bg-white overflow-y-auto"
             >
               <span
                 class="cursor-pointer btn-close absolute top-3 left-4 nav-toggler text-black"
@@ -74,53 +74,109 @@
                 <img src="/images/profile.png" alt="" />
                 <p class="text-gray-700 font-medium">Hend Hussein</p>
               </a>
-              <ul class="menu">
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> settings </span>
 
-                    <p>اعدادات الحساب</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> login </span>
+              <div class="flex-grow-1 flex flex-col divide-y">
+                <ul class="menu">
+                  <li>
+                    <a
+                      href="pages/account/login.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> login </span>
 
-                    <p>تسجيل دخول</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> thumb_up </span>
+                      <p>تسجيل دخول</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/account.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> settings </span>
 
-                    <p>تابع طبيبة</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> help </span>
+                      <p>اعدادات الحساب</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/reservations.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> date_range </span>
 
-                    <p>الدعم</p>
-                  </a>
-                </li>
+                      <p>الحجوزات</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/favorites.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> bookmark_added </span>
 
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons"> mail </span>
+                      <p>المفضلة</p>
+                    </a>
+                  </li>
+                </ul>
 
-                    <p>تواصل معنا</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="menu mt-auto">
-                <li>
-                  <a href="" class="menu-item rounded-full">
-                    <span class="material-icons text-danger"> logout </span>
+                <ul class="menu">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/facebook.svg" alt="" />
 
-                    <p>تسجيل خروج</p>
-                  </a>
-                </li>
-              </ul>
+                      <p>فيس بوك</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/instagram.svg" alt="" />
+
+                      <p>إنستغرام</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/twitter-x.svg" alt="" />
+
+                      <p>منصة إكس</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/linkedin.svg" alt="" />
+
+                      <p>لينكد إن</p>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="menu">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons"> mail </span>
+
+                      <p>contant@tabiba.com</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons"> dialpad </span>
+
+                      <p>+2012233132222</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="menu mt-auto">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons text-danger"> logout </span>
+
+                      <p>تسجيل خروج</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <!-- End Mobile Menu -->
