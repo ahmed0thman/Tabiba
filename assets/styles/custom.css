@@ -64,7 +64,7 @@ textarea:focus {
   outline: none;
   outline: none;
   border: none;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 textarea {
   field-sizing: content;
