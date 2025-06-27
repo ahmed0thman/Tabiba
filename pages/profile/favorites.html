@@ -34,7 +34,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">مدونة</a>
+                <a class="nav-link" href="/pages/blog/blogs-category.html"
+                  >مدونة</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/pages/forum/forum.html">منتدى</a>
@@ -204,7 +206,7 @@
             <span class="material-icons text-4xl">home</span>
             <span class="text-xs font-medium">الرئيسية</span>
           </a>
-          <a class="nav-item" href="#">
+          <a class="nav-item" href="/pages/blog/blogs-category.html">
             <span class="material-icons text-4xl">article</span>
             <span class="text-xs">مدونة</span>
           </a>
@@ -294,7 +296,7 @@
           <!-- End Porfile Navigation -->
 
           <!-- Start Profile Page Content -->
-          <div class="bg-white rounded-lg !p-4 lg:!p-6 flex-grow-1">
+          <div class="rounded-lg !p-4 lg:!p-6 flex-grow-1">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs mb-10" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -325,10 +327,25 @@
                   المراكز
                 </button>
               </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="Articles-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Articles"
+                  type="button"
+                  role="tab"
+                  aria-controls="Articles"
+                  aria-selected="false"
+                >
+                  المقالات
+                </button>
+              </li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
+              <!-- Favorite Doctors Tab -->
               <div
                 class="tab-pane active"
                 id="Doctors"
@@ -336,11 +353,11 @@
                 aria-labelledby="Doctors-tab"
               >
                 <div
-                  class="grid grid-cols-1 justify-content-center sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 lg:mt-8"
+                  class="grid grid-cols-1 justify-content-center sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:mt-8"
                 >
                   <!-- Start Result Card -->
                   <a
-                    href="./tabiba-profile.html"
+                    href="/pages/tabiba/tabiba-profile.html"
                     class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md overflow-hidden"
                   >
                     <!-- Start Card Image -->
@@ -390,7 +407,7 @@
                   <!-- End Result Card -->
                   <!-- Start Result Card -->
                   <a
-                    href="./tabiba-profile.html"
+                    href="/pages/tabiba/tabiba-profile.html"
                     class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md overflow-hidden"
                   >
                     <!-- Start Card Image -->
@@ -598,6 +615,345 @@
                     <!-- End Card Content -->
                   </a>
                   <!-- End Result Card -->
+                </div>
+              </div>
+
+              <!-- Favorite Article Tab -->
+              <div
+                class="tab-pane"
+                id="Articles"
+                role="tabpanel"
+                aria-labelledby="Articles-tab"
+              >
+                <div class="flex-grow-1 space-y-4 px-3 sm:px-0">
+                  <!-- Start Article Card -->
+                  <a
+                    href="/pages/blog/article.html"
+                    class="bg-white rounded-md shadow-md flex flex-col sm:flex-row sm:max-h-72"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="sm:w-2/5 relative">
+                      <img
+                        src="/images/derma-article.jpg"
+                        alt=""
+                        class="h-full object-cover"
+                      />
+                      <span
+                        class="absolute bottom-0 !end-0 bg-teal-600/70 text-white px-3 py-1"
+                      >
+                        الأمراض الجلدية
+                      </span>
+                    </div>
+
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div
+                      class="flex-grow-1 sm:w-3/5 px-2 py-3 md:!p-3 lg:!pt-6 flex flex-col gap-2 sm:!gap-3"
+                    >
+                      <!-- Card Header -->
+                      <div class="flex justify-between items-start gap-1">
+                        <h3
+                          class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
+                        >
+                          ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
+                        </h3>
+                        <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                        <span
+                          class="hidden material-icons text-gray-500 text-2l md:text-3xl"
+                        >
+                          bookmark_border
+                        </span>
+                        <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                        <span
+                          class="material-icons text-pink-500 text-xl md:text-3xl"
+                        >
+                          bookmark
+                        </span>
+                      </div>
+                      <!-- Card Text -->
+                      <p
+                        class="text-gray-600 text-sm !leading-6 !pe-0 sm:!pe-2 md:!pe-4 lg:!pe-6 xl:!pe-10 lg:!leading-7 xl:!leading-8 sm:text-sm md:text-base xl:text-lg"
+                      >
+                        <!-- only view five rows then clip the text and "view all span" -->
+                        <span class="line-clamp-3 xl:line-clamp-4">
+                          يعاني الكثير من الناس من مشكلة ظهور الحبوب المفاجئة
+                          على الوجه أو الجسم دون سبب واضح، وقد تكون هذه الحالة
+                          مصدر قلق خاصة عندما تظهر في مناسبات مهمة أو في أوقات
+                          الضغط النفسي. في هذه التدوينة، نستعرض الأسباب الشائعة
+                          التي قد تؤدي إلى ظهور الحبوب بشكل مفاجئ على البشرة،
+                          مثل التغيرات الهرمونية، التوتر النفسي، النظام الغذائي
+                          غير الصحي، استخدام مستحضرات تجميل غير مناسبة، أو حتى
+                          التعرض لعوامل بيئية ملوثة. كما سنقدم نصائح عملية
+                          للوقاية من هذه المشكلة، مثل الحفاظ على روتين عناية
+                          بالبشرة منتظم، اختيار منتجات مناسبة لنوع البشرة، وتجنب
+                          لمس الوجه باليدين بشكل متكرر. إذا استمرت المشكلة أو
+                          كانت مصحوبة بأعراض أخرى، يُنصح بمراجعة طبيب الجلدية
+                          للحصول على التشخيص والعلاج المناسبين.
+                        </span>
+                        <!-- this span will be always added after the clipped text -->
+                        <span class="text-green-500 font-semibold">
+                          قراءة الكل
+                        </span>
+                      </p>
+                      <!-- Card Date -->
+                      <div
+                        class="text-gray-200 flex items-center gap-2 mt-auto"
+                      >
+                        <span class="material-icons-outlined text-lg"
+                          >access_time</span
+                        >
+                        <span class="text-xs">29 مايو 2025</span>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Article Card -->
+                  <!-- Start Article Card -->
+                  <a
+                    href="/pages/blog/article.html"
+                    class="bg-white rounded-md shadow-md flex flex-col sm:flex-row sm:max-h-72"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="sm:w-2/5 relative">
+                      <img
+                        src="/images/derma-article.jpg"
+                        alt=""
+                        class="h-full object-cover"
+                      />
+                      <span
+                        class="absolute bottom-0 !end-0 bg-teal-600/70 text-white px-3 py-1"
+                      >
+                        الأمراض الجلدية
+                      </span>
+                    </div>
+
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div
+                      class="flex-grow-1 sm:w-3/5 px-2 py-3 md:!p-3 lg:!pt-6 flex flex-col gap-2 sm:!gap-3"
+                    >
+                      <!-- Card Header -->
+                      <div class="flex justify-between items-start gap-1">
+                        <h3
+                          class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
+                        >
+                          ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
+                        </h3>
+                        <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                        <span
+                          class="hidden material-icons text-gray-500 text-2l md:text-3xl"
+                        >
+                          bookmark_border
+                        </span>
+                        <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                        <span
+                          class="material-icons text-pink-500 text-xl md:text-3xl"
+                        >
+                          bookmark
+                        </span>
+                      </div>
+                      <!-- Card Text -->
+                      <p
+                        class="text-gray-600 text-sm !leading-6 !pe-0 sm:!pe-2 md:!pe-4 lg:!pe-6 xl:!pe-10 lg:!leading-7 xl:!leading-8 sm:text-sm md:text-base xl:text-lg"
+                      >
+                        <!-- only view five rows then clip the text and "view all span" -->
+                        <span class="line-clamp-3 xl:line-clamp-4">
+                          يعاني الكثير من الناس من مشكلة ظهور الحبوب المفاجئة
+                          على الوجه أو الجسم دون سبب واضح، وقد تكون هذه الحالة
+                          مصدر قلق خاصة عندما تظهر في مناسبات مهمة أو في أوقات
+                          الضغط النفسي. في هذه التدوينة، نستعرض الأسباب الشائعة
+                          التي قد تؤدي إلى ظهور الحبوب بشكل مفاجئ على البشرة،
+                          مثل التغيرات الهرمونية، التوتر النفسي، النظام الغذائي
+                          غير الصحي، استخدام مستحضرات تجميل غير مناسبة، أو حتى
+                          التعرض لعوامل بيئية ملوثة. كما سنقدم نصائح عملية
+                          للوقاية من هذه المشكلة، مثل الحفاظ على روتين عناية
+                          بالبشرة منتظم، اختيار منتجات مناسبة لنوع البشرة، وتجنب
+                          لمس الوجه باليدين بشكل متكرر. إذا استمرت المشكلة أو
+                          كانت مصحوبة بأعراض أخرى، يُنصح بمراجعة طبيب الجلدية
+                          للحصول على التشخيص والعلاج المناسبين.
+                        </span>
+                        <!-- this span will be always added after the clipped text -->
+                        <span class="text-green-500 font-semibold">
+                          قراءة الكل
+                        </span>
+                      </p>
+                      <!-- Card Date -->
+                      <div
+                        class="text-gray-200 flex items-center gap-2 mt-auto"
+                      >
+                        <span class="material-icons-outlined text-lg"
+                          >access_time</span
+                        >
+                        <span class="text-xs">29 مايو 2025</span>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Article Card -->
+                  <!-- Start Article Card -->
+                  <a
+                    href="/pages/blog/article.html"
+                    class="bg-white rounded-md shadow-md flex flex-col sm:flex-row sm:max-h-72"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="sm:w-2/5 relative">
+                      <img
+                        src="/images/derma-article.jpg"
+                        alt=""
+                        class="h-full object-cover"
+                      />
+                      <span
+                        class="absolute bottom-0 !end-0 bg-teal-600/70 text-white px-3 py-1"
+                      >
+                        الأمراض الجلدية
+                      </span>
+                    </div>
+
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div
+                      class="flex-grow-1 sm:w-3/5 px-2 py-3 md:!p-3 lg:!pt-6 flex flex-col gap-2 sm:!gap-3"
+                    >
+                      <!-- Card Header -->
+                      <div class="flex justify-between items-start gap-1">
+                        <h3
+                          class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
+                        >
+                          ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
+                        </h3>
+                        <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                        <span
+                          class="hidden material-icons text-gray-500 text-2l md:text-3xl"
+                        >
+                          bookmark_border
+                        </span>
+                        <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                        <span
+                          class="material-icons text-pink-500 text-xl md:text-3xl"
+                        >
+                          bookmark
+                        </span>
+                      </div>
+                      <!-- Card Text -->
+                      <p
+                        class="text-gray-600 text-sm !leading-6 !pe-0 sm:!pe-2 md:!pe-4 lg:!pe-6 xl:!pe-10 lg:!leading-7 xl:!leading-8 sm:text-sm md:text-base xl:text-lg"
+                      >
+                        <!-- only view five rows then clip the text and "view all span" -->
+                        <span class="line-clamp-3 xl:line-clamp-4">
+                          يعاني الكثير من الناس من مشكلة ظهور الحبوب المفاجئة
+                          على الوجه أو الجسم دون سبب واضح، وقد تكون هذه الحالة
+                          مصدر قلق خاصة عندما تظهر في مناسبات مهمة أو في أوقات
+                          الضغط النفسي. في هذه التدوينة، نستعرض الأسباب الشائعة
+                          التي قد تؤدي إلى ظهور الحبوب بشكل مفاجئ على البشرة،
+                          مثل التغيرات الهرمونية، التوتر النفسي، النظام الغذائي
+                          غير الصحي، استخدام مستحضرات تجميل غير مناسبة، أو حتى
+                          التعرض لعوامل بيئية ملوثة. كما سنقدم نصائح عملية
+                          للوقاية من هذه المشكلة، مثل الحفاظ على روتين عناية
+                          بالبشرة منتظم، اختيار منتجات مناسبة لنوع البشرة، وتجنب
+                          لمس الوجه باليدين بشكل متكرر. إذا استمرت المشكلة أو
+                          كانت مصحوبة بأعراض أخرى، يُنصح بمراجعة طبيب الجلدية
+                          للحصول على التشخيص والعلاج المناسبين.
+                        </span>
+                        <!-- this span will be always added after the clipped text -->
+                        <span class="text-green-500 font-semibold">
+                          قراءة الكل
+                        </span>
+                      </p>
+                      <!-- Card Date -->
+                      <div
+                        class="text-gray-200 flex items-center gap-2 mt-auto"
+                      >
+                        <span class="material-icons-outlined text-lg"
+                          >access_time</span
+                        >
+                        <span class="text-xs">29 مايو 2025</span>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Article Card -->
+                  <!-- Start Article Card -->
+                  <a
+                    href="/pages/blog/article.html"
+                    class="bg-white rounded-md shadow-md flex flex-col sm:flex-row sm:max-h-72"
+                  >
+                    <!-- Start Card Image -->
+                    <div class="sm:w-2/5 relative">
+                      <img
+                        src="/images/derma-article.jpg"
+                        alt=""
+                        class="h-full object-cover"
+                      />
+                      <span
+                        class="absolute bottom-0 !end-0 bg-teal-600/70 text-white px-3 py-1"
+                      >
+                        الأمراض الجلدية
+                      </span>
+                    </div>
+
+                    <!-- End Card Image -->
+                    <!-- Start Card Content -->
+                    <div
+                      class="flex-grow-1 sm:w-3/5 px-2 py-3 md:!p-3 lg:!pt-6 flex flex-col gap-2 sm:!gap-3"
+                    >
+                      <!-- Card Header -->
+                      <div class="flex justify-between items-start gap-1">
+                        <h3
+                          class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
+                        >
+                          ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
+                        </h3>
+                        <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                        <span
+                          class="hidden material-icons text-gray-500 text-2l md:text-3xl"
+                        >
+                          bookmark_border
+                        </span>
+                        <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                        <span
+                          class="material-icons text-pink-500 text-xl md:text-3xl"
+                        >
+                          bookmark
+                        </span>
+                      </div>
+                      <!-- Card Text -->
+                      <p
+                        class="text-gray-600 text-sm !leading-6 !pe-0 sm:!pe-2 md:!pe-4 lg:!pe-6 xl:!pe-10 lg:!leading-7 xl:!leading-8 sm:text-sm md:text-base xl:text-lg"
+                      >
+                        <!-- only view five rows then clip the text and "view all span" -->
+                        <span class="line-clamp-3 xl:line-clamp-4">
+                          يعاني الكثير من الناس من مشكلة ظهور الحبوب المفاجئة
+                          على الوجه أو الجسم دون سبب واضح، وقد تكون هذه الحالة
+                          مصدر قلق خاصة عندما تظهر في مناسبات مهمة أو في أوقات
+                          الضغط النفسي. في هذه التدوينة، نستعرض الأسباب الشائعة
+                          التي قد تؤدي إلى ظهور الحبوب بشكل مفاجئ على البشرة،
+                          مثل التغيرات الهرمونية، التوتر النفسي، النظام الغذائي
+                          غير الصحي، استخدام مستحضرات تجميل غير مناسبة، أو حتى
+                          التعرض لعوامل بيئية ملوثة. كما سنقدم نصائح عملية
+                          للوقاية من هذه المشكلة، مثل الحفاظ على روتين عناية
+                          بالبشرة منتظم، اختيار منتجات مناسبة لنوع البشرة، وتجنب
+                          لمس الوجه باليدين بشكل متكرر. إذا استمرت المشكلة أو
+                          كانت مصحوبة بأعراض أخرى، يُنصح بمراجعة طبيب الجلدية
+                          للحصول على التشخيص والعلاج المناسبين.
+                        </span>
+                        <!-- this span will be always added after the clipped text -->
+                        <span class="text-green-500 font-semibold">
+                          قراءة الكل
+                        </span>
+                      </p>
+                      <!-- Card Date -->
+                      <div
+                        class="text-gray-200 flex items-center gap-2 mt-auto"
+                      >
+                        <span class="material-icons-outlined text-lg"
+                          >access_time</span
+                        >
+                        <span class="text-xs">29 مايو 2025</span>
+                      </div>
+                    </div>
+                    <!-- End Card Content -->
+                  </a>
+                  <!-- End Article Card -->
                 </div>
               </div>
             </div>

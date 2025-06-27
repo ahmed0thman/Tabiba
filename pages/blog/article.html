@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="/assets/libs/material-icon/material-icon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <title>Tabiba</title>
+  </head>
+
+  <body>
+    <!-- Start Main Header -->
+    <header id="header" class="transition duration-300 ease-in-out">
+      <div class="wrapper">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="/" class="logo">
+            <img src="/images/icons/logo.png" alt="Logo" />
+          </a>
+          <nav id="navMenu">
+            <span class="btn-close-menu d-md-none nav-toggler"> x </span>
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="/">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/tabiba/tabiba.html">طبيبة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/center/center.html">مركز</a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="/pages/blog/blogs-category.html"
+                  >مدونة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/forum/forum.html">منتدى</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-none d-md-flex gap-3 items-center">
+            <!-- Visible when not logged in -->
+            <a class="btn d-none btn-green-500 btn-login" href="/"
+              >تسجيل الدخول</a
+            >
+            <!-- Visible when logged in -->
+            <a
+              href="/pages/profile/account.html"
+              class="flex items-center gap-3"
+            >
+              <p class="text-gray-700 font-medium">Hend Hussein</p>
+              <img class="w-11" src="/images/profile.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="nav-toggler md:hidden flex items-center text-gray-600 transition duration-300 ease-in-out hover:text-pink-500 focus:outline-none"
+            id="menu-button"
+          >
+            <span class="material-icons">menu</span>
+          </button>
+          <!-- Start Mobile Menu -->
+          <div id="mobileMenu" class="">
+            <div
+              class="flex relative pt-4 pb-2 px-4 h-full w-10/12 flex-col gap-3 bg-white overflow-y-auto"
+            >
+              <span
+                class="cursor-pointer btn-close absolute top-3 left-4 nav-toggler text-black"
+              >
+              </span>
+              <a class="flex items-center gap-6">
+                <img src="/images/profile.png" alt="" />
+                <p class="text-gray-700 font-medium">Hend Hussein</p>
+              </a>
+
+              <div class="flex-grow-1 flex flex-col divide-y">
+                <ul class="menu">
+                  <li>
+                    <a
+                      href="pages/account/login.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> login </span>
+
+                      <p>تسجيل دخول</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/account.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> settings </span>
+
+                      <p>اعدادات الحساب</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/reservations.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> date_range </span>
+
+                      <p>الحجوزات</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/profile/favorites.html"
+                      class="menu-item rounded-full"
+                    >
+                      <span class="material-icons"> bookmark_added </span>
+
+                      <p>المفضلة</p>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="menu">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/facebook.svg" alt="" />
+
+                      <p>فيس بوك</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/instagram.svg" alt="" />
+
+                      <p>إنستغرام</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/twitter-x.svg" alt="" />
+
+                      <p>منصة إكس</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <img src="/images/icons/social/linkedin.svg" alt="" />
+
+                      <p>لينكد إن</p>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="menu">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons"> mail </span>
+
+                      <p>contant@tabiba.com</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons"> dialpad </span>
+
+                      <p>+2012233132222</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="menu mt-auto">
+                  <li>
+                    <a href="" class="menu-item rounded-full">
+                      <span class="material-icons text-danger"> logout </span>
+
+                      <p>تسجيل خروج</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Mobile Menu -->
+        </div>
+      </div>
+    </header>
+    <!-- End Main Header -->
+
+    <!-- Start Mobile Nav -->
+    <nav
+      id="navMobile"
+      class="transition duration-300 ease-in-out fixed md:hidden bottom-0 left-0 right-0 shadow-t border-t border-gray-200 z-50"
+    >
+      <div class="container mx-auto px-2">
+        <div class="flex justify-around items-center h-16">
+          <a class="nav-item" href="/pages/tabiba/tabiba.html">
+            <span class="material-icons text-4xl">local_hospital</span>
+            <span class="text-xs">طبيبة</span>
+          </a>
+          <a class="nav-item" href="/pages/center/center.html">
+            <span class="material-icons text-4xl">monitor_heart</span>
+            <span class="text-xs">مركز</span>
+          </a>
+          <a class="nav-item" href="/">
+            <span class="material-icons text-4xl">home</span>
+            <span class="text-xs font-medium">الرئيسية</span>
+          </a>
+          <a class="nav-item active" href="/pages/blog/blogs-category.html">
+            <span class="material-icons text-4xl">article</span>
+            <span class="text-xs">مدونة</span>
+          </a>
+          <a class="nav-item" href="/pages/forum/forum.html">
+            <span class="material-icons text-4xl">forum</span>
+            <span class="text-xs">منتدى</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Mobile Nav -->
+    <main id="main" class="overflow-visible">
+      <!-- If user is already subscribed to the news letter, set the mb to mb-4 -->
+      <div class="wrapper px-3 md:pt-3 mb-[6rem]">
+        <div class="search-filter">
+          <!-- Start Filter Web -->
+          <div
+            class="hidden md:block max-w-[560px] mx-auto p-3 p-lg-4 bg-white rounded-full"
+          >
+            <form action="" class="d-flex gap-1 gap-lg-3">
+              <div class="filter bg-gray-100 rounded-full">
+                <select name="" id="" class="bg-transparent flex-1">
+                  <option value="0">أحدث المقالات</option>
+                </select>
+                <select name="" id="" class="bg-transparent flex-1">
+                  <option value="0">التصنيفات</option>
+                </select>
+              </div>
+              <button class="btn btn-green-500 rounded-full">بحث</button>
+            </form>
+          </div>
+          <!-- End Filter Web -->
+          <!-- Start Filter Mobile -->
+          <div class="md:hidden flex justify-end">
+            <!-- Mobile Filter Button Menu Toggler -->
+            <button
+              id="toggleFiterMenu"
+              class="btn px-2 flex items-center gap-2 bg-white rounded-3 border-1 border-gray-500"
+            >
+              <span class="material-icons text-gray-500">tune</span>
+              <span class="text-gray-500/90">تصفيه</span>
+            </button>
+            <!-- Mobile Filter Side Menu -->
+            <div
+              id="mobileFilterMenu"
+              class="translate-x-[-100%] transition duration-300 ease-in-out fixed md:hidden bottom-0 top-[62px] right-0 w-100 bg-white shadow-t border-t border-gray-200 z-40 py-14"
+            >
+              <span
+                id="hideFiterMenu"
+                class="btn-close absolute top-4 end-4 cursor-pointer"
+              ></span>
+              <form class="flex flex-col gap-4 px-4 max-w-[400px] mx-auto">
+                <select
+                  name=""
+                  id=""
+                  class="border-gray-500 rounded-full focus:!ring-gray-500"
+                >
+                  <option value="0">أحدث المقالات</option>
+                </select>
+                <select
+                  name=""
+                  id=""
+                  class="border-gray-500 rounded-full focus:!ring-gray-500"
+                >
+                  <option value="0">التصنيفات</option>
+                </select>
+
+                <button class="btn btn-green-500">بحث</button>
+              </form>
+            </div>
+          </div>
+          <!-- End Filter Mobile -->
+        </div>
+
+        <div class="flex gap-4 mt-6 relative">
+          <!-- Start Atricle -->
+          <div class="flex-grow-1 w-10/12 space-y-4 px-3 sm:px-0">
+            <div class="bg-white rounded-md">
+              <!-- Article Content -->
+              <div class="p-3 mb-6 space-y-5">
+                <!-- Article Header -->
+                <!-- Article Title -->
+                <div class="flex justify-between items-start gap-1">
+                  <h3
+                    class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
+                  >
+                    ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
+                  </h3>
+                  <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                  <span
+                    class="material-icons text-gray-500 text-2l md:text-3xl"
+                  >
+                    bookmark_border
+                  </span>
+                  <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                  <span
+                    class="hidden material-icons text-pink-500 text-xl md:text-3xl"
+                  >
+                    bookmark
+                  </span>
+                </div>
+
+                <!-- Article Auther and date -->
+                <div class="flex gap-3 items-center flex-wrap">
+                  <img
+                    src="/images/profile-pink.svg"
+                    alt=""
+                    class="rounded-full w-12"
+                  />
+
+                  <div class="flex flex-col gap-1 flex-grow-1 text-sm">
+                    <!-- Auther name -->
+                    <p class="font-medium flex items-center gap-2">
+                      <span class="text-gray-500">الكاتب</span>
+                      <span class="text-gray-700">هدير سالم</span>
+                    </p>
+                    <!-- Article date -->
+                    <p class="font-medium flex items-center gap-2">
+                      <span class="text-gray-500">تاريخ النشر</span>
+                      <span class="text-gray-700">21 مايو 2025</span>
+                    </p>
+                  </div>
+
+                  <!-- Start Share Article -->
+                  <div class="share-list !ms-auto">
+                    <span
+                      type="button"
+                      class="border border-gray-300 text-gray-500 rounded-lg py-2 px-3 flex items-center gap-2 cursor-pointer dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="material-icons">share</span>
+                      <span class="text-sm">مشاركة</span>
+                    </span>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu share-list-options">
+                        <span>
+                          <img src="/images/icons/social/copy.svg" alt="" />
+                        </span>
+                        <span>
+                          <img src="/images/icons/social/facebook.svg" alt="" />
+                        </span>
+                        <span>
+                          <img
+                            src="/images/icons/social/instagram.svg"
+                            alt=""
+                          />
+                        </span>
+                        <span>
+                          <img
+                            src="/images/icons/social/twitter-x.svg"
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- End Share Article -->
+                </div>
+
+                <!-- Article Image -->
+                <img
+                  src="/images/derma-article.jpg"
+                  class="w-full object-fit-contain"
+                  alt=""
+                />
+
+                <!-- Article Body -->
+                <!-- Content of this element should be an "Inner HTML" -->
+                <div
+                  class="article-content text-gray-700 text-sm sm:text-base font-medium leading-7"
+                >
+                  <div>
+                    <h2>أولًا: أسباب ظهور الحبوب في الوجه</h2>
+                    <h3>
+                      تتعدد الأسباب التي تؤدي إلى ظهور الحبوب، ومن أبرزها:
+                    </h3>
+                    <ol>
+                      <li>
+                        <strong>التغيرات الهرمونية</strong>
+                        <ul>
+                          <li>تحدث في سن البلوغ أو أثناء الحيض والحمل.</li>
+                          <li>تؤدي إلى زيادة إفراز الدهون وظهور الحبوب.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>زيادة إفراز الدهون (الزهم)</strong>
+                        <ul>
+                          <li>الغدد الدهنية تفرز كميات زائدة من الزيت.</li>
+                          <li>يسبب انسداد المسام وتراكم البكتيريا.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>انسداد المسام</strong>
+                        <ul>
+                          <li>
+                            بسبب خلايا الجلد الميتة أو الأوساخ أو مستحضرات
+                            التجميل.
+                          </li>
+                          <li>يسبب تكون البثور والرؤوس السوداء والبيضاء.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>البكتيريا</strong>
+                        <ul>
+                          <li>
+                            خاصة بكتيريا <em>Propionibacterium acnes</em>.
+                          </li>
+                          <li>تؤدي إلى تهيّج الجلد والتهاب الحبوب.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>العوامل الوراثية</strong>
+                        <ul>
+                          <li>
+                            وجود تاريخ عائلي مع حب الشباب يزيد من احتمالية
+                            ظهوره.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>التوتر والضغط النفسي</strong>
+                        <ul>
+                          <li>لا يسبب الحبوب بشكل مباشر.</li>
+                          <li>
+                            لكن يؤثر على الهرمونات والمناعة ويزيد من تفاقم
+                            الحالة.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>النظام الغذائي</strong>
+                        <ul>
+                          <li>
+                            تناول السكريات والدهون المشبعة قد يساهم في ظهور
+                            الحبوب.
+                          </li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <div>
+                    <h2>ثانيًا: أنواع الحبوب</h2>
+                    <ul>
+                      <li>
+                        <strong>الرؤوس السوداء</strong>
+                        <ul>
+                          <li>
+                            تنتج عن انسداد المسام بالزيوت والأوساخ وتعرضها
+                            للهواء.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>الرؤوس البيضاء</strong>
+                        <ul>
+                          <li>
+                            تشبه الرؤوس السوداء لكنها تبقى مغطاة بطبقة جلد.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>البثور (Pimples)</strong>
+                        <ul>
+                          <li>نتوءات حمراء ملتهبة وقد تحتوي على صديد.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>الخراجات والعقيدات</strong>
+                        <ul>
+                          <li>حبوب عميقة ومؤلمة.</li>
+                          <li>غالبًا ما تترك ندوبًا بعد الشفاء.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h2>ثالثًا: طرق العلاج</h2>
+
+                    <h3>١. العناية اليومية بالبشرة</h3>
+                    <ul>
+                      <li>تنظيف الوجه مرتين يوميًا باستخدام غسول مناسب.</li>
+                      <li>استخدام منتجات لا تسد المسام (Non-comedogenic).</li>
+                      <li>تجنب لمس أو العبث بالحبوب.</li>
+                    </ul>
+
+                    <h3>٢. العلاج الموضعي</h3>
+                    <ul>
+                      <li>
+                        استخدام كريمات تحتوي على حمض الساليسيليك أو البنزويل
+                        بيروكسيد.
+                      </li>
+                      <li>استخدام مضادات حيوية موضعية لتقليل الالتهاب.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Article Desc -->
+              <div
+                class="flex gap-4 items-center mx-2 px-2 py-3 border-t border-t-gray-500/20 text-gray-500 font-semibold text-sm sm:text-base"
+              >
+                <button
+                  class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                  data-target="modalPostComments"
+                >
+                  <span class="material-icons">comment</span>
+                  <span>
+                    <span>5</span>
+                    <span>تعليق</span>
+                  </span>
+                </button>
+                <button
+                  class="flex-1 flex items-center justify-center gap-2 btn-modal-toggler"
+                  data-target="modalPostComments"
+                >
+                  <!-- if post not liked -->
+                  <span class="hidden material-icons">favorite_border</span>
+                  <!-- if post is liked -->
+                  <span class="material-icons text-pink-500">favorite</span>
+                  <span>
+                    <span>5</span>
+                    <span>إعجاب</span>
+                  </span>
+                </button>
+              </div>
+
+              <!-- Form Add Comment -->
+              <form
+                class="border-t border-t-gray-500/2 p-3 flex items-start gap-2"
+              >
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="flex-grow-1 bg-gray-50 text-gray-500 border border-gray-200 rounded-md focus:ring-0 placeholder:text-gray-300 max-h-24"
+                  placeholder="أضيفي تعليق"
+                ></textarea>
+
+                <button class="w-8 mt-1">
+                  <img src="/images/icons/send.svg" alt="" class="" />
+                </button>
+              </form>
+
+              <!-- Start Comments -->
+              <div class="flex flex-col !gap-5 px-3 py-3">
+                <!-- Filter and Sort Comments -->
+                <select
+                  type="text"
+                  id=""
+                  class="flex-2 form-select rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200 w-52"
+                >
+                  <option value="1">الشائعة</option>
+                </select>
+                <!-- Comment Item -->
+                <div class="space-y-1">
+                  <!-- Comment Card -->
+                  <div
+                    class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+                  >
+                    <!-- Comment Header -->
+                    <div
+                      class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                    >
+                      <div class="flex gap-2 items-center">
+                        <img
+                          src="/images/profile-pink.svg"
+                          alt=""
+                          class="rounded-full w-8"
+                        />
+                        <!-- Commenter Name -->
+                        <p class="text-gray-500 text-sm font-semibold">
+                          هند حسين
+                        </p>
+
+                        <!-- Comment Date -->
+                        <span class="text-gray-500 text-xs">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Comment Body -->
+                    <p
+                      class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Comment Item -->
+                <div class="space-y-1">
+                  <!-- Comment Card -->
+                  <div
+                    class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+                  >
+                    <!-- Comment Header -->
+                    <div
+                      class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                    >
+                      <div class="flex gap-2 items-center">
+                        <img
+                          src="/images/profile-pink.svg"
+                          alt=""
+                          class="rounded-full w-8"
+                        />
+                        <!-- Commenter Name -->
+                        <p class="text-gray-500 text-sm font-semibold">
+                          هند حسين
+                        </p>
+
+                        <!-- Comment Date -->
+                        <span class="text-gray-500 text-xs">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Comment Body -->
+                    <p
+                      class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Comment Item -->
+                <div class="space-y-1">
+                  <!-- Comment Card -->
+                  <div
+                    class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+                  >
+                    <!-- Comment Header -->
+                    <div
+                      class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                    >
+                      <div class="flex gap-2 items-center">
+                        <img
+                          src="/images/profile-pink.svg"
+                          alt=""
+                          class="rounded-full w-8"
+                        />
+                        <!-- Commenter Name -->
+                        <p class="text-gray-500 text-sm font-semibold">
+                          هند حسين
+                        </p>
+
+                        <!-- Comment Date -->
+                        <span class="text-gray-500 text-xs">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Comment Body -->
+                    <p
+                      class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Comment Item -->
+                <div class="space-y-1">
+                  <!-- Comment Card -->
+                  <div
+                    class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+                  >
+                    <!-- Comment Header -->
+                    <div
+                      class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+                    >
+                      <div class="flex gap-2 items-center">
+                        <img
+                          src="/images/profile-pink.svg"
+                          alt=""
+                          class="rounded-full w-8"
+                        />
+                        <!-- Commenter Name -->
+                        <p class="text-gray-500 text-sm font-semibold">
+                          هند حسين
+                        </p>
+
+                        <!-- Comment Date -->
+                        <span class="text-gray-500 text-xs">
+                          <span>منذ</span>
+                          <span>4</span>
+                          <span>ساعات</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Comment Body -->
+                    <p
+                      class="text-gray-500 leading-5 sm:leading-6 text-sm mt-2 mb-3"
+                    >
+                      انضمي إلى المنتدى الخاص بنا وشاركي تجاربك الآن!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button Show more Comment -->
+              <button
+                class="text-gray-500 text-decoration-underline leading-8 text-sm block !ms-auto p-3"
+              >
+                إظهار المزيد
+              </button>
+            </div>
+          </div>
+
+          <!-- Start Forum Highlights -->
+          <div class="space-y-4 hidden md:block sticky top-24 h-fit">
+            <!-- Doctors Highlights Card -->
+            <div
+              class="bg-white flex flex-col items-center gap-6 p-6 rounded-md max-w-72"
+            >
+              <!-- Doctors Thumnnails -->
+              <div class="flex items-end justify-center gap-1">
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square w-14 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+              </div>
+              <!-- Highlight Title -->
+              <h2 class="text-lg lg:text-xl font-semibold text-gray-700">
+                احجزي طبيبة الآن
+              </h2>
+              <!-- Highlight Text -->
+              <p class="text-gray-500 font-medium text-center">
+                راحة المريضة تبدأ من أول لقاء — طاقم نسائي بالكامل لخدمة ورعاية
+                السيدات بكل خصوصية واهتمام.
+              </p>
+              <!-- href to tabiba search -->
+              <a
+                href="/pages/tabiba/tabiba.html"
+                class="btn btn-green-500 text-xl font-semibold rounded-xl mt-6 py-2 px-16"
+              >
+                دخول
+              </a>
+            </div>
+
+            <!-- Centers Highlights Card -->
+            <div
+              class="bg-white flex flex-col items-center gap-6 p-6 rounded-md max-w-72"
+            >
+              <!-- Doctors Thumnnails -->
+              <div class="flex items-end justify-center gap-1">
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square w-14 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+              </div>
+              <!-- Highlight Title -->
+              <h2 class="text-lg lg:text-xl font-semibold text-gray-700">
+                احجزي أشعة وتحاليل الآن
+              </h2>
+              <!-- Highlight Text -->
+              <p class="text-gray-500 font-medium text-center">
+                راحة المريضة تبدأ من أول لقاء — طاقم نسائي بالكامل لخدمة ورعاية
+                السيدات بكل خصوصية واهتمام.
+              </p>
+              <!-- href to tabiba search -->
+              <a
+                href="/pages/tabiba/tabiba.html"
+                class="btn btn-green-500 text-xl font-semibold rounded-xl mt-6 py-2 px-16"
+              >
+                دخول
+              </a>
+            </div>
+          </div>
+          <!-- End Forum Highlights -->
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="pt-40">
+      <section id="newsLetter" class="m-0 p-0">
+        <div class="wrapper">
+          <div class="news-letter">
+            <h2>اشترك في نشرتنا الإخبارية</h2>
+            <form>
+              <div class="input-with-button">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="البريد الإلكتروني"
+                />
+                <button class="btn">اشتراك</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <div
+          class="d-none d-md-flex row justify-content-center justify-content-md-start px-sm-5"
+        >
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">الدعم</h4>
+              <ul>
+                <li>مصر</li>
+                <li>exclusive@gmail.com</li>
+                <li>+201112228899</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">الحساب</h4>
+              <ul>
+                <li>
+                  <a href="">تسجيل الدخول / تسجيل جديد</a>
+                </li>
+                <li>
+                  <a href="">منتدى</a>
+                </li>
+                <li>
+                  <a href="">مدونة</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-list">
+              <h4 class="list-title">رابط سريع</h4>
+              <ul>
+                <li>
+                  <a href="">الرئيسية</a>
+                </li>
+                <li>
+                  <a href="">طبيبة</a>
+                </li>
+                <li>
+                  <a href="">مركز</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="d-flex flex-column align-items-center gap-4">
+              <a href="/">
+                <img
+                  class="logo"
+                  src="/images/icons/logo-white.png"
+                  alt="logo"
+                />
+              </a>
+              <p class="text-white fs-5">تابعنا على منصاتنا</p>
+              <div
+                class="d-flex justify-content-center align-items-center gap-4"
+              >
+                <a class="p-1" href="">
+                  <img src="/images/icons/linkedin.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/instagram.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/twitter.svg" alt="" />
+                </a>
+                <a class="p-1" href="">
+                  <img src="/images/icons/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="copyRight">حقوق النشر محفوظة © منصة طبيبة 2025</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/filter.js"></script>
+  </body>
+</html>

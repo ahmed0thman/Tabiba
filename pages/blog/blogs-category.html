@@ -29,11 +29,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/pages/tabiba/tabiba.html">طبيبة</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="/pages/center/center.html">مركز</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="/pages/blog/blogs-category.html"
                   >مدونة</a
                 >
@@ -198,7 +198,7 @@
             <span class="material-icons text-4xl">local_hospital</span>
             <span class="text-xs">طبيبة</span>
           </a>
-          <a class="nav-item active" href="/pages/center/center.html">
+          <a class="nav-item" href="/pages/center/center.html">
             <span class="material-icons text-4xl">monitor_heart</span>
             <span class="text-xs">مركز</span>
           </a>
@@ -206,7 +206,7 @@
             <span class="material-icons text-4xl">home</span>
             <span class="text-xs font-medium">الرئيسية</span>
           </a>
-          <a class="nav-item" href="/pages/blog/blogs-category.html">
+          <a class="nav-item active" href="/pages/blog/blogs-category.html">
             <span class="material-icons text-4xl">article</span>
             <span class="text-xs">مدونة</span>
           </a>
@@ -223,20 +223,16 @@
       <div class="wrapper px-3 md:pt-3 mb-[6rem]">
         <div class="search-filter">
           <!-- Start Filter Web -->
-          <div class="hidden md:block p-3 p-lg-4 bg-white rounded-full">
+          <div
+            class="hidden md:block max-w-[560px] mx-auto p-3 p-lg-4 bg-white rounded-full"
+          >
             <form action="" class="d-flex gap-1 gap-lg-3">
               <div class="filter bg-gray-100 rounded-full">
                 <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">نوع الخدمة</option>
+                  <option value="0">أحدث المقالات</option>
                 </select>
                 <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">المحافظة</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">المنطقة</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">ترتيب بواسطة</option>
+                  <option value="0">التصنيفات</option>
                 </select>
               </div>
               <button class="btn btn-green-500 rounded-full">بحث</button>
@@ -268,28 +264,14 @@
                   id=""
                   class="border-gray-500 rounded-full focus:!ring-gray-500"
                 >
-                  <option value="0">نوع الخدمة</option>
+                  <option value="0">أحدث المقالات</option>
                 </select>
                 <select
                   name=""
                   id=""
                   class="border-gray-500 rounded-full focus:!ring-gray-500"
                 >
-                  <option value="0">المحافظة</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">المنطقة</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">ترتيب بواسطة</option>
+                  <option value="0">التصنيفات</option>
                 </select>
 
                 <button class="btn btn-green-500">بحث</button>
@@ -297,283 +279,282 @@
             </div>
           </div>
           <!-- End Filter Mobile -->
-
-          <!-- Search Input and Total Results -->
-          <div
-            class="d-flex flex-wrap-reverse justify-content-between align-items-center gap-3 mt-6 lg:mt-8 lg:max-w-[900px] xl:max-w-[1000px] mx-auto"
-          >
-            <div class="d-flex align-items-center gap-2">
-              <p class="text-gray-500 text-lg font-bold">كل المراكز</p>
-              <p class="text-gray-500">12113</p>
-            </div>
-            <form action="" class="flex-grow-1 max-w-[400px] min-w-[300px]">
-              <input
-                type="text"
-                class="border-gray-500/50 rounded-full text-gray-500 placeholder-gray-500/30 focus:ring-gray-500/50 w-100"
-                placeholder="اكتب اسم المركز ..."
-              />
-            </form>
-          </div>
         </div>
 
-        <div
-          class="grid justify-content-center col-span-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 lg:mt-8"
-        >
-          <!-- Start Result Card -->
-          <a
-            href="./center-profile.html"
-            class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md"
+        <div class="flex gap-4 mt-6">
+          <!-- Start Categories List -->
+          <div
+            class="flex-grow-1 w-9/12 xl:w-8/12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3"
           >
-            <!-- Start Card Image -->
-            <div class="row-span-3">
-              <img
-                class="h-100 w-100 object-fit-cover"
-                src="/images/cairo-scan.png"
-                alt=""
-              />
-            </div>
-            <!-- End Card Image -->
-            <!-- Start Card Content -->
-            <div class="row-span-2 flex flex-col p-3">
-              <div class="flex items-center justify-between gap-3">
-                <!-- Center Name -->
-                <p class="text-pink-500 font-medium">كايرو سكان</p>
-
-                <!-- visible if not added to favorites yet -->
-                <button class="material-icons text-gray-500/30">
-                  favorite_border
-                </button>
-                <!-- visible if added to favorites -->
-                <button class="hidden material-icons text-red-500/80">
-                  favorite
-                </button>
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-              <!-- Center Specialization -->
-              <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-              <!-- Center Stats -->
-              <div class="flex justify-end items-center gap-1 mt-auto">
-                <!-- Total Visitors -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">230</span>
-                  <span class="material-icons text-gray-500/50"
-                    >how_to_reg</span
-                  >
-                </div>
-                <!-- Rating -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">(4.7)</span>
-                  <span class="material-icons text-yellow-400">star</span>
-                </div>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-            </div>
-            <!-- End Card Content -->
-          </a>
-          <!-- End Result Card -->
-          <!-- Start Result Card -->
-          <a
-            href="./center-profile.html"
-            class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md"
-          >
-            <!-- Start Card Image -->
-            <div class="row-span-3">
-              <img
-                class="h-100 w-100 object-fit-cover"
-                src="/images/cairo-scan.png"
-                alt=""
-              />
-            </div>
-            <!-- End Card Image -->
-            <!-- Start Card Content -->
-            <div class="row-span-2 flex flex-col p-3">
-              <div class="flex items-center justify-between gap-3">
-                <!-- Center Name -->
-                <p class="text-pink-500 font-medium">كايرو سكان</p>
-
-                <!-- visible if not added to favorites yet -->
-                <button class="material-icons text-gray-500/30">
-                  favorite_border
-                </button>
-                <!-- visible if added to favorites -->
-                <button class="hidden material-icons text-red-500/80">
-                  favorite
-                </button>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-              <!-- Center Specialization -->
-              <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-              <!-- Center Stats -->
-              <div class="flex justify-end items-center gap-1 mt-auto">
-                <!-- Total Visitors -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">230</span>
-                  <span class="material-icons text-gray-500/50"
-                    >how_to_reg</span
-                  >
-                </div>
-                <!-- Rating -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">(4.7)</span>
-                  <span class="material-icons text-yellow-400">star</span>
-                </div>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-            </div>
-            <!-- End Card Content -->
-          </a>
-          <!-- End Result Card -->
-          <!-- Start Result Card -->
-          <a
-            href="./center-profile.html"
-            class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md"
-          >
-            <!-- Start Card Image -->
-            <div class="row-span-3">
-              <img
-                class="h-100 w-100 object-fit-cover"
-                src="/images/cairo-scan.png"
-                alt=""
-              />
-            </div>
-            <!-- End Card Image -->
-            <!-- Start Card Content -->
-            <div class="row-span-2 flex flex-col p-3">
-              <div class="flex items-center justify-between gap-3">
-                <!-- Center Name -->
-                <p class="text-pink-500 font-medium">كايرو سكان</p>
-
-                <!-- visible if not added to favorites yet -->
-                <button class="material-icons text-gray-500/30">
-                  favorite_border
-                </button>
-                <!-- visible if added to favorites -->
-                <button class="hidden material-icons text-red-500/80">
-                  favorite
-                </button>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-              <!-- Center Specialization -->
-              <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-              <!-- Center Stats -->
-              <div class="flex justify-end items-center gap-1 mt-auto">
-                <!-- Total Visitors -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">230</span>
-                  <span class="material-icons text-gray-500/50"
-                    >how_to_reg</span
-                  >
-                </div>
-                <!-- Rating -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">(4.7)</span>
-                  <span class="material-icons text-yellow-400">star</span>
-                </div>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-            </div>
-            <!-- End Card Content -->
-          </a>
-          <!-- End Result Card -->
-          <!-- Start Result Card -->
-          <a
-            href="./center-profile.html"
-            class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md"
-          >
-            <!-- Start Card Image -->
-            <div class="row-span-3">
-              <img
-                class="h-100 w-100 object-fit-cover"
-                src="/images/cairo-scan.png"
-                alt=""
-              />
-            </div>
-            <!-- End Card Image -->
-            <!-- Start Card Content -->
-            <div class="row-span-2 flex flex-col p-3">
-              <div class="flex items-center justify-between gap-3">
-                <!-- Center Name -->
-                <p class="text-pink-500 font-medium">كايرو سكان</p>
-
-                <!-- visible if not added to favorites yet -->
-                <button class="material-icons text-gray-500/30">
-                  favorite_border
-                </button>
-                <!-- visible if added to favorites -->
-                <button class="hidden material-icons text-red-500/80">
-                  favorite
-                </button>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-              <!-- Center Specialization -->
-              <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-              <!-- Center Stats -->
-              <div class="flex justify-end items-center gap-1 mt-auto">
-                <!-- Total Visitors -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">230</span>
-                  <span class="material-icons text-gray-500/50"
-                    >how_to_reg</span
-                  >
-                </div>
-                <!-- Rating -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">(4.7)</span>
-                  <span class="material-icons text-yellow-400">star</span>
-                </div>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+            <!-- Start Category Card -->
+            <a
+              href="./blogs.html"
+              class="grid grid-rows-4 bg-white rounded-md shadow-md"
+            >
+              <!-- Start Card Image -->
+              <div class="row-span-3">
+                <img
+                  class="h-100 w-100 object-fit-cover"
+                  src="/images/dermatology.png"
+                  alt=""
+                />
               </div>
-            </div>
-            <!-- End Card Content -->
-          </a>
-          <!-- End Result Card -->
-          <!-- Start Result Card -->
-          <a
-            href="./center-profile.html"
-            class="grid grid-rows-5 max-w-[350px] max-h-[345px] bg-white rounded-lg shadow-md"
-          >
-            <!-- Start Card Image -->
-            <div class="row-span-3">
-              <img
-                class="h-100 w-100 object-fit-cover"
-                src="/images/cairo-scan.png"
-                alt=""
-              />
-            </div>
-            <!-- End Card Image -->
-            <!-- Start Card Content -->
-            <div class="row-span-2 flex flex-col p-3">
-              <div class="flex items-center justify-between gap-3">
-                <!-- Center Name -->
-                <p class="text-pink-500 font-medium">كايرو سكان</p>
+              <!-- End Card Image -->
+              <!-- Start Card Content -->
+              <h1
+                class="row-span-1 text-green-500 text-base sm:text-xl md:text-lg lg:text-2xl font-medium text-center content-center"
+              >
+                الأمراض الجلدية
+              </h1>
+              <!-- End Card Content -->
+            </a>
+            <!-- End Category Card -->
+          </div>
 
-                <!-- visible if not added to favorites yet -->
-                <button class="material-icons text-gray-500/30">
-                  favorite_border
-                </button>
-                <!-- visible if added to favorites -->
-                <button class="hidden material-icons text-red-500/80">
-                  favorite
-                </button>
+          <!-- Start Forum Highlights -->
+          <div class="space-y-4 hidden md:block sticky top-24 h-fit">
+            <!-- Doctors Highlights Card -->
+            <div
+              class="bg-white flex flex-col items-center gap-6 p-6 rounded-md max-w-72"
+            >
+              <!-- Doctors Thumnnails -->
+              <div class="flex items-end justify-center gap-1">
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square w-14 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
               </div>
-              <!-- Center Specialization -->
-              <p class="text-gray-500 text-sm">مركز أشعة وتحاليل</p>
-
-              <!-- Center Stats -->
-              <div class="flex justify-end items-center gap-1 mt-auto">
-                <!-- Total Visitors -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">230</span>
-                  <span class="material-icons text-gray-500/50"
-                    >how_to_reg</span
-                  >
-                </div>
-                <!-- Rating -->
-                <div class="flex items-center">
-                  <span class="text-gray-500 text-sm">(4.7)</span>
-                  <span class="material-icons text-yellow-400">star</span>
-                </div>
-              </div>
+              <!-- Highlight Title -->
+              <h2 class="text-lg lg:text-xl font-semibold text-gray-700">
+                احجزي طبيبة الآن
+              </h2>
+              <!-- Highlight Text -->
+              <p class="text-gray-500 font-medium text-center">
+                راحة المريضة تبدأ من أول لقاء — طاقم نسائي بالكامل لخدمة ورعاية
+                السيدات بكل خصوصية واهتمام.
+              </p>
+              <!-- href to tabiba search -->
+              <a
+                href="/pages/tabiba/tabiba.html"
+                class="btn btn-green-500 text-xl font-semibold rounded-xl mt-6 py-2 px-16"
+              >
+                دخول
+              </a>
             </div>
-            <!-- End Card Content -->
-          </a>
-          <!-- End Result Card -->
+
+            <!-- Centers Highlights Card -->
+            <div
+              class="bg-white flex flex-col items-center gap-6 p-6 rounded-md max-w-72"
+            >
+              <!-- Doctors Thumnnails -->
+              <div class="flex items-end justify-center gap-1">
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square w-14 object-contain object-center"
+                />
+                <img
+                  src="/images/female-profile.jpg"
+                  alt=""
+                  class="rounded-full aspect-square !w-10 object-contain object-center"
+                />
+              </div>
+              <!-- Highlight Title -->
+              <h2 class="text-lg lg:text-xl font-semibold text-gray-700">
+                احجزي أشعة وتحاليل الآن
+              </h2>
+              <!-- Highlight Text -->
+              <p class="text-gray-500 font-medium text-center">
+                راحة المريضة تبدأ من أول لقاء — طاقم نسائي بالكامل لخدمة ورعاية
+                السيدات بكل خصوصية واهتمام.
+              </p>
+              <!-- href to tabiba search -->
+              <a
+                href="/pages/tabiba/tabiba.html"
+                class="btn btn-green-500 text-xl font-semibold rounded-xl mt-6 py-2 px-16"
+              >
+                دخول
+              </a>
+            </div>
+          </div>
+          <!-- End Forum Highlights -->
         </div>
       </div>
     </main>
