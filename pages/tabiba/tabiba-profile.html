@@ -245,12 +245,14 @@
                 <div class="h-0">
                   <img
                     src="/images/female-profile.jpg"
-                    class="rounded-full border-2 bg-white border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-12 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
+                    class="rounded-full border-2 bg-white border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-8 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
                     alt=""
                   />
                 </div>
                 <!-- Doctor main info and stats -->
-                <div class="flex sm:gap-2 flex-grow-1">
+                <div
+                  class="flex flex-col-reverse sm:flex-row sm:gap-2 flex-grow-1"
+                >
                   <!-- Doctor Name, specialization, and title -->
                   <div class="flex flex-col gap-1">
                     <!-- Profile Name -->
@@ -274,7 +276,7 @@
                   </div>
                   <!-- Doctor Stats -->
                   <div
-                    class="absolute top-4 !end-2 flex flex-col sm:static sm:flex-row items-start gap-1 sm:!ms-auto text-xs sm:text-sm md:text-base"
+                    class="flex static items-start gap-1 !ms-auto text-xs sm:text-sm md:text-base"
                   >
                     <!-- Total Visitors -->
                     <div class="flex items-center">
@@ -514,20 +516,42 @@
                         </div>
                         <div class="flex items-center gap-2">
                           <span class="material-icons text-green-500"
-                            >phone_iphone</span
-                          >
-                          <span> 01234034230 </span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
                             >paid</span
                           >
                           <span> 560 جنية </span>
                         </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >phone_iphone</span
+                          >
+                          <div class="text-show-toggler">
+                            <label
+                              class="cursor-pointer btn-toggler"
+                              for="ClinicOnePhoneNumber"
+                              >اظهر بيانات الإتصال</label
+                            >
+                            <input
+                              hidden
+                              type="checkbox"
+                              name=""
+                              id="ClinicOnePhoneNumber"
+                            />
+                            <span class="text-to-toggle">01234034230</span>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <span
+                            >برجاء الحجز ثم التواصل تليفونياً بالعيادة
+                            للتنسيق</span
+                          >
+                        </div>
                       </div>
                       <!-- Clinic Week Schedules -->
                       <div
-                        class="flex flex-col mt-3 gap-3 sm:gap-1 sm:max-h-64 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 gap-1 sm:max-h-64 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -626,6 +650,17 @@
                           </button>
                         </div>
                       </div>
+                      <div class="flex items-start gap-2">
+                        <img
+                          src="/images/icons/doctor-female-staff.png"
+                          alt=""
+                          class="w-8"
+                        />
+                        <span class="text-sm text-gray-400">
+                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
+                          الحساب ثم اختيار قائمة الحجز
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -644,7 +679,9 @@
                     >
                       <div class="flex items-center gap-2 text-sm sm:text-base">
                         <span class="material-icons text-green-500">home</span>
-                        <span class="!text-start">عيادة مركز النخبة الطبي</span>
+                        <span class="!text-start"
+                          >عيادة مركز النخبة الطبي
+                        </span>
                       </div>
                     </button>
                   </h2>
@@ -667,20 +704,42 @@
                         </div>
                         <div class="flex items-center gap-2">
                           <span class="material-icons text-green-500"
-                            >phone_iphone</span
-                          >
-                          <span> 01234034230 </span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
                             >paid</span
                           >
                           <span> 560 جنية </span>
                         </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >phone_iphone</span
+                          >
+                          <div class="text-show-toggler">
+                            <label
+                              class="cursor-pointer btn-toggler"
+                              for="ClinicTwoPhoneNumber"
+                              >اظهر بيانات الإتصال</label
+                            >
+                            <input
+                              hidden
+                              type="checkbox"
+                              name=""
+                              id="ClinicTwoPhoneNumber"
+                            />
+                            <span class="text-to-toggle">01234034230</span>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <span
+                            >برجاء الحجز ثم التواصل تليفونياً بالعيادة
+                            للتنسيق</span
+                          >
+                        </div>
                       </div>
                       <!-- Clinic Week Schedules -->
                       <div
-                        class="flex flex-col mt-3 gap-3 sm:gap-1 sm:max-h-64 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 gap-1 sm:max-h-64 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -779,6 +838,17 @@
                           </button>
                         </div>
                       </div>
+                      <div class="flex items-start gap-2">
+                        <img
+                          src="/images/icons/doctor-female-staff.png"
+                          alt=""
+                          class="w-8"
+                        />
+                        <span class="text-sm text-gray-400">
+                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
+                          الحساب ثم اختيار قائمة الحجز
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -797,7 +867,9 @@
                     >
                       <div class="flex items-center gap-2 text-sm sm:text-base">
                         <span class="material-icons text-green-500">home</span>
-                        <span class="!text-start">عيادة مركز النخبة الطبي</span>
+                        <span class="!text-start"
+                          >عيادة مركز النخبة الطبي
+                        </span>
                       </div>
                     </button>
                   </h2>
@@ -820,20 +892,42 @@
                         </div>
                         <div class="flex items-center gap-2">
                           <span class="material-icons text-green-500"
-                            >phone_iphone</span
-                          >
-                          <span> 01234034230 </span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
                             >paid</span
                           >
                           <span> 560 جنية </span>
                         </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >phone_iphone</span
+                          >
+                          <div class="text-show-toggler">
+                            <label
+                              class="cursor-pointer btn-toggler"
+                              for="ClinicThreeoPhoneNumber"
+                              >اظهر بيانات الإتصال</label
+                            >
+                            <input
+                              hidden
+                              type="checkbox"
+                              name=""
+                              id="ClinicThreeoPhoneNumber"
+                            />
+                            <span class="text-to-toggle">01234034230</span>
+                          </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <span
+                            >برجاء الحجز ثم التواصل تليفونياً بالعيادة
+                            للتنسيق</span
+                          >
+                        </div>
                       </div>
                       <!-- Clinic Week Schedules -->
                       <div
-                        class="flex flex-col mt-3 gap-3 sm:gap-1 sm:max-h-64 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 gap-1 sm:max-h-64 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -931,6 +1025,17 @@
                             احجزي
                           </button>
                         </div>
+                      </div>
+                      <div class="flex items-start gap-2">
+                        <img
+                          src="/images/icons/doctor-female-staff.png"
+                          alt=""
+                          class="w-8"
+                        />
+                        <span class="text-sm text-gray-400">
+                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
+                          الحساب ثم اختيار قائمة الحجز
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -1696,7 +1801,7 @@
             <form class="flex justify-center gap-3 items-center">
               <button class="btn btn-green-500">تأكيد الحجز</button>
               <span
-                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500 btn-modal-toggler"
+                class="btn btn-outline-green-500 btn-modal-toggler"
                 data-target="modalConfrimReservation"
                 data-action="close"
               >

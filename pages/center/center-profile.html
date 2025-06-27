@@ -244,12 +244,14 @@
                 <div class="h-0">
                   <img
                     src="/images/cairo-scan.png"
-                    class="rounded-full border-2 bg-white border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-12 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
+                    class="rounded-full border-2 bg-white border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-8 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
                     alt=""
                   />
                 </div>
                 <!-- Center main info and stats -->
-                <div class="flex sm:gap-2 flex-grow-1">
+                <div
+                  class="flex flex-col-reverse sm:flex-row sm:gap-2 flex-grow-1"
+                >
                   <!-- Center Name, specialization, and title -->
                   <div class="flex flex-col gap-1">
                     <!-- Profile Name -->
@@ -269,7 +271,7 @@
                   </div>
                   <!-- Center Stats -->
                   <div
-                    class="absolute top-4 !end-2 flex flex-col sm:static sm:flex-row items-start gap-1 sm:!ms-auto text-xs sm:text-sm md:text-base"
+                    class="flex items-start gap-1 !ms-auto text-xs sm:text-sm md:text-base"
                   >
                     <!-- Total Visitors -->
                     <div class="flex items-center">
@@ -510,7 +512,29 @@
                           <span class="material-icons text-green-500"
                             >phone_iphone</span
                           >
-                          <span> 01234034230 </span>
+                          <div class="text-show-toggler">
+                            <label
+                              class="cursor-pointer btn-toggler"
+                              for="centerOnePhoneNumber"
+                              >اظهر بيانات الإتصال</label
+                            >
+                            <input
+                              hidden
+                              type="checkbox"
+                              name=""
+                              id="centerOnePhoneNumber"
+                            />
+                            <span class="text-to-toggle">01234034230</span>
+                          </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <span>
+                            برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
+                            مع الطاقم النسائي
+                          </span>
                         </div>
                         <div class="flex items-center gap-2">
                           <img src="/images/icons/females.png" alt="" />
@@ -521,7 +545,7 @@
                       </div>
                       <!-- Center Week Schedules -->
                       <div
-                        class="flex flex-col mt-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -619,6 +643,17 @@
                             احجزي
                           </button>
                         </div>
+                      </div>
+                      <div class="flex items-start gap-2">
+                        <img
+                          src="/images/icons/doctor-female-staff.png"
+                          alt=""
+                          class="w-8"
+                        />
+                        <span class="text-sm text-gray-400">
+                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
+                          الحساب ثم اختيار قائمة الحجز
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -659,7 +694,29 @@
                           <span class="material-icons text-green-500"
                             >phone_iphone</span
                           >
-                          <span> 01234034230 </span>
+                          <div class="text-show-toggler">
+                            <label
+                              class="cursor-pointer btn-toggler"
+                              for="centerTwoPhoneNumber"
+                              >اظهر بيانات الإتصال</label
+                            >
+                            <input
+                              hidden
+                              type="checkbox"
+                              name=""
+                              id="centerTwoPhoneNumber"
+                            />
+                            <span class="text-to-toggle">01234034230</span>
+                          </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <span>
+                            برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
+                            مع الطاقم النسائي
+                          </span>
                         </div>
                         <div class="flex items-center gap-2">
                           <img src="/images/icons/females.png" alt="" />
@@ -670,7 +727,7 @@
                       </div>
                       <!-- Center Week Schedules -->
                       <div
-                        class="flex flex-col mt-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -768,6 +825,17 @@
                             احجزي
                           </button>
                         </div>
+                      </div>
+                      <div class="flex items-start gap-2">
+                        <img
+                          src="/images/icons/doctor-female-staff.png"
+                          alt=""
+                          class="w-8"
+                        />
+                        <span class="text-sm text-gray-400">
+                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
+                          الحساب ثم اختيار قائمة الحجز
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -808,7 +876,29 @@
                           <span class="material-icons text-green-500"
                             >phone_iphone</span
                           >
-                          <span> 01234034230 </span>
+                          <div class="text-show-toggler">
+                            <label
+                              class="cursor-pointer btn-toggler"
+                              for="centerThreePhoneNumber"
+                              >اظهر بيانات الإتصال</label
+                            >
+                            <input
+                              hidden
+                              type="checkbox"
+                              name=""
+                              id="centerThreePhoneNumber"
+                            />
+                            <span class="text-to-toggle">01234034230</span>
+                          </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <span>
+                            برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
+                            مع الطاقم النسائي
+                          </span>
                         </div>
                         <div class="flex items-center gap-2">
                           <img src="/images/icons/females.png" alt="" />
@@ -819,7 +909,7 @@
                       </div>
                       <!-- Center Week Schedules -->
                       <div
-                        class="flex flex-col mt-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -917,54 +1007,17 @@
                             احجزي
                           </button>
                         </div>
-                        <!-- Schedule Item -->
-                        <div
-                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
-                        >
-                          <!-- Week Day -->
-                          <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
-                            >السبت</span
-                          >
-                          <!-- Day Schedules -->
-                          <div
-                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
-                          >
-                            <span>من 11 ص ل 4 م</span>
-                            و
-                            <span>من 11 ص ل 4 م</span>
-                          </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
-                        </div>
-                        <!-- Schedule Item -->
-                        <div
-                          class="flex items-center pt-3 p-2 gap-2 sm:!pt-2 border border-gray-500/50 rounded-md relative"
-                        >
-                          <!-- Week Day -->
-                          <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
-                            >السبت</span
-                          >
-                          <!-- Day Schedules -->
-                          <div
-                            class="flex-grow-1 flex gap-2 items-center justify-center text-sm"
-                          >
-                            <span>من 11 ص ل 4 م</span>
-                            و
-                            <span>من 11 ص ل 4 م</span>
-                          </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
-                        </div>
+                      </div>
+                      <div class="flex items-start gap-2">
+                        <img
+                          src="/images/icons/doctor-female-staff.png"
+                          alt=""
+                          class="w-8"
+                        />
+                        <span class="text-sm text-gray-400">
+                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
+                          الحساب ثم اختيار قائمة الحجز
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -991,86 +1044,106 @@
                     >
                       <!-- add class 'text-green-500' for the active one-->
                       <span class="text-green-500">القاهرة</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <!-- Government card -->
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span> الدقهلية</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span>القاهرة</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <!-- Government card -->
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span> الدقهلية</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span>القاهرة</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <!-- Government card -->
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span> الدقهلية</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span>القاهرة</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <!-- Government card -->
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span> الدقهلية</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span>القاهرة</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                     <!-- Government card -->
                     <button
                       class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
                     >
                       <span> الدقهلية</span>
-                      <span class="material-icons text-green-500"
-                        >arrow_back</span
-                      >
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
                     </button>
                   </div>
                 </div>
@@ -1835,7 +1908,7 @@
             <form class="flex justify-center gap-3 items-center">
               <button class="btn btn-green-500">تأكيد الحجز</button>
               <span
-                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500 btn-modal-toggler"
+                class="btn btn-outline-danger btn-modal-toggler"
                 data-target="modalConfrimReservation"
                 data-action="close"
               >

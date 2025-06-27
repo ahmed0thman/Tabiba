@@ -295,394 +295,802 @@
 
           <!-- Start Profile Page Content -->
           <div class="flex-grow-1 space-y-4">
-            <div class="accordion" id="accordionExample">
-              <!-- Reservation Card -->
-              <div class="accordion-item p-0 bg-transparent border-0">
-                <!-- Reservation Header -->
-                <h2
-                  class="accordion-header bg-white border-1 border-gray-200 rounded-2xl p-3"
-                  id="headingOne"
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs mb-10" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="Doctors-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Doctors"
+                  type="button"
+                  role="tab"
+                  aria-controls="Doctors"
+                  aria-selected="true"
                 >
-                  <button
-                    class="accordion-button m-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    <div
-                      class="flex items-center flex-grow-1 gap-2 text-sm sm:text-base"
+                  الطبيبات
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="Centers-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#Centers"
+                  type="button"
+                  role="tab"
+                  aria-controls="Centers"
+                  aria-selected="false"
+                >
+                  المراكز
+                </button>
+              </li>
+            </ul>
+
+            <!-- Tab Panes -->
+            <div class="tab-content">
+              <div
+                class="tab-pane active"
+                id="Doctors"
+                role="tabpanel"
+                aria-labelledby="Doctors-tab"
+              >
+                <div class="accordion" id="DoctorsReservationsAccordion">
+                  <!-- Reservation Card -->
+                  <div class="accordion-item p-0 bg-transparent border-0">
+                    <!-- Reservation Header -->
+                    <h2
+                      class="accordion-header bg-white border-1 border-gray-200 rounded-2xl p-3"
+                      id="headingOne"
                     >
-                      <span class="material-icons text-green-500"
-                        >calendar_month</span
+                      <button
+                        class="accordion-button m-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
                       >
-                      <span class="!text-start">15/6/2025 </span>
-                      <!-- Visible if reservation was canceled -->
-                      <span class="text-red-500 block !ms-auto"
-                        >تم الإلغاء</span
-                      >
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div
-                    class="accordion-body bg-white border-1 border-gray-200 rounded-2xl"
-                  >
-                    <div class="flex flex-col">
-                      <!-- Card Cover -->
-                      <img
-                        src="/images/Doctor-Banner.png"
-                        alt=""
-                        class="h-32"
-                      />
-                      <!-- Card Content -->
+                        <div
+                          class="flex items-center flex-grow-1 gap-2 text-sm sm:text-base"
+                        >
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <!-- If canceled add the "text-red-500" class-->
+                          <span class="!text-start text-red-500"
+                            >15/6/2025
+                          </span>
+                          <!-- Visible if reservation was canceled -->
+                          <span class="text-red-500 block !ms-auto"
+                            >تم الإلغاء</span
+                          >
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#DoctorsReservationsAccordion"
+                    >
                       <div
-                        class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-2 md:!px-6 md:!py-6"
+                        class="accordion-body bg-white border-1 border-gray-200 rounded-2xl"
                       >
-                        <h3 class="text-gray-700 font-semibold">
-                          تفاصيل الحجز
-                        </h3>
-                        <!-- Start Reservation Table Info -->
-                        <div class="space-y-3">
-                          <!-- Reservation Row -->
+                        <div class="flex flex-col">
+                          <!-- Card Cover -->
+                          <img
+                            src="/images/Doctor-Banner.png"
+                            alt=""
+                            class="h-32"
+                          />
+                          <!-- Card Content -->
                           <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                            class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-2 md:!px-6 md:!py-6"
                           >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img
-                                src="/images/icons/doctor-female.svg"
-                                alt=""
-                              />
-                              <span class="">اسم الطبيبة</span>
+                            <h3 class="text-gray-700 font-semibold">
+                              تفاصيل الحجز
+                            </h3>
+                            <!-- Start Reservation Table Info -->
+                            <div class="space-y-3">
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/doctor-female.svg"
+                                    alt=""
+                                  />
+                                  <span class="">اسم الطبيبة</span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  هدير سالم
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <span class=""> التخصص </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  استشاري طب النسا والتوليد
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/currency.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> سعر الكشف </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  560 جنية
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/date.svg" alt="" />
+                                  <span class=""> تاريخ الحجز </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  15/6/2025
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/location.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> نوع العيادة </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  عيادة خاصة
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/location.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> العنوان </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  المنصورة - شارع قناة السويس أعلى مركز النخبة
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <span class=""> أرقام التواصل </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  05024544545 - 010545151515
+                                </div>
+                              </div>
                             </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                            <!-- End Reservation Table Info -->
+                            <button
+                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                              data-target="modalCancelReservation"
                             >
-                              هدير سالم
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/gears.svg" alt="" />
-                              <span class=""> التخصص </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              استشاري طب النسا والتوليد
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/currency.svg" alt="" />
-                              <span class=""> سعر الكشف </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              560 جنية
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/date.svg" alt="" />
-                              <span class=""> تاريخ الحجز </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              15/6/2025
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/location.svg" alt="" />
-                              <span class=""> نوع العيادة </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              عيادة خاصة
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/location.svg" alt="" />
-                              <span class=""> العنوان </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              المنصورة - شارع قناة السويس أعلى مركز النخبة
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/phone.svg" alt="" />
-                              <span class=""> أرقام التواصل </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              05024544545 - 010545151515
-                            </div>
+                              إلغاء الحجز
+                            </button>
                           </div>
                         </div>
-                        <!-- End Reservation Table Info -->
-                        <button
-                          class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 bg-gray-400/20 text-red-500 hover:bg-gray-400/20 hover:text-red-500 btn-modal-toggler"
-                          data-target="modalCancelReservation"
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Reservation Card -->
+                  <div class="accordion-item p-0 bg-transparent border-0">
+                    <!-- Reservation Header -->
+                    <h2
+                      class="accordion-header bg-white border-1 border-gray-200 rounded-2xl p-3"
+                      id="headingTwo"
+                    >
+                      <button
+                        class="accordion-button m-0 collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        <div
+                          class="flex items-center flex-grow-1 gap-2 text-sm sm:text-base"
                         >
-                          إلغاء الحجز
-                        </button>
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <!-- If canceled add the "text-red-500" class-->
+                          <span class="!text-start">15/6/2025 </span>
+                          <!-- Visible if reservation was canceled "Remove the hidden class"-->
+                          <span class="hidden text-red-500 block !ms-auto"
+                            >تم الإلغاء</span
+                          >
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#DoctorsReservationsAccordion"
+                    >
+                      <div
+                        class="accordion-body bg-white border-1 border-gray-200 rounded-2xl"
+                      >
+                        <div class="flex flex-col">
+                          <!-- Card Cover -->
+                          <img
+                            src="/images/Doctor-Banner.png"
+                            alt=""
+                            class="h-32"
+                          />
+                          <!-- Card Content -->
+                          <div
+                            class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-2 md:!px-6 md:!py-6"
+                          >
+                            <h3 class="text-gray-700 font-semibold">
+                              تفاصيل الحجز
+                            </h3>
+                            <!-- Start Reservation Table Info -->
+                            <div class="space-y-3">
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/doctor-female.svg"
+                                    alt=""
+                                  />
+                                  <span class="">اسم الطبيبة</span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  هدير سالم
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <span class=""> التخصص </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  استشاري طب النسا والتوليد
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/currency.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> سعر الكشف </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  560 جنية
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/date.svg" alt="" />
+                                  <span class=""> تاريخ الحجز </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  15/6/2025
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/location.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> نوع العيادة </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  عيادة خاصة
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/location.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> العنوان </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  المنصورة - شارع قناة السويس أعلى مركز النخبة
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <span class=""> أرقام التواصل </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  05024544545 - 010545151515
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Reservation Table Info -->
+                            <button
+                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                              data-target="modalCancelReservation"
+                            >
+                              إلغاء الحجز
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Reservation Card -->
-              <div class="accordion-item p-0 bg-transparent border-0">
-                <!-- Reservation Header -->
-                <h2
-                  class="accordion-header bg-white border-1 border-gray-200 rounded-2xl p-3"
-                  id="headingTwo"
-                >
-                  <button
-                    class="accordion-button m-0 collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="true"
-                    aria-controls="collapseTwo"
-                  >
-                    <div
-                      class="flex items-center flex-grow-1 gap-2 text-sm sm:text-base"
+
+              <div
+                class="tab-pane"
+                id="Centers"
+                role="tabpanel"
+                aria-labelledby="Centers-tab"
+              >
+                <div class="accordion" id="CenterReservationsAccordion">
+                  <!-- Reservation Card -->
+                  <div class="accordion-item p-0 bg-transparent border-0">
+                    <!-- Reservation Header -->
+                    <h2
+                      class="accordion-header bg-white border-1 border-gray-200 rounded-2xl p-3"
+                      id="headingOne"
                     >
-                      <span class="material-icons text-green-500"
-                        >calendar_month</span
+                      <button
+                        class="accordion-button m-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
                       >
-                      <span class="!text-start">15/6/2025 </span>
-                      <!-- Visible if reservation was canceled "Remove the hidden class"-->
-                      <span class="hidden text-red-500 block !ms-auto"
-                        >تم الإلغاء</span
-                      >
-                    </div>
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div
-                    class="accordion-body bg-white border-1 border-gray-200 rounded-2xl"
-                  >
-                    <div class="flex flex-col">
-                      <!-- Card Cover -->
-                      <img
-                        src="/images/Doctor-Banner.png"
-                        alt=""
-                        class="h-32"
-                      />
-                      <!-- Card Content -->
+                        <div
+                          class="flex items-center flex-grow-1 gap-2 text-sm sm:text-base"
+                        >
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <!-- If canceled add the "text-red-500" class-->
+                          <span class="!text-start text-red-500"
+                            >15/6/2025
+                          </span>
+                          <!-- Visible if reservation was canceled -->
+                          <span class="text-red-500 block !ms-auto"
+                            >تم الإلغاء</span
+                          >
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#CenterReservationsAccordion"
+                    >
                       <div
-                        class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-2 md:!px-6 md:!py-6"
+                        class="accordion-body bg-white border-1 border-gray-200 rounded-2xl"
                       >
-                        <h3 class="text-gray-700 font-semibold">
-                          تفاصيل الحجز
-                        </h3>
-                        <!-- Start Reservation Table Info -->
-                        <div class="space-y-3">
-                          <!-- Reservation Row -->
+                        <div class="flex flex-col">
+                          <!-- Card Cover -->
+                          <img
+                            src="/images/Doctor-Banner.png"
+                            alt=""
+                            class="h-32"
+                          />
+                          <!-- Card Content -->
                           <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                            class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-2 md:!px-6 md:!py-6"
                           >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img
-                                src="/images/icons/doctor-female.svg"
-                                alt=""
-                              />
-                              <span class="">اسم الطبيبة</span>
+                            <h3 class="text-gray-700 font-semibold">
+                              تفاصيل الحجز
+                            </h3>
+                            <!-- Start Reservation Table Info -->
+                            <div class="space-y-3">
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/monitor_heart.svg"
+                                    alt=""
+                                  />
+                                  <span class="">اسم المركز</span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  كايرو سكان
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <span class=""> التخصص </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  اشعه
+                                </div>
+                              </div>
+
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/date.svg" alt="" />
+                                  <span class=""> تاريخ الحجز </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  15/6/2025
+                                </div>
+                              </div>
+
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/location.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> العنوان </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  المنصورة - شارع قناة السويس أعلى مركز النخبة
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <span class=""> أرقام التواصل </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  05024544545 - 010545151515
+                                </div>
+                              </div>
                             </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                            <!-- End Reservation Table Info -->
+                            <button
+                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                              data-target="modalCancelReservation"
                             >
-                              هدير سالم
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/gears.svg" alt="" />
-                              <span class=""> التخصص </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              استشاري طب النسا والتوليد
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/currency.svg" alt="" />
-                              <span class=""> سعر الكشف </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              560 جنية
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/date.svg" alt="" />
-                              <span class=""> تاريخ الحجز </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              15/6/2025
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/location.svg" alt="" />
-                              <span class=""> نوع العيادة </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              عيادة خاصة
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/location.svg" alt="" />
-                              <span class=""> العنوان </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              المنصورة - شارع قناة السويس أعلى مركز النخبة
-                            </div>
-                          </div>
-                          <!-- Reservation Row -->
-                          <div
-                            class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                          >
-                            <!-- Row Title -->
-                            <div
-                              class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                            >
-                              <img src="/images/icons/phone.svg" alt="" />
-                              <span class=""> أرقام التواصل </span>
-                            </div>
-                            <!-- Row Data  -->
-                            <div
-                              class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                            >
-                              05024544545 - 010545151515
-                            </div>
+                              إلغاء الحجز
+                            </button>
                           </div>
                         </div>
-                        <!-- End Reservation Table Info -->
-                        <button
-                          class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 bg-gray-400/20 text-red-500 hover:bg-gray-400/20 hover:text-red-500 btn-modal-toggler"
-                          data-target="modalCancelReservation"
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Reservation Card -->
+                  <div class="accordion-item p-0 bg-transparent border-0">
+                    <!-- Reservation Header -->
+                    <h2
+                      class="accordion-header bg-white border-1 border-gray-200 rounded-2xl p-3"
+                      id="headingTwo"
+                    >
+                      <button
+                        class="accordion-button m-0 collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        <div
+                          class="flex items-center flex-grow-1 gap-2 text-sm sm:text-base"
                         >
-                          إلغاء الحجز
-                        </button>
+                          <span class="material-icons text-green-500"
+                            >calendar_month</span
+                          >
+                          <!-- If canceled add the "text-red-500" class-->
+                          <span class="!text-start">15/6/2025 </span>
+                          <!-- Visible if reservation was canceled "Remove the hidden class"-->
+                          <span class="hidden text-red-500 block !ms-auto"
+                            >تم الإلغاء</span
+                          >
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#CenterReservationsAccordion"
+                    >
+                      <div
+                        class="accordion-body bg-white border-1 border-gray-200 rounded-2xl"
+                      >
+                        <div class="flex flex-col">
+                          <!-- Card Cover -->
+                          <img
+                            src="/images/Doctor-Banner.png"
+                            alt=""
+                            class="h-32"
+                          />
+                          <!-- Card Content -->
+                          <div
+                            class="card-content flex-grow-1 flex flex-col !gap-5 py-3 px-2 md:!px-6 md:!py-6"
+                          >
+                            <h3 class="text-gray-700 font-semibold">
+                              تفاصيل الحجز
+                            </h3>
+                            <!-- Start Reservation Table Info -->
+                            <div class="space-y-3">
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/monitor_heart.svg"
+                                    alt=""
+                                  />
+                                  <span class="">اسم المركز</span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  كايرو سكان
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <span class=""> التخصص </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  اشعه
+                                </div>
+                              </div>
+
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/date.svg" alt="" />
+                                  <span class=""> تاريخ الحجز </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  15/6/2025
+                                </div>
+                              </div>
+
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    src="/images/icons/location.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> العنوان </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  المنصورة - شارع قناة السويس أعلى مركز النخبة
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <span class=""> أرقام التواصل </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  05024544545 - 010545151515
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Reservation Table Info -->
+                            <button
+                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                              data-target="modalCancelReservation"
+                            >
+                              إلغاء الحجز
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -804,11 +1212,7 @@
           <div class="flex flex-col gap-3 items-center">
             <h3 class="text-xl font-bold">هل تريد الإلغاء؟</h3>
             <form action="" class="flex justify-center gap-3 items-center">
-              <button
-                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500"
-              >
-                تأكيد الإلغاء
-              </button>
+              <button class="btn btn-outline-danger">تأكيد الإلغاء</button>
               <span
                 class="btn btn-green-500 btn-modal-toggler"
                 data-target="modalCancelReservation"
@@ -837,7 +1241,7 @@
             >
               <button class="btn btn-green-500">نعم أريد</button>
               <span
-                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500 btn-modal-toggler"
+                class="btn btn-outline-green-500 btn-modal-toggler"
                 data-target="modalLogout"
                 data-action="close"
               >

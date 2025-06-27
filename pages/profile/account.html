@@ -348,12 +348,13 @@
                 </div>
                 <!-- Age input -->
                 <div class="form-group">
-                  <label for="age" class="form-label"> السن </label>
+                  <label for="userEmail" class="form-label">
+                    البريد الإلكتروني
+                  </label>
                   <input
-                    type="number"
-                    id="age"
-                    min="1"
-                    placeholder="السن"
+                    type="email"
+                    id="userEmail"
+                    placeholder="البريد الإلكتروني"
                     class="form-control rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200"
                   />
                 </div>
@@ -485,7 +486,7 @@
             >
               <button class="btn btn-green-500">نعم أريد</button>
               <span
-                class="btn bg-gray-500/20 text-red-500 hover:bg-gray-500/20 hover:text-red-500 btn-modal-toggler"
+                class="btn btn-outline-green-500 btn-modal-toggler"
                 data-target="modalLogout"
                 data-action="close"
               >

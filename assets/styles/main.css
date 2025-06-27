@@ -856,6 +856,7 @@
       color: #7b7b7b;
       border: 0 !important;
       margin: 0 !important;
+      padding-inline: 0 !important;
     }
 
     &:has(.active) {
@@ -863,6 +864,7 @@
 
       .nav-link {
         color: var(--color-pink-500);
+        background-color: transparent;
       }
     }
   }

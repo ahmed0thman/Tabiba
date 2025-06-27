@@ -175,6 +175,14 @@ button:not(.accordion-button, .nav-link) {
   background: transparent;
 }
 
+.btn-outline-danger,
+.btn-outline-danger:hover,
+.btn-outline-danger:active {
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  background: transparent;
+}
+
 .btn-outline-yellow-500,
 .btn-outline-yellow-500:hover,
 .btn-outline-yellow-500:active {
@@ -220,11 +228,11 @@ button:not(.accordion-button, .nav-link) {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   width: 2.5rem !important;
   height: 2.5rem !important;
   border-radius: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 8px 1px rgba(27, 27, 27, 0.36);
 
   &::after {
@@ -383,6 +391,21 @@ button:not(.accordion-button, .nav-link) {
       position: static;
       transform: none;
       padding: 0.75rem;
+    }
+  }
+}
+
+.text-show-toggler {
+  .text-to-toggle {
+    display: none;
+  }
+
+  &:has(input[type="checkbox"]:checked) {
+    .text-to-toggle {
+      display: inline;
+    }
+    .btn-toggler {
+      display: none;
     }
   }
 }
