@@ -2,4 +2,9 @@ html[dir="rtl"] {
   .tab-pane {
     direction: rtl;
   }
+
+  .material-icons,
+  .material-icons-outlined {
+    transform: rotateY(180deg);
+  }
 }
