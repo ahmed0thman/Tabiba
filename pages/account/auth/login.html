@@ -19,9 +19,9 @@
         <!-- image and qoute -->
         <div class="hidden sm:block relative md:px-8 lg:px-8 flex-1">
           <img
-            src="/images/nurseWithMask.png"
+            src="/images/ph1.png"
             alt=""
-            class="max-w-96 w-full mx-auto block"
+            class="max-h-96 object-contain w-full mx-auto block object-center"
           />
           <div
             class="qoute sm:text-base md:text-lg lg:text-2xl font-semibold !p-5 lg:!px-6 max-w-full sm:!leading-8 lg:!leading-10 border-3"
@@ -51,15 +51,17 @@
               <p class="fs-6 fw-light mt-2">الرجاء تسجيل الدخول هنا</p>
             </div>
 
-            <form class="form" action="/pages/account/auth/otp.html">
+            <form class="form" action="/pages/account/auth/signup.html">
               <div class="form-group">
-                <label class="form-label" for="phoneNumber"> رقم الهاتف</label>
+                <label class="form-label" for="phoneNumber"
+                  >رقم الهاتف او البريد الإلكتروني</label
+                >
                 <input
                   class="form-control"
-                  type="number"
+                  type="text"
                   id="phoneNumber"
                   name="phoneNumber"
-                  placeholder="01123456789"
+                  placeholder=""
                   required=""
                 />
               </div>
@@ -77,9 +79,6 @@
                   />
                 </div>
               </div>
-              <p class="text-gray-700 lg:text-lg font-medium mt-4">
-                سيتم إرسال رمز التحقيق على رقمك
-              </p>
 
               <div
                 class="d-flex flex-column justify-content-center gap-3 mt-4 !font-semibold"
@@ -87,11 +86,6 @@
                 <button class="btn btn-green-500 w-100 mt-3" type="submit">
                   دخول
                 </button>
-                <a
-                  class="btn text-gray-800 bg-gray-300 btn-outline-secondary"
-                  href="/pages/account/auth/signup.html"
-                  >إنشاء حساب جديد</a
-                >
               </div>
             </form>
           </div>
