@@ -3,8 +3,8 @@ html[dir="rtl"] {
     direction: rtl;
   }
 
-  .material-icons,
-  .material-icons-outlined {
+  .material-icons.mirror,
+  .material-icons-outlined.mirror {
     transform: rotateY(180deg);
   }
 }

@@ -13,6 +13,12 @@
       href="/assets/libs/star-rating/css/star-rating.min.css"
     />
     <link rel="stylesheet" href="/assets/libs/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/libs/flatpicker/flatpickr.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://npmcdn.com/flatpickr/dist/themes/material_green.css"
+    />
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <title>Tabiba</title>
   </head>
@@ -113,7 +119,7 @@
                     >
                       <span class="material-icons"> date_range </span>
 
-                      <p>الحجوزات</p>
+                      <p>قائمة الحجز</p>
                     </a>
                   </li>
                   <li>
@@ -289,6 +295,45 @@
                       <span class="text-gray-500">(4.7)</span>
                       <span class="material-icons text-yellow-400">star</span>
                     </div>
+                    <!-- Start Share Profile -->
+                    <div class="share-list !ms-auto">
+                      <span
+                        type="button"
+                        class="cursor-pointer dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="material-icons text-xl text-gray-500/90"
+                          >share</span
+                        >
+                      </span>
+                      <div class="dropdown-menu">
+                        <div class="dropdown-menu share-list-options">
+                          <span>
+                            <img src="/images/icons/social/copy.svg" alt="" />
+                          </span>
+                          <span>
+                            <img
+                              src="/images/icons/social/facebook.svg"
+                              alt=""
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src="/images/icons/social/instagram.svg"
+                              alt=""
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src="/images/icons/social/twitter-x.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Share Profile -->
                   </div>
                 </div>
               </div>
@@ -308,12 +353,22 @@
                     <p
                       class="text-gray-500 text-xs sm:text-sm leading-6 sm:leading-7"
                     >
-                      كايرو سكان للأشعة والتحاليل هي واحدة من أبرز المؤسسات
-                      الطبية الخاصة في مصر، تأسست عام 1983 بهدف إحداث نقلة نوعية
-                      في مجال الأشعة التشخيصية والتداخلية. تقدم كايرو سكان خدمات
-                      طبية متكاملة تشمل أحدث تقنيات التصوير الطبي والتحاليل
-                      المعملية، مع التركيز على الجودة والدقة في التشخيص تعتمد
-                      كايرو سكان على
+                      <span>
+                        كايرو سكان للأشعة والتحاليل هي واحدة من أبرز المؤسسات
+                        الطبية الخاصة في مصر، تأسست عام 1983 بهدف إحداث نقلة
+                        نوعية في مجال الأشعة التشخيصية والتداخلية. تقدم كايرو
+                        سكان خدمات طبية متكاملة تشمل أحدث تقنيات التصوير الطبي
+                        والتحاليل المعملية، مع التركيز على الجودة والدقة في
+                        التشخيص تعتمد كايرو سكان على كايرو سكان للأشعة والتحاليل
+                        هي واحدة من أبرز المؤسسات الطبية الخاصة في مصر، تأسست
+                        عام 1983 بهدف إحداث نقلة نوعية في مجال الأشعة التشخيصية
+                        والتداخلية. تقدم كايرو سكان خدمات طبية متكاملة تشمل أحدث
+                        تقنيات التصوير الطبي والتحاليل المعملية، مع التركيز على
+                        الجودة والدقة في التشخيص تعتمد كايرو سكان على
+                      </span>
+                      <span class="text-green-500 cursor-pointer">
+                        المزيد
+                      </span>
                     </p>
                   </div>
                   <!-- Card Rate and Comments -->
@@ -512,44 +567,22 @@
                     <div class="accordion-body">
                       <!-- Center Info -->
                       <div class="flex flex-col gap-3 text-sm sm:text-base">
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >phone_iphone</span
-                          >
-                          <div class="text-show-toggler">
-                            <label
-                              class="cursor-pointer btn-toggler"
-                              for="centerOnePhoneNumber"
-                              >اظهر بيانات الإتصال</label
-                            >
-                            <input
-                              hidden
-                              type="checkbox"
-                              name=""
-                              id="centerOnePhoneNumber"
-                            />
-                            <span class="text-to-toggle">01234034230</span>
-                          </div>
-                        </div>
                         <div class="flex items-start gap-2">
-                          <span class="material-icons text-green-500"
-                            >calendar_month</span
-                          >
+                          <img
+                            src="/images/icons/females.png"
+                            alt=""
+                            class="w-8"
+                          />
+
                           <span>
                             برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
                             مع الطاقم النسائي
                           </span>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <img src="/images/icons/females.png" alt="" />
-                          <span class="text-green-500">
-                            مواعيد الطاقم النسائي
-                          </span>
-                        </div>
                       </div>
                       <!-- Center Week Schedules -->
                       <div
-                        class="flex flex-col my-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 !gap-3 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -557,7 +590,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -568,12 +601,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -581,7 +608,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -592,12 +619,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -605,7 +626,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -616,12 +637,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -629,7 +644,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -640,25 +655,28 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                       </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          src="/images/icons/doctor-female-staff.png"
-                          alt=""
-                          class="w-8"
+                      <!-- Start Custome Datpicker -->
+                      <div class="relative flatpicker mb-3">
+                        <input
+                          type="text"
+                          placeholder="اختاري تاريخ الحجز"
+                          class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
+                          data-min-date="today"
+                          data-days-range="70"
+                          data-days-off="sunday,tuesday,friday"
+                          data-dates-off="2025-07-05,2025-07-23"
+                          name="date"
                         />
-                        <span class="text-sm text-gray-400">
-                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
-                          الحساب ثم اختيار قائمة الحجز
-                        </span>
                       </div>
+                      <!-- End Custome Datpicker -->
+                      <button
+                        class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler block !ms-auto"
+                        data-target="modalConfrimReservation"
+                      >
+                        احجزي
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -714,24 +732,21 @@
                           </div>
                         </div>
                         <div class="flex items-start gap-2">
-                          <span class="material-icons text-green-500"
-                            >calendar_month</span
-                          >
+                          <img
+                            src="/images/icons/females.png"
+                            alt=""
+                            class="w-8"
+                          />
+
                           <span>
                             برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
                             مع الطاقم النسائي
                           </span>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <img src="/images/icons/females.png" alt="" />
-                          <span class="text-green-500">
-                            مواعيد الطاقم النسائي
-                          </span>
-                        </div>
                       </div>
                       <!-- Center Week Schedules -->
                       <div
-                        class="flex flex-col my-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 !gap-3 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -739,7 +754,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -750,12 +765,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -763,7 +772,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -774,12 +783,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -787,7 +790,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -798,12 +801,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -811,7 +808,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -822,25 +819,28 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                       </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          src="/images/icons/doctor-female-staff.png"
-                          alt=""
-                          class="w-8"
+                      <!-- Start Custome Datpicker -->
+                      <div class="relative flatpicker mb-3">
+                        <input
+                          type="text"
+                          placeholder="اختاري تاريخ الحجز"
+                          class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
+                          data-min-date="today"
+                          data-days-range="70"
+                          data-days-off="sunday,tuesday,friday"
+                          data-dates-off="2025-07-05,2025-07-23"
+                          name="date"
                         />
-                        <span class="text-sm text-gray-400">
-                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
-                          الحساب ثم اختيار قائمة الحجز
-                        </span>
                       </div>
+                      <!-- End Custome Datpicker -->
+                      <button
+                        class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler block !ms-auto"
+                        data-target="modalConfrimReservation"
+                      >
+                        احجزي
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -896,24 +896,21 @@
                           </div>
                         </div>
                         <div class="flex items-start gap-2">
-                          <span class="material-icons text-green-500"
-                            >calendar_month</span
-                          >
+                          <img
+                            src="/images/icons/females.png"
+                            alt=""
+                            class="w-8"
+                          />
+
                           <span>
                             برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
                             مع الطاقم النسائي
                           </span>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <img src="/images/icons/females.png" alt="" />
-                          <span class="text-green-500">
-                            مواعيد الطاقم النسائي
-                          </span>
-                        </div>
                       </div>
                       <!-- Center Week Schedules -->
                       <div
-                        class="flex flex-col my-3 gap-3 sm:gap-1 md:max-h-72 py-2 overflow-y-auto"
+                        class="flex flex-col my-3 !gap-3 py-2 overflow-y-auto"
                       >
                         <!-- Schedule Item -->
                         <div
@@ -921,7 +918,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -932,12 +929,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -945,7 +936,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -956,12 +947,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -969,7 +954,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -980,12 +965,6 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                         <!-- Schedule Item -->
                         <div
@@ -993,7 +972,7 @@
                         >
                           <!-- Week Day -->
                           <span
-                            class="text-green-500 -translate-y-3 lg:translate-y-0 bg-white absolute top-0 px-2 lg:static lg:!px-0"
+                            class="text-green-500 -translate-y-3 bg-white absolute top-0 px-2 lg:!px-0"
                             >السبت</span
                           >
                           <!-- Day Schedules -->
@@ -1004,25 +983,28 @@
                             و
                             <span>من 11 ص ل 4 م</span>
                           </div>
-                          <button
-                            class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler"
-                            data-target="modalConfrimReservation"
-                          >
-                            احجزي
-                          </button>
                         </div>
                       </div>
-                      <div class="flex items-start gap-2">
-                        <img
-                          src="/images/icons/doctor-female-staff.png"
-                          alt=""
-                          class="w-8"
+                      <!-- Start Custome Datpicker -->
+                      <div class="relative flatpicker mb-3">
+                        <input
+                          type="text"
+                          placeholder="اختاري تاريخ الحجز"
+                          class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
+                          data-min-date="today"
+                          data-days-range="70"
+                          data-days-off="sunday,tuesday,friday"
+                          data-dates-off="2025-07-05,2025-07-23"
+                          name="date"
                         />
-                        <span class="text-sm text-gray-400">
-                          يمكنك الاطلاع علي تفاصيل الحجز من خلال الدخول علي
-                          الحساب ثم اختيار قائمة الحجز
-                        </span>
                       </div>
+                      <!-- End Custome Datpicker -->
+                      <button
+                        class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler block !ms-auto"
+                        data-target="modalConfrimReservation"
+                      >
+                        احجزي
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1161,9 +1143,15 @@
           <div
             class="col-span-10 md:col-start-1 md:col-span-5 row-start-7 md:row-span-2 lg:row-start-4 lg:row-span-2 lg:col-start-1 lg:col-span-6 mt-12"
           >
-            <h2 class="text-gray-700 text-xl font-medium mb-3">
-              الخدمات المقدمة
-            </h2>
+            <div class="flex items-center gap-2 justify-between mb-3">
+              <h2 class="text-gray-700 text-xl font-medium">الخدمات المقدمة</h2>
+              <!-- search input -->
+              <input
+                type="text"
+                class="border border-gray-200 rounded-md text-sm"
+                placeholder="ابحث هنا..."
+              />
+            </div>
             <!-- Nav tabs -->
             <div class="bg-white rounded-[1.2rem]">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -1237,9 +1225,15 @@
           <div
             class="col-span-10 md:col-start-6 md:col-span-5 row-start-9 md:row-span-1 lg:row-start-6 lg:row-span-1 lg:col-start-1 lg:col-span-6 mt-8"
           >
-            <h2 class="text-gray-700 text-xl font-medium mb-3">
-              شركات التأمين
-            </h2>
+            <div class="flex items-center gap-2 justify-between mb-3">
+              <h2 class="text-gray-700 text-xl font-medium">شركات التأمين</h2>
+              <!-- search input -->
+              <input
+                type="text"
+                class="border border-gray-200 rounded-md text-sm"
+                placeholder="ابحث هنا..."
+              />
+            </div>
 
             <div class="bg-white rounded-[1.2rem] py-3 contractors-swiper">
               <div id="contractors" class="swiper">
@@ -1899,7 +1893,7 @@
 
     <!-- Modal form confirm reservation -->
     <div id="modalConfrimReservation" class="modal">
-      <div class="modal-view p-4 flex flex-col">
+      <div class="modal-view p-4 flex flex-col overflow-visible">
         <button
           data-target="modalConfrimReservation"
           data-action="close"
@@ -1909,15 +1903,18 @@
           <img src="/images/icons/success.png" alt="" />
           <div class="flex flex-col gap-3 items-center">
             <h3 class="text-xl font-bold">قومي بتأكيد الحجز الان!</h3>
-            <form class="flex justify-center gap-3 items-center">
-              <button class="btn btn-green-500">تأكيد الحجز</button>
-              <span
-                class="btn btn-outline-danger btn-modal-toggler"
-                data-target="modalConfrimReservation"
-                data-action="close"
-              >
-                إلغاء الحجز
-              </span>
+
+            <form class="">
+              <div class="flex items-center justify-between gap-3">
+                <button class="btn btn-green-500">تأكيد الحجز</button>
+                <span
+                  class="btn btn-outline-green-500 btn-modal-toggler"
+                  data-target="modalConfrimReservation"
+                  data-action="close"
+                >
+                  إلغاء الحجز
+                </span>
+              </div>
             </form>
           </div>
         </div>
@@ -1965,9 +1962,12 @@
 
     <script type="module" src="/main.js"></script>
     <script src="/assets/libs/swiper/swiper.min.js"></script>
+    <script src="/assets/libs/flatpicker/flatpickr.min.js"></script>
+    <script src="/assets/libs/flatpicker/ar.js"></script>
     <script src="/assets/libs/star-rating/star-rating.min.js"></script>
     <script type="module" src="/js/imageGallery.js"></script>
     <script type="module" src="/js/contractor.js"></script>
     <script type="module" src="/js/addRate.js"></script>
+    <script type="module" src="/js/flatpicker.js"></script>
   </body>
 </html>

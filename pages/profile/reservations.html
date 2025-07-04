@@ -108,7 +108,7 @@
                     >
                       <span class="material-icons"> date_range </span>
 
-                      <p>الحجوزات</p>
+                      <p>قائمة الحجز</p>
                     </a>
                   </li>
                   <li>
@@ -275,7 +275,7 @@
                 href="/pages/profile/reservations.html"
                 class="btn text-gray-500 btn-green-500 hover:text-gray-500 w-full rounded-xl p-y-2 font-medium"
               >
-                الحجوزات
+                قائمة الحجز
               </a>
               <!-- page link -->
               <!-- add the "btn-green-500" class for the active page link -->
@@ -333,6 +333,7 @@
 
             <!-- Tab Panes -->
             <div class="tab-content">
+              <!-- Doctors Reservations Tab -->
               <div
                 class="tab-pane active"
                 id="Doctors"
@@ -406,6 +407,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/doctor-female.svg"
                                     alt=""
                                   />
@@ -426,7 +428,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/gears.svg"
+                                    alt=""
+                                  />
                                   <span class=""> التخصص </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -445,6 +451,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/currency.svg"
                                     alt=""
                                   />
@@ -465,7 +472,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/date.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/date.svg"
+                                    alt=""
+                                  />
                                   <span class=""> تاريخ الحجز </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -475,6 +486,7 @@
                                   15/6/2025
                                 </div>
                               </div>
+
                               <!-- Reservation Row -->
                               <div
                                 class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
@@ -484,27 +496,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
-                                    src="/images/icons/location.svg"
-                                    alt=""
-                                  />
-                                  <span class=""> نوع العيادة </span>
-                                </div>
-                                <!-- Row Data  -->
-                                <div
-                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                                >
-                                  عيادة خاصة
-                                </div>
-                              </div>
-                              <!-- Reservation Row -->
-                              <div
-                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                              >
-                                <!-- Row Title -->
-                                <div
-                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                                >
-                                  <img
+                                    class="w-7"
                                     src="/images/icons/location.svg"
                                     alt=""
                                   />
@@ -525,7 +517,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/phone.svg"
+                                    alt=""
+                                  />
                                   <span class=""> أرقام التواصل </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -537,12 +533,20 @@
                               </div>
                             </div>
                             <!-- End Reservation Table Info -->
-                            <button
-                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
-                              data-target="modalCancelReservation"
-                            >
-                              إلغاء الحجز
-                            </button>
+                            <div class="flex items-center gap-2 justify-end">
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                إلغاء الحجز
+                              </button>
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-green-500 btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                تعديل
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -612,6 +616,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/doctor-female.svg"
                                     alt=""
                                   />
@@ -632,7 +637,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/gears.svg"
+                                    alt=""
+                                  />
                                   <span class=""> التخصص </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -651,6 +660,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/currency.svg"
                                     alt=""
                                   />
@@ -671,7 +681,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/date.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/date.svg"
+                                    alt=""
+                                  />
                                   <span class=""> تاريخ الحجز </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -681,6 +695,7 @@
                                   15/6/2025
                                 </div>
                               </div>
+
                               <!-- Reservation Row -->
                               <div
                                 class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
@@ -690,27 +705,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
-                                    src="/images/icons/location.svg"
-                                    alt=""
-                                  />
-                                  <span class=""> نوع العيادة </span>
-                                </div>
-                                <!-- Row Data  -->
-                                <div
-                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
-                                >
-                                  عيادة خاصة
-                                </div>
-                              </div>
-                              <!-- Reservation Row -->
-                              <div
-                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
-                              >
-                                <!-- Row Title -->
-                                <div
-                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
-                                >
-                                  <img
+                                    class="w-7"
                                     src="/images/icons/location.svg"
                                     alt=""
                                   />
@@ -731,7 +726,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/phone.svg"
+                                    alt=""
+                                  />
                                   <span class=""> أرقام التواصل </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -743,12 +742,20 @@
                               </div>
                             </div>
                             <!-- End Reservation Table Info -->
-                            <button
-                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
-                              data-target="modalCancelReservation"
-                            >
-                              إلغاء الحجز
-                            </button>
+                            <div class="flex items-center gap-2 justify-end">
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                إلغاء الحجز
+                              </button>
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-green-500 btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                تعديل
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -757,6 +764,7 @@
                 </div>
               </div>
 
+              <!-- Centers Reservations Tab -->
               <div
                 class="tab-pane"
                 id="Centers"
@@ -830,6 +838,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/monitor_heart.svg"
                                     alt=""
                                   />
@@ -850,7 +859,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/gears.svg"
+                                    alt=""
+                                  />
                                   <span class=""> التخصص </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -869,7 +882,34 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/date.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/services.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> نوع الخدمه </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  اشعه
+                                </div>
+                              </div>
+
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/date.svg"
+                                    alt=""
+                                  />
                                   <span class=""> تاريخ الحجز </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -889,6 +929,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/location.svg"
                                     alt=""
                                   />
@@ -909,7 +950,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/phone.svg"
+                                    alt=""
+                                  />
                                   <span class=""> أرقام التواصل </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -921,12 +966,20 @@
                               </div>
                             </div>
                             <!-- End Reservation Table Info -->
-                            <button
-                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
-                              data-target="modalCancelReservation"
-                            >
-                              إلغاء الحجز
-                            </button>
+                            <div class="flex items-center gap-2 justify-end">
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                إلغاء الحجز
+                              </button>
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-green-500 btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                تعديل
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -996,6 +1049,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/monitor_heart.svg"
                                     alt=""
                                   />
@@ -1016,8 +1070,34 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/gears.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/gears.svg"
+                                    alt=""
+                                  />
                                   <span class=""> التخصص </span>
+                                </div>
+                                <!-- Row Data  -->
+                                <div
+                                  class="col-span-7 sm:col-span-6 lg:col-span-7 xl:col-span-8 text-gray-700 font-medium"
+                                >
+                                  اشعه
+                                </div>
+                              </div>
+                              <!-- Reservation Row -->
+                              <div
+                                class="grid grid-cols-12 sm:grid-cols-10 text-gray-500 text-sm sm:text-base font-medium gap-1 sm:gap-3 items-center"
+                              >
+                                <!-- Row Title -->
+                                <div
+                                  class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
+                                >
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/services.svg"
+                                    alt=""
+                                  />
+                                  <span class=""> نوع الخدمه </span>
                                 </div>
                                 <!-- Row Data  -->
                                 <div
@@ -1035,7 +1115,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/date.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/date.svg"
+                                    alt=""
+                                  />
                                   <span class=""> تاريخ الحجز </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -1055,6 +1139,7 @@
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
                                   <img
+                                    class="w-7"
                                     src="/images/icons/location.svg"
                                     alt=""
                                   />
@@ -1075,7 +1160,11 @@
                                 <div
                                   class="col-span-5 sm:col-span-4 lg:col-span-3 xl:col-span-2 flex items-center gap-3"
                                 >
-                                  <img src="/images/icons/phone.svg" alt="" />
+                                  <img
+                                    class="w-7"
+                                    src="/images/icons/phone.svg"
+                                    alt=""
+                                  />
                                   <span class=""> أرقام التواصل </span>
                                 </div>
                                 <!-- Row Data  -->
@@ -1087,12 +1176,20 @@
                               </div>
                             </div>
                             <!-- End Reservation Table Info -->
-                            <button
-                              class="btn block !ms-auto font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
-                              data-target="modalCancelReservation"
-                            >
-                              إلغاء الحجز
-                            </button>
+                            <div class="flex items-center gap-2 justify-end">
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-danger btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                إلغاء الحجز
+                              </button>
+                              <button
+                                class="btn block font-semibold rounded-xl pt-2 !px-3 btn-outline-green-500 btn-modal-toggler"
+                                data-target="modalCancelReservation"
+                              >
+                                تعديل
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -108,7 +108,7 @@
                     >
                       <span class="material-icons"> date_range </span>
 
-                      <p>الحجوزات</p>
+                      <p>قائمة الحجز</p>
                     </a>
                   </li>
                   <li>
@@ -290,27 +290,6 @@
               <!-- Article Content -->
               <div class="p-3 mb-6 space-y-5">
                 <!-- Article Header -->
-                <!-- Article Title -->
-                <div class="flex justify-between items-start gap-1">
-                  <h3
-                    class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
-                  >
-                    ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
-                  </h3>
-                  <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
-                  <span
-                    class="material-icons text-gray-500 text-2l md:text-3xl"
-                  >
-                    bookmark_border
-                  </span>
-                  <!-- visible if Article was Saved to Favorites "use the hidden class"-->
-                  <span
-                    class="hidden material-icons text-pink-500 text-xl md:text-3xl"
-                  >
-                    bookmark
-                  </span>
-                </div>
-
                 <!-- Article Auther and date -->
                 <div class="flex gap-3 items-center flex-wrap">
                   <img
@@ -319,9 +298,9 @@
                     class="rounded-full w-12"
                   />
 
-                  <div class="flex flex-col gap-1 flex-grow-1 text-sm">
+                  <div class="flex flex-col gap-1 flex-grow-1">
                     <!-- Auther name -->
-                    <p class="font-medium flex items-center gap-2">
+                    <p class="font-medium flex items-center gap-2 text-sm">
                       <span class="text-gray-500">الكاتب</span>
                       <span class="text-gray-700">هدير سالم</span>
                     </p>
@@ -332,42 +311,72 @@
                     </p>
                   </div>
 
-                  <!-- Start Share Article -->
-                  <div class="share-list !ms-auto">
-                    <span
-                      type="button"
-                      class="border border-gray-300 text-gray-500 rounded-lg py-2 px-3 flex items-center gap-2 cursor-pointer dropdown-toggle"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span class="material-icons">share</span>
-                      <span class="text-sm">مشاركة</span>
-                    </span>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-menu share-list-options">
-                        <span>
-                          <img src="/images/icons/social/copy.svg" alt="" />
-                        </span>
-                        <span>
-                          <img src="/images/icons/social/facebook.svg" alt="" />
-                        </span>
-                        <span>
-                          <img
-                            src="/images/icons/social/instagram.svg"
-                            alt=""
-                          />
-                        </span>
-                        <span>
-                          <img
-                            src="/images/icons/social/twitter-x.svg"
-                            alt=""
-                          />
-                        </span>
+                  <div class="flex items-center gap-1">
+                    <!-- Start Share Article -->
+                    <div class="share-list !ms-auto">
+                      <button
+                        type="button"
+                        class="md:border border-gray-300 text-gray-500 rounded-lg md:py-1 md:px-3 flex items-center gap-1 cursor-pointer dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="material-icons text-3xl md:text-xl"
+                          >share</span
+                        >
+                        <span class="text-sm hidden md:block">مشاركة</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <div class="dropdown-menu share-list-options">
+                          <span>
+                            <img src="/images/icons/social/copy.svg" alt="" />
+                          </span>
+                          <span>
+                            <img
+                              src="/images/icons/social/facebook.svg"
+                              alt=""
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src="/images/icons/social/instagram.svg"
+                              alt=""
+                            />
+                          </span>
+                          <span>
+                            <img
+                              src="/images/icons/social/twitter-x.svg"
+                              alt=""
+                            />
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- End Share Article -->
+                    <!-- End Share Article -->
+
+                    <!-- Start Articel Save -->
+                    <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                    <span
+                      class="material-icons text-gray-500 text-2l md:text-3xl cursor-pointer"
+                    >
+                      bookmark_border
+                    </span>
+                    <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                    <span
+                      class="hidden material-icons text-pink-500 text-xl md:text-3xl"
+                    >
+                      bookmark
+                    </span>
+                    <!-- End Articel Save -->
+                  </div>
+                </div>
+                <!-- Article Title -->
+                <div class="flex justify-between items-start gap-1">
+                  <h3
+                    class="text-gray-700 font-medium sm:text-xl md:text-lg lg:text-xl xl:text-2xl md:font-semibold"
+                  >
+                    ما الذي يسبب ظهور الحبوب المفاجئة على البشرة؟
+                  </h3>
                 </div>
 
                 <!-- Article Image -->
@@ -557,14 +566,6 @@
 
               <!-- Start Comments -->
               <div class="flex flex-col !gap-5 px-3 py-3">
-                <!-- Filter and Sort Comments -->
-                <select
-                  type="text"
-                  id=""
-                  class="flex-2 form-select rounded-lg border border-gray-500 text-gray-600 font-normal focus:ring-0 focus:shadow-sm shadow-green-200/50 focus:border-gray-500 placeholder:text-gray-200 w-52"
-                >
-                  <option value="1">الشائعة</option>
-                </select>
                 <!-- Comment Item -->
                 <div class="space-y-1">
                   <!-- Comment Card -->
