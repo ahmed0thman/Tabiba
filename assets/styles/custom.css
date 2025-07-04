@@ -809,7 +809,7 @@ button:not(.accordion-button, .nav-link) {
   flex-direction: column;
 
   @media (max-width: 440px) {
-    scale: 0.8;
+    scale: 0.9;
     top: auto !important;
     translate: 50% -50%;
     inset-inline-end: 50% !important;
