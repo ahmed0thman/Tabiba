@@ -657,20 +657,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Start Custome Datpicker -->
-                      <div class="relative flatpicker mb-3">
-                        <input
-                          type="text"
-                          placeholder="اختاري تاريخ الحجز"
-                          class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
-                          data-min-date="today"
-                          data-days-range="70"
-                          data-days-off="sunday,tuesday,friday"
-                          data-dates-off="2025-07-05,2025-07-23"
-                          name="date"
-                        />
-                      </div>
-                      <!-- End Custome Datpicker -->
+
                       <button
                         class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler block !ms-auto"
                         data-target="modalConfrimReservation"
@@ -802,20 +789,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Start Custome Datpicker -->
-                      <div class="relative flatpicker mb-3">
-                        <input
-                          type="text"
-                          placeholder="اختاري تاريخ الحجز"
-                          class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
-                          data-min-date="today"
-                          data-days-range="70"
-                          data-days-off="sunday,tuesday,friday"
-                          data-dates-off="2025-07-05,2025-07-23"
-                          name="date"
-                        />
-                      </div>
-                      <!-- End Custome Datpicker -->
+
                       <button
                         class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler block !ms-auto"
                         data-target="modalConfrimReservation"
@@ -947,20 +921,7 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Start Custome Datpicker -->
-                      <div class="relative flatpicker mb-3">
-                        <input
-                          type="text"
-                          placeholder="اختاري تاريخ الحجز"
-                          class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
-                          data-min-date="today"
-                          data-days-range="70"
-                          data-days-off="sunday,tuesday,friday"
-                          data-dates-off="2025-07-05,2025-07-23"
-                          name="date"
-                        />
-                      </div>
-                      <!-- End Custome Datpicker -->
+
                       <button
                         class="btn btn-green-500 px-3 sm:!px-4 py-1 text-sm font-semibold btn-modal-toggler block !ms-auto"
                         data-target="modalConfrimReservation"
@@ -1731,13 +1692,38 @@
           class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto"
         ></button>
         <div class="flex flex-col items-center gap-6">
-          <img src="/images/icons/success.png" alt="" />
+          <img class="h-28" src="/images/ph3.png" alt="" />
           <div class="flex flex-col gap-3 items-center">
             <h3 class="text-xl font-bold">قومي بتأكيد الحجز الان!</h3>
 
-            <form class="">
+            <form class="" onsubmit="event.preventDefault()">
+              <!-- Start Custome Datpicker -->
+              <div class="relative flatpicker mb-3">
+                <input
+                  type="text"
+                  placeholder="اختاري تاريخ الحجز"
+                  class="flatpickerinput border border-gray-500 rounded-lg text-sm text-stone-600"
+                  data-min-date="today"
+                  data-days-range="70"
+                  data-days-off="sunday,tuesday,friday"
+                  data-dates-off="2025-07-05,2025-07-23"
+                  name="date"
+                />
+              </div>
+              <!-- End Custome Datpicker -->
               <div class="flex items-center justify-between gap-3">
-                <button class="btn btn-green-500">تأكيد الحجز</button>
+                <span
+                  class="btn-modal-toggler"
+                  data-target="modalReservationSuccess"
+                >
+                  <button
+                    class="btn btn-green-500 btn-modal-toggler"
+                    data-target="modalConfrimReservation"
+                    data-action="close"
+                  >
+                    تأكيد الحجز
+                  </button>
+                </span>
                 <span
                   class="btn btn-outline-green-500 btn-modal-toggler"
                   data-target="modalConfrimReservation"
@@ -1747,6 +1733,38 @@
                 </span>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal reservation Success -->
+    <div id="modalReservationSuccess" class="modal">
+      <div class="modal-view p-4 flex flex-col overflow-visible">
+        <button
+          data-target="modalReservationSuccess"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto"
+        ></button>
+        <div class="flex flex-col items-center gap-6">
+          <img class="h-28" src="/images/icons/success.png" alt="" />
+          <div class="flex flex-col gap-3 items-center">
+            <h3 class="text-xl font-bold">تم تأكيد الحجز بنجاح</h3>
+            <div class="flex items-center justify-between gap-3">
+              <a
+                href="/pages/profile/reservations.html"
+                class="btn btn-green-500"
+              >
+                عرض تافصيل الحجز
+              </a>
+              <span
+                class="btn btn-outline-green-500 btn-modal-toggler"
+                data-target="modalReservationSuccess"
+                data-action="close"
+              >
+                إغلاق
+              </span>
+            </div>
           </div>
         </div>
       </div>
