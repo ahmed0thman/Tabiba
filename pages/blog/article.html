@@ -286,7 +286,7 @@
         <div class="flex gap-4 mt-6 relative">
           <!-- Start Atricle -->
           <div class="flex-grow-1 w-10/12 space-y-4 px-3 sm:px-0">
-            <div class="bg-white rounded-md">
+            <div class="bg-white rounded-md !pt-5 sm:!pt-0 relative">
               <!-- Article Content -->
               <div class="p-3 mb-6 space-y-5">
                 <!-- Article Header -->
@@ -311,7 +311,9 @@
                     </p>
                   </div>
 
-                  <div class="flex items-center gap-1">
+                  <div
+                    class="flex items-center gap-1 absolute top-2 end-2 sm:static"
+                  >
                     <!-- Start Share Article -->
                     <div class="share-list !ms-auto">
                       <button
@@ -320,13 +322,13 @@
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        <span class="material-icons text-3xl md:text-xl"
+                        <span class="material-icons text-2xl md:text-xl"
                           >share</span
                         >
                         <span class="text-sm hidden md:block">مشاركة</span>
                       </button>
                       <div class="dropdown-menu">
-                        <div class="dropdown-menu share-list-options">
+                        <div class="share-list-options">
                           <span>
                             <img src="/images/icons/social/copy.svg" alt="" />
                           </span>

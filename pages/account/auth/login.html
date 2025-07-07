@@ -51,19 +51,83 @@
               <p class="fs-6 fw-light mt-2">الرجاء تسجيل الدخول هنا</p>
             </div>
 
-            <form class="form" action="/pages/account/auth/signup.html">
-              <div class="form-group">
-                <label class="form-label" for="phoneNumber"
-                  >رقم الهاتف او البريد الإلكتروني</label
-                >
-                <input
-                  class="form-control"
-                  type="text"
+            <form class="form mt-2" action="/pages/account/auth/signup.html">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs loginTab" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="phoneNumber-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#phoneNumber"
+                    type="button"
+                    role="tab"
+                    aria-controls="phoneNumber"
+                    aria-selected="true"
+                  >
+                    <span class="material-icons text-lg">phone</span>
+                    <span> الهاتف</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="email-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#email"
+                    type="button"
+                    role="tab"
+                    aria-controls="email"
+                    aria-selected="false"
+                  >
+                    <span class="material-icons text-lg">mail</span>
+                    البريد
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content pt-4">
+                <div
+                  class="tab-pane active"
                   id="phoneNumber"
-                  name="phoneNumber"
-                  placeholder=""
-                  required=""
-                />
+                  role="tabpanel"
+                  aria-labelledby="phoneNumber-tab"
+                >
+                  <div class="form-group">
+                    <label class="form-label" for="phoneNumber">
+                      رقم الهاتف (واتساب)
+                    </label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="email"
+                  role="tabpanel"
+                  aria-labelledby="email-tab"
+                >
+                  <div class="form-group">
+                    <label class="form-label" for="phoneNumber">
+                      البريد الإلكتروني
+                    </label>
+                    <input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
               </div>
 
               <div class="d-flex justify-content-between align-items-center">

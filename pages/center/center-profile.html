@@ -534,22 +534,6 @@
             </div>
             <!-- Centers Accordion -->
             <div class="flex-1 lg:mt-8">
-              <!-- Start Filter and Search branches -->
-              <div class="!p-3 bg-white rounded-full mb-3 scale-90">
-                <form action="" class="d-flex gap-1 gap-lg-3">
-                  <div class="filter bg-gray-100 rounded-full">
-                    <select name="" id="" class="bg-transparent flex-1">
-                      <option value="0">المحافظة</option>
-                    </select>
-                    <select name="" id="" class="bg-transparent flex-1">
-                      <option value="0">المنطقة</option>
-                    </select>
-                  </div>
-                  <button class="btn btn-green-500 rounded-full">بحث</button>
-                </form>
-              </div>
-              <!-- End Filter and Search branches -->
-
               <!-- Centers Accordion -->
               <div class="accordion" id="accordionExample">
                 <!-- Center Element -->
@@ -590,7 +574,7 @@
                             class="w-8"
                           />
 
-                          <span>
+                          <span class="text-gray-400 text-sm">
                             برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
                             مع الطاقم النسائي
                           </span>
@@ -741,7 +725,7 @@
                             class="w-8"
                           />
 
-                          <span>
+                          <span class="text-gray-400 text-sm">
                             برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
                             مع الطاقم النسائي
                           </span>
@@ -892,7 +876,7 @@
                             class="w-8"
                           />
 
-                          <span>
+                          <span class="text-gray-400 text-sm">
                             برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
                             مع الطاقم النسائي
                           </span>
@@ -989,7 +973,7 @@
             </div>
 
             <!-- Governments Locations -->
-            <div class="hidden flex-grow-1 mt-3 lg:!mt-1">
+            <div class="flex-grow-1 mt-3 lg:!mt-1">
               <h2 class="text-gray-700 text-xl font-medium mb-3">عناوينا</h2>
               <div
                 class="flex-grow-1 bg-white border border-gray-200 rounded-[1.2rem] overflow-hidden"
@@ -1003,7 +987,34 @@
                   >
                     <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
+                    >
+                      <!-- add class 'text-green-500' for the active one-->
+                      <span class="">القاهرة</span>
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
+                    </button>
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
+                    >
+                      <span> الدقهلية</span>
+                      <img
+                        src="/images/icons/external-link.svg"
+                        alt=""
+                        class="w-4"
+                      />
+                    </button>
+
+                    <!-- Government card -->
+                    <button
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
                       <!-- add class 'text-green-500' for the active one-->
                       <span class="text-green-500">القاهرة</span>
@@ -1015,7 +1026,8 @@
                     </button>
                     <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
                       <span> الدقهلية</span>
                       <img
@@ -1024,10 +1036,14 @@
                         class="w-4"
                       />
                     </button>
+
+                    <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
-                      <span>القاهرة</span>
+                      <!-- add class 'text-green-500' for the active one-->
+                      <span class="">القاهرة</span>
                       <img
                         src="/images/icons/external-link.svg"
                         alt=""
@@ -1036,7 +1052,8 @@
                     </button>
                     <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
                       <span> الدقهلية</span>
                       <img
@@ -1045,10 +1062,14 @@
                         class="w-4"
                       />
                     </button>
+
+                    <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
-                      <span>القاهرة</span>
+                      <!-- add class 'text-green-500' for the active one-->
+                      <span class="">القاهرة</span>
                       <img
                         src="/images/icons/external-link.svg"
                         alt=""
@@ -1057,7 +1078,8 @@
                     </button>
                     <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
                       <span> الدقهلية</span>
                       <img
@@ -1066,10 +1088,14 @@
                         class="w-4"
                       />
                     </button>
+
+                    <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
-                      <span>القاهرة</span>
+                      <!-- add class 'text-green-500' for the active one-->
+                      <span class="">القاهرة</span>
                       <img
                         src="/images/icons/external-link.svg"
                         alt=""
@@ -1078,7 +1104,8 @@
                     </button>
                     <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
                       <span> الدقهلية</span>
                       <img
@@ -1087,10 +1114,14 @@
                         class="w-4"
                       />
                     </button>
+
+                    <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
-                      <span>القاهرة</span>
+                      <!-- add class 'text-green-500' for the active one-->
+                      <span class="">القاهرة</span>
                       <img
                         src="/images/icons/external-link.svg"
                         alt=""
@@ -1099,7 +1130,8 @@
                     </button>
                     <!-- Government card -->
                     <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3"
+                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                      data-target="ModalSelectArea"
                     >
                       <span> الدقهلية</span>
                       <img
@@ -1877,7 +1909,11 @@
           class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto"
         ></button>
         <div class="flex flex-col items-center gap-6">
-          <img class="h-28" src="/images/ph3.png" alt="" />
+          <img
+            class="h-28"
+            src="/images/icons/doctor-female-staff.png"
+            alt=""
+          />
           <div class="flex flex-col gap-3 items-center">
             <h3 class="text-xl font-bold">قومي بتأكيد الحجز الان!</h3>
 
@@ -1900,7 +1936,7 @@
               <div class="flex items-center gap-3">
                 <span> نوع الخدمة : </span>
                 <span class="btn-option-radion">
-                  <input type="radio" name="serviceType" id="radiology" />
+                  <input type="checkbox" name="serviceType" id="radiology" />
                   <label
                     class="text-gray-500 text-sm font-medium"
                     for="radiology"
@@ -1909,7 +1945,7 @@
                   </label>
                 </span>
                 <span class="btn-option-radion">
-                  <input type="radio" name="serviceType" id="analysis" />
+                  <input type="checkbox" name="serviceType" id="analysis" />
                   <label
                     class="text-gray-500 text-sm font-medium"
                     for="analysis"
@@ -1971,6 +2007,169 @@
               >
                 إغلاق
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Select Area Location -->
+    <div id="ModalSelectArea" class="modal" data-behavior="closable">
+      <div class="modal-view w-11/12 max-w-[440px] p-4 flex flex-col relative">
+        <button
+          data-target="ModalSelectArea"
+          data-action="close"
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 absolute !end-3"
+        ></button>
+        <!-- Areas Locations -->
+        <div class="flex-grow-1 mt-3 lg:!mt-1">
+          <h2 class="text-gray-700 text-xl font-medium mb-3">اختاري منطقة</h2>
+          <div class="flex-grow-1 bg-whit rounded-[1.2rem] overflow-hidden">
+            <!-- Areas -->
+            <div class="overflow-y-auto max-h-[17rem] my-3 p-2 sm:!p-4">
+              <div class="grid grid-cols-2 gap-2">
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <!-- add class 'text-green-500' for the active one-->
+                  <span class="text-green-500">المهندسين</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">المعادي</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">الدقي</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">مدينة نصر</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">الزمالك</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">مصر الجديدة</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">الهرم</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">حلوان</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">شبرا</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+                <!-- Area card -->
+                <button
+                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
+                  data-target="ModalSelectArea"
+                  data-action="close"
+                  data-behavior="closable"
+                >
+                  <span class="">السلام</span>
+                  <img
+                    src="/images/icons/external-link.svg"
+                    alt=""
+                    class="w-4"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>

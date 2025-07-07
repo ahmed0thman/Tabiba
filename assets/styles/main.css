@@ -1136,4 +1136,34 @@
     }
   }
 }
+
+.nav.nav-tabs.loginTab {
+  border: 2px solid var(--color-green-500);
+  border-radius: 10rem;
+  overflow: hidden;
+  width: 12rem;
+  margin: 0 auto;
+  .nav-item {
+    border-bottom: 0 !important;
+    transition: 0.3s ease-out;
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--color-green-500);
+      font-size: 14px;
+      font-weight: 400;
+      padding-block: 6px;
+    }
+  }
+
+  & .nav-item {
+    &:has(.active) {
+      background-color: var(--color-green-500);
+      .nav-link {
+        color: #fff !important;
+      }
+    }
+  }
+}
 /* End Account Page */

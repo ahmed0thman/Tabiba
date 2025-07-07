@@ -7,4 +7,11 @@ html[dir="rtl"] {
   .material-icons-outlined.mirror {
     transform: rotateY(180deg);
   }
+
+  .flatpickr-calendar.animate.open {
+    direction: rtl !important;
+    translate: 50% -50%;
+    inset-inline-end: 0 !important;
+    inset-inline-start: 50% !important;
+  }
 }
