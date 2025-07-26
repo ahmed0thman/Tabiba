@@ -287,59 +287,77 @@
                   </div>
                   <!-- Doctor Stats -->
                   <div
-                    class="flex static items-start gap-1 !ms-auto text-xs sm:text-sm md:text-base"
+                    class="static flex flex-col items-end gap-2 !ms-auto text-xs sm:text-sm md:text-base"
                   >
-                    <!-- Total Visitors -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500">230</span>
-                      <span class="material-icons text-gray-500/50"
-                        >how_to_reg</span
+                    <div class="flex items-center gap-1">
+                      <!-- Start Favorite -->
+                      <div
+                        class="cursor-pointer rounded-full w-8 h-8 flex justify-center items-center shadow-md"
                       >
-                    </div>
-                    <!-- Rating -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500">(4.7)</span>
-                      <span class="material-icons text-yellow-400">star</span>
-                    </div>
-                    <!-- Start Share Profile -->
-                    <div class="share-list !ms-auto">
-                      <span
-                        type="button"
-                        class="cursor-pointer dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <span class="material-icons text-xl text-gray-500/90"
-                          >share</span
+                        <!--set hidden if not favorite -->
+                        <span
+                          class="hidden material-icons text-gray-500/90 hover:fill-red-500 hover:text-red-500 transition duration-300 ease-in-out"
+                          >favorite_border</span
                         >
-                      </span>
-                      <div class="dropdown-menu">
-                        <div class="dropdown-menu share-list-options">
-                          <span>
-                            <img src="/images/icons/social/copy.svg" alt="" />
-                          </span>
-                          <span>
-                            <img
-                              src="/images/icons/social/facebook.svg"
-                              alt=""
-                            />
-                          </span>
-                          <span>
-                            <img
-                              src="/images/icons/social/instagram.svg"
-                              alt=""
-                            />
-                          </span>
-                          <span>
-                            <img
-                              src="/images/icons/social/twitter-x.svg"
-                              alt=""
-                            />
-                          </span>
+                        <!-- set visible if favorite -->
+                        <span class="material-icons text-red-500"
+                          >favorite</span
+                        >
+                      </div>
+                      <!-- Start Share Profile -->
+                      <div class="share-list !ms-auto">
+                        <span
+                          type="button"
+                          class="cursor-pointer dropdown-toggle rounded-full w-8 h-8 flex justify-center items-center shadow-md"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="material-icons text-xl text-gray-500/90"
+                            >share</span
+                          >
+                        </span>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-menu share-list-options">
+                            <span>
+                              <img src="/images/icons/social/copy.svg" alt="" />
+                            </span>
+                            <span>
+                              <img
+                                src="/images/icons/social/facebook.svg"
+                                alt=""
+                              />
+                            </span>
+                            <span>
+                              <img
+                                src="/images/icons/social/instagram.svg"
+                                alt=""
+                              />
+                            </span>
+                            <span>
+                              <img
+                                src="/images/icons/social/twitter-x.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
                         </div>
                       </div>
+                      <!-- End Share Profile -->
                     </div>
-                    <!-- End Share Profile -->
+                    <div class="flex items-center gap-1">
+                      <!-- Total Visitors -->
+                      <div class="flex items-center">
+                        <span class="text-gray-500">230</span>
+                        <span class="material-icons text-gray-500/50"
+                          >how_to_reg</span
+                        >
+                      </div>
+                      <!-- Rating -->
+                      <div class="flex items-center">
+                        <span class="text-gray-500">(4.7)</span>
+                        <span class="material-icons text-yellow-400">star</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -944,68 +962,304 @@
             <h2 class="text-gray-700 text-xl font-medium mb-3">
               الخدمات المقدمة
             </h2>
-            <!-- Nav tabs -->
-            <div class="bg-white rounded-[1.2rem]">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="services-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#services"
-                    type="button"
-                    role="tab"
-                    aria-controls="services"
-                    aria-selected="true"
+            <!-- Services List -->
+            <div
+              class="rounded-[1.2rem] bg-white border border-gray-200 overflow-hidden p-2"
+            >
+              <div
+                class="accordion gap-0 max-h-[24rem] overflow-auto"
+                id="servicesAccordion"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseOne"
+                      aria-expanded="true"
+                      aria-controls="servicesCollapseOne"
+                    >
+                      رسم قلب
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingOne"
+                    data-bs-parent="#servicesAccordion"
                   >
-                    خدمات
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="otherServieces-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#otherServieces"
-                    type="button"
-                    role="tab"
-                    aria-controls="otherServieces"
-                    aria-selected="false"
-                  >
-                    خدمات أخرى
-                  </button>
-                </li>
-              </ul>
-
-              <!-- Tab panes -->
-              <div class="tab-content max-h-[220px] overflow-auto" dir="ltr">
-                <div
-                  class="tab-pane active"
-                  id="services"
-                  role="tabpanel"
-                  aria-labelledby="services-tab"
-                >
-                  <!-- Services Items -->
-                  <div class="flex flex-col divide-y divide-gray-100/50 p-3">
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="accordion-body text-gray-700">
+                      في هذا الفحص يتم تسجيل نشاط القلب الكهربائي لتشخيص نظم
+                      القلب وتحديد أي خلل قد يؤثر على الأداء.
+                    </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane"
-                  id="otherServieces"
-                  role="tabpanel"
-                  aria-labelledby="otherServieces-tab"
-                >
-                  <!-- Services Items -->
-                  <div class="flex flex-col divide-y divide-gray-100/50 p-3">
-                    <div class="text-gray-700 text-center py-2">أشعة</div>
-                    <div class="text-gray-700 text-center py-2">أشعة</div>
-                    <div class="text-gray-700 text-center py-2">أشعة</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseTwo"
+                    >
+                      أشعة
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingTwo"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      يقدم المركز خدمة الأشعة التشخيصية مثل الأشعة السينية
+                      والرنين المغناطيسي مع أحدث الأجهزة.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseThree"
+                    >
+                      تحاليل طبية
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingThree"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      إجراء جميع أنواع التحاليل الطبية المعملية بدقة عالية وسرعة
+                      في النتائج.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseFour"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseFour"
+                    >
+                      أشعة مقطعية
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingFour"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      تصوير مقطعي محوسب لتشخيص أدق للأمراض والإصابات الداخلية.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseFive"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseFive"
+                    >
+                      أشعة رنين مغناطيسي
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingFive"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحوصات الرنين المغناطيسي لكافة أجزاء الجسم بأحدث الأجهزة.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseSix"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseSix"
+                    >
+                      أشعة موجات صوتية (سونار)
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingSix"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحوصات السونار للبطن والحوض والأعضاء الداخلية بدقة عالية.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseSeven"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseSeven"
+                    >
+                      أشعة دوبلر
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingSeven"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص دوبلر للأوعية الدموية لتقييم تدفق الدم وتشخيص الجلطات.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingEight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseEight"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseEight"
+                    >
+                      أشعة بانوراما أسنان
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseEight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingEight"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      تصوير بانورامي للفم والأسنان لتشخيص مشاكل الأسنان والفكين.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingNine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseNine"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseNine"
+                    >
+                      أشعة ماموجرام للثدي
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseNine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingNine"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص الماموجرام للكشف المبكر عن أورام الثدي.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingTen">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseTen"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseTen"
+                    >
+                      رسم مخ كهربائي EEG
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseTen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingTen"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص رسم المخ الكهربائي لتشخيص أمراض الجهاز العصبي.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingEleven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseEleven"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseEleven"
+                    >
+                      رسم عضلات EMG
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseEleven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingEleven"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص رسم العضلات والأعصاب لتشخيص أمراض العضلات والأعصاب
+                      الطرفية.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingTwelve">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseTwelve"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseTwelve"
+                    >
+                      أشعة كثافة العظام DEXA
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseTwelve"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingTwelve"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص قياس كثافة العظام للكشف عن هشاشة العظام.
+                    </div>
                   </div>
                 </div>
               </div>

@@ -857,6 +857,10 @@
       border: 0 !important;
       margin: 0 !important;
       padding-inline: 0 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
     }
 
     &:has(.active) {

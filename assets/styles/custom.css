@@ -682,6 +682,18 @@ button:not(.accordion-button, .nav-link) {
   }
 }
 
+#servicesAccordion {
+  .accordion-item {
+    border: 0;
+    border-bottom: 1px solid #efefef !important;
+    border-radius: 0 !important;
+
+    &:last-child {
+      border: 0 !important;
+    }
+  }
+}
+
 .collapse {
   visibility: unset !important;
 }

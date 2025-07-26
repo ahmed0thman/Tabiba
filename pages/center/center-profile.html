@@ -281,59 +281,77 @@
                   </div>
                   <!-- Center Stats -->
                   <div
-                    class="flex items-start gap-1 !ms-auto text-xs sm:text-sm md:text-base"
+                    class="static flex flex-col items-end gap-2 !ms-auto text-xs sm:text-sm md:text-base"
                   >
-                    <!-- Total Visitors -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500">230</span>
-                      <span class="material-icons text-gray-500/50"
-                        >how_to_reg</span
+                    <div class="flex items-center gap-1">
+                      <!-- Start Favorite -->
+                      <div
+                        class="cursor-pointer rounded-full w-8 h-8 flex justify-center items-center shadow-md"
                       >
-                    </div>
-                    <!-- Rating -->
-                    <div class="flex items-center">
-                      <span class="text-gray-500">(4.7)</span>
-                      <span class="material-icons text-yellow-400">star</span>
-                    </div>
-                    <!-- Start Share Profile -->
-                    <div class="share-list !ms-auto">
-                      <span
-                        type="button"
-                        class="cursor-pointer dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        <span class="material-icons text-xl text-gray-500/90"
-                          >share</span
+                        <!--set hidden if not favorite -->
+                        <span
+                          class="hidden material-icons text-gray-500/90 hover:fill-red-500 hover:text-red-500 transition duration-300 ease-in-out"
+                          >favorite_border</span
                         >
-                      </span>
-                      <div class="dropdown-menu">
-                        <div class="dropdown-menu share-list-options">
-                          <span>
-                            <img src="/images/icons/social/copy.svg" alt="" />
-                          </span>
-                          <span>
-                            <img
-                              src="/images/icons/social/facebook.svg"
-                              alt=""
-                            />
-                          </span>
-                          <span>
-                            <img
-                              src="/images/icons/social/instagram.svg"
-                              alt=""
-                            />
-                          </span>
-                          <span>
-                            <img
-                              src="/images/icons/social/twitter-x.svg"
-                              alt=""
-                            />
-                          </span>
+                        <!-- set visible if favorite -->
+                        <span class="material-icons text-red-500"
+                          >favorite</span
+                        >
+                      </div>
+                      <!-- Start Share Profile -->
+                      <div class="share-list !ms-auto">
+                        <span
+                          type="button"
+                          class="cursor-pointer dropdown-toggle rounded-full w-8 h-8 flex justify-center items-center shadow-md"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="material-icons text-xl text-gray-500/90"
+                            >share</span
+                          >
+                        </span>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-menu share-list-options">
+                            <span>
+                              <img src="/images/icons/social/copy.svg" alt="" />
+                            </span>
+                            <span>
+                              <img
+                                src="/images/icons/social/facebook.svg"
+                                alt=""
+                              />
+                            </span>
+                            <span>
+                              <img
+                                src="/images/icons/social/instagram.svg"
+                                alt=""
+                              />
+                            </span>
+                            <span>
+                              <img
+                                src="/images/icons/social/twitter-x.svg"
+                                alt=""
+                              />
+                            </span>
+                          </div>
                         </div>
                       </div>
+                      <!-- End Share Profile -->
                     </div>
-                    <!-- End Share Profile -->
+                    <div class="flex items-center gap-1">
+                      <!-- Total Visitors -->
+                      <div class="flex items-center">
+                        <span class="text-gray-500">230</span>
+                        <span class="material-icons text-gray-500/50"
+                          >how_to_reg</span
+                        >
+                      </div>
+                      <!-- Rating -->
+                      <div class="flex items-center">
+                        <span class="text-gray-500">(4.7)</span>
+                        <span class="material-icons text-yellow-400">star</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -575,8 +593,7 @@
                           />
 
                           <span class="text-gray-400 text-sm">
-                            برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
-                            مع الطاقم النسائي
+                            مواعيد الطاقم النسائي
                           </span>
                         </div>
                       </div>
@@ -699,25 +716,6 @@
                     <div class="accordion-body">
                       <!-- Center Info -->
                       <div class="flex flex-col gap-3 text-sm sm:text-base">
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >phone_iphone</span
-                          >
-                          <div class="text-show-toggler">
-                            <label
-                              class="cursor-pointer btn-toggler"
-                              for="centerTwoPhoneNumber"
-                              >اظهر بيانات الإتصال</label
-                            >
-                            <input
-                              hidden
-                              type="checkbox"
-                              name=""
-                              id="centerTwoPhoneNumber"
-                            />
-                            <span class="text-to-toggle">01234034230</span>
-                          </div>
-                        </div>
                         <div class="flex items-start gap-2">
                           <img
                             src="/images/icons/females.png"
@@ -726,8 +724,7 @@
                           />
 
                           <span class="text-gray-400 text-sm">
-                            برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
-                            مع الطاقم النسائي
+                            مواعيد الطاقم النسائي
                           </span>
                         </div>
                       </div>
@@ -850,25 +847,6 @@
                     <div class="accordion-body">
                       <!-- Center Info -->
                       <div class="flex flex-col gap-3 text-sm sm:text-base">
-                        <div class="flex items-center gap-2">
-                          <span class="material-icons text-green-500"
-                            >phone_iphone</span
-                          >
-                          <div class="text-show-toggler">
-                            <label
-                              class="cursor-pointer btn-toggler"
-                              for="centerThreePhoneNumber"
-                              >اظهر بيانات الإتصال</label
-                            >
-                            <input
-                              hidden
-                              type="checkbox"
-                              name=""
-                              id="centerThreePhoneNumber"
-                            />
-                            <span class="text-to-toggle">01234034230</span>
-                          </div>
-                        </div>
                         <div class="flex items-start gap-2">
                           <img
                             src="/images/icons/females.png"
@@ -877,8 +855,7 @@
                           />
 
                           <span class="text-gray-400 text-sm">
-                            برجاء الحجز ثم التواصل تليفونياً بالمركز لتنسيق موعد
-                            مع الطاقم النسائي
+                            مواعيد الطاقم النسائي
                           </span>
                         </div>
                       </div>
@@ -1114,32 +1091,6 @@
                         class="w-4"
                       />
                     </button>
-
-                    <!-- Government card -->
-                    <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                      data-target="ModalSelectArea"
-                    >
-                      <!-- add class 'text-green-500' for the active one-->
-                      <span class="">القاهرة</span>
-                      <img
-                        src="/images/icons/external-link.svg"
-                        alt=""
-                        class="w-4"
-                      />
-                    </button>
-                    <!-- Government card -->
-                    <button
-                      class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                      data-target="ModalSelectArea"
-                    >
-                      <span> الدقهلية</span>
-                      <img
-                        src="/images/icons/external-link.svg"
-                        alt=""
-                        class="w-4"
-                      />
-                    </button>
                   </div>
                 </div>
               </div>
@@ -1155,74 +1106,316 @@
             <div class="flex items-center gap-2 justify-between mb-3">
               <h2 class="text-gray-700 text-xl font-medium">الخدمات المقدمة</h2>
               <!-- search input -->
-              <input
-                type="text"
-                class="border border-gray-200 rounded-md text-sm"
-                placeholder="ابحث هنا..."
-              />
+              <select
+                class="border border-gray-200 rounded-md text-sm px-2 py-1 w-20"
+                id="serviceCategoryFilter"
+              >
+                <option value="">كل الخدمات</option>
+                <option value="radiology">الأشعة</option>
+                <option value="analysis">تحاليل طبية</option>
+                <option value="cardiology">رسم قلب</option>
+                <option value="neurology">رسم مخ/عضلات</option>
+                <option value="dental">أسنان</option>
+              </select>
             </div>
-            <!-- Nav tabs -->
-            <div class="bg-white rounded-[1.2rem]">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="services-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#services"
-                    type="button"
-                    role="tab"
-                    aria-controls="services"
-                    aria-selected="true"
+            <!-- Services List -->
+            <div
+              class="rounded-[1.2rem] bg-white border border-gray-200 overflow-hidden p-2"
+            >
+              <div
+                class="accordion gap-0 max-h-[24rem] overflow-auto"
+                id="servicesAccordion"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseOne"
+                      aria-expanded="true"
+                      aria-controls="servicesCollapseOne"
+                    >
+                      رسم قلب
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingOne"
+                    data-bs-parent="#servicesAccordion"
                   >
-                    خدمات
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="otherServieces-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#otherServieces"
-                    type="button"
-                    role="tab"
-                    aria-controls="otherServieces"
-                    aria-selected="false"
-                  >
-                    خدمات أخرى
-                  </button>
-                </li>
-              </ul>
-
-              <!-- Tab panes -->
-              <div class="tab-content max-h-[220px] overflow-auto" dir="ltr">
-                <div
-                  class="tab-pane active"
-                  id="services"
-                  role="tabpanel"
-                  aria-labelledby="services-tab"
-                >
-                  <!-- Services Items -->
-                  <div class="flex flex-col divide-y divide-gray-100/50 p-3">
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
-                    <div class="text-gray-700 text-center py-2">رسم قلب</div>
+                    <div class="accordion-body text-gray-700">
+                      في هذا الفحص يتم تسجيل نشاط القلب الكهربائي لتشخيص نظم
+                      القلب وتحديد أي خلل قد يؤثر على الأداء.
+                    </div>
                   </div>
                 </div>
-                <div
-                  class="tab-pane"
-                  id="otherServieces"
-                  role="tabpanel"
-                  aria-labelledby="otherServieces-tab"
-                >
-                  <!-- Services Items -->
-                  <div class="flex flex-col divide-y divide-gray-100/50 p-3">
-                    <div class="text-gray-700 text-center py-2">أشعة</div>
-                    <div class="text-gray-700 text-center py-2">أشعة</div>
-                    <div class="text-gray-700 text-center py-2">أشعة</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseTwo"
+                    >
+                      أشعة
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingTwo"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      يقدم المركز خدمة الأشعة التشخيصية مثل الأشعة السينية
+                      والرنين المغناطيسي مع أحدث الأجهزة.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseThree"
+                    >
+                      تحاليل طبية
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingThree"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      إجراء جميع أنواع التحاليل الطبية المعملية بدقة عالية وسرعة
+                      في النتائج.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseFour"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseFour"
+                    >
+                      أشعة مقطعية
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingFour"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      تصوير مقطعي محوسب لتشخيص أدق للأمراض والإصابات الداخلية.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseFive"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseFive"
+                    >
+                      أشعة رنين مغناطيسي
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingFive"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحوصات الرنين المغناطيسي لكافة أجزاء الجسم بأحدث الأجهزة.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseSix"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseSix"
+                    >
+                      أشعة موجات صوتية (سونار)
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingSix"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحوصات السونار للبطن والحوض والأعضاء الداخلية بدقة عالية.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseSeven"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseSeven"
+                    >
+                      أشعة دوبلر
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingSeven"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص دوبلر للأوعية الدموية لتقييم تدفق الدم وتشخيص الجلطات.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingEight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseEight"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseEight"
+                    >
+                      أشعة بانوراما أسنان
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseEight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingEight"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      تصوير بانورامي للفم والأسنان لتشخيص مشاكل الأسنان والفكين.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingNine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseNine"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseNine"
+                    >
+                      أشعة ماموجرام للثدي
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseNine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingNine"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص الماموجرام للكشف المبكر عن أورام الثدي.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingTen">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseTen"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseTen"
+                    >
+                      رسم مخ كهربائي EEG
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseTen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingTen"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص رسم المخ الكهربائي لتشخيص أمراض الجهاز العصبي.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingEleven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseEleven"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseEleven"
+                    >
+                      رسم عضلات EMG
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseEleven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingEleven"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص رسم العضلات والأعصاب لتشخيص أمراض العضلات والأعصاب
+                      الطرفية.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="servicesHeadingTwelve">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#servicesCollapseTwelve"
+                      aria-expanded="false"
+                      aria-controls="servicesCollapseTwelve"
+                    >
+                      أشعة كثافة العظام DEXA
+                    </button>
+                  </h2>
+                  <div
+                    id="servicesCollapseTwelve"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="servicesHeadingTwelve"
+                    data-bs-parent="#servicesAccordion"
+                  >
+                    <div class="accordion-body text-gray-700">
+                      فحص قياس كثافة العظام للكشف عن هشاشة العظام.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1896,6 +2089,192 @@
               </p>
             </div>
           </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
+          <!-- Comment Item -->
+          <div class="space-y-1">
+            <!-- Comment Card -->
+            <div
+              class="bg-gray-200/40 p-2 sm:!py-3 sm: !px-4 rounded-se-xl rounded-es-xl"
+            >
+              <!-- Comment Header -->
+              <div
+                class="flex flex-col sm:flex-row justify-between sm:items-center gap-1 flex-wrap"
+              >
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <p class="text-gray-500 text-sm font-semibold">هند حسين</p>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+                <!-- Commenter Rate -->
+                <div
+                  class="flex items-center text-xs sm:text-sm text-yellow-400"
+                >
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                  <span class="material-icons">star</span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-3"
+              >
+                “ مكان محترم واستقبال كويس جدا. والاهم الدكتور حد جميل اوي علي
+                المستوي الشخصي والعملي “
+              </p>
+            </div>
+            <!-- Comment Reply Card -->
+            <div
+              class="bg-gray-200/50 p-2 sm:!py-3 sm: !px-4 rounded-ss-xl rounded-ee-xl"
+            >
+              <!-- Comment Header -->
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <!-- Commenter Name -->
+                  <span class="text-gray-500 text-xs font-semibold">
+                    د/هدير سالم
+                  </span>
+
+                  <!-- Comment Date -->
+                  <span class="text-gray-500 text-xs"> 20/4/2024 </span>
+                </div>
+              </div>
+
+              <!-- Comment Body -->
+              <p
+                class="text-gray-500 text-xs leading-5 sm:leading-6 sm:text-sm mt-2 mb-1"
+              >
+                “ اتشرفنا بيك “
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1935,24 +2314,178 @@
               <!-- End Custome Datpicker -->
               <div class="flex items-center gap-3">
                 <span> نوع الخدمة : </span>
-                <span class="btn-option-radion">
-                  <input type="checkbox" name="serviceType" id="radiology" />
-                  <label
-                    class="text-gray-500 text-sm font-medium"
-                    for="radiology"
+                <details
+                  class="relative min-w-[180px] flex-grow"
+                  id="serviceTypesDropdown"
+                >
+                  <summary
+                    class="border border-gray-300 rounded-md px-3 py-2 text-sm cursor-pointer flex items-center justify-between"
                   >
-                    أشعة
-                  </label>
-                </span>
-                <span class="btn-option-radion">
-                  <input type="checkbox" name="serviceType" id="analysis" />
-                  <label
-                    class="text-gray-500 text-sm font-medium"
-                    for="analysis"
+                    <span>اختر نوع الخدمة</span>
+                    <span class="material-icons text-gray-400 text-base"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <div
+                    class="absolute translate-x-20 max-h-[200px] overflow-auto z-10 bg-white border border-gray-200 rounded-md mt-2 w-max max-w-[340px] shadow-lg flex flex-col gap-2 p-2 divide-y divide-gray-200"
                   >
-                    تحليل
-                  </label>
-                </span>
+                    <span class="btn-option-radion">
+                      <input
+                        type="checkbox"
+                        name="serviceType"
+                        id="radiology"
+                      />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="radiology"
+                      >
+                        أشعة (مثال: أشعة سينية، رنين مغناطيسي)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="analysis" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="analysis"
+                      >
+                        تحاليل (مثال: تحليل دم، تحليل بول)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input
+                        type="checkbox"
+                        name="serviceType"
+                        id="cardiology"
+                      />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="cardiology"
+                      >
+                        رسم قلب (مثال: ECG)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input
+                        type="checkbox"
+                        name="serviceType"
+                        id="neurology"
+                      />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="neurology"
+                      >
+                        رسم مخ/عضلات (مثال: EEG, EMG)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="dental" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="dental"
+                      >
+                        أسنان (مثال: بانوراما أسنان)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="ct_scan" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="ct_scan"
+                      >
+                        أشعة مقطعية (CT Scan)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="mri" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="mri"
+                      >
+                        أشعة رنين مغناطيسي (MRI)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input
+                        type="checkbox"
+                        name="serviceType"
+                        id="ultrasound"
+                      />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="ultrasound"
+                      >
+                        موجات صوتية (سونار)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="doppler" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="doppler"
+                      >
+                        أشعة دوبلر
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="panorama" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="panorama"
+                      >
+                        أشعة بانوراما أسنان
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input
+                        type="checkbox"
+                        name="serviceType"
+                        id="mammogram"
+                      />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="mammogram"
+                      >
+                        أشعة ماموجرام للثدي
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="ecg" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="ecg"
+                      >
+                        رسم قلب كهربائي (ECG)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="eeg" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="eeg"
+                      >
+                        رسم مخ كهربائي (EEG)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="emg" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="emg"
+                      >
+                        رسم عضلات (EMG)
+                      </label>
+                    </span>
+                    <span class="btn-option-radion">
+                      <input type="checkbox" name="serviceType" id="dexa" />
+                      <label
+                        class="text-gray-500 text-sm font-medium"
+                        for="dexa"
+                      >
+                        أشعة كثافة العظام (DEXA)
+                      </label>
+                    </span>
+                  </div>
+                </details>
               </div>
               <div class="flex items-center justify-between gap-3">
                 <span
@@ -2024,153 +2557,19 @@
         <!-- Areas Locations -->
         <div class="flex-grow-1 mt-3 lg:!mt-1">
           <h2 class="text-gray-700 text-xl font-medium mb-3">اختاري منطقة</h2>
-          <div class="flex-grow-1 bg-whit rounded-[1.2rem] overflow-hidden">
-            <!-- Areas -->
-            <div class="overflow-y-auto max-h-[17rem] my-3 p-2 sm:!p-4">
-              <div class="grid grid-cols-2 gap-2">
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <!-- add class 'text-green-500' for the active one-->
-                  <span class="text-green-500">المهندسين</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">المعادي</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">الدقي</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">مدينة نصر</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">الزمالك</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">مصر الجديدة</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">الهرم</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">حلوان</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">شبرا</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-                <!-- Area card -->
-                <button
-                  class="col-span-1 border border-gray-200 rounded-2xl flex justify-between py-2 !px-3 text-sm sm:text-base sm:!px-3 sm:!py-3 btn-modal-toggler"
-                  data-target="ModalSelectArea"
-                  data-action="close"
-                  data-behavior="closable"
-                >
-                  <span class="">السلام</span>
-                  <img
-                    src="/images/icons/external-link.svg"
-                    alt=""
-                    class="w-4"
-                  />
-                </button>
-              </div>
-            </div>
+          <!-- Areas -->
+          <div class="flex items-center gap-2 mb-4">
+            <select
+              class="border border-gray-300 rounded-md px-3 py-2 text-sm flex-1"
+            >
+              <option value="">اختر المنطقة</option>
+              <option value="nasr_city">مدينة نصر</option>
+              <option value="heliopolis">مصر الجديدة</option>
+              <option value="maadi">المعادي</option>
+              <option value="dokki">الدقي</option>
+              <option value="zamalek">الزمالك</option>
+            </select>
+            <button class="btn btn-green-500 px-4 py-2 text-sm">بحث</button>
           </div>
         </div>
       </div>
