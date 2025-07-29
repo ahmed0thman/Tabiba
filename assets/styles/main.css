@@ -842,6 +842,53 @@
     }
   }
 }
+
+.select-search {
+  .select,
+  select {
+    background-position: left 0.75rem center !important;
+    background-repeat: no-repeat;
+    background-image: url("/images/icons/chevron-down.svg") !important;
+    background-size: 1rem !important;
+    padding-inline: 1.5rem !important;
+    padding-inline-end: 2.5rem !important;
+    padding-block: 0.5rem;
+    align-content: center;
+    border: 0 !important;
+    color: #7b7b7b;
+    font-size: 1rem;
+    font-weight: 300;
+    &:not(:last-child) {
+      border-inline-end: 1px solid rgba(123, 123, 123, 0.5) !important;
+    }
+  }
+  .select-search-trigger {
+    padding-inline-end: 0.5rem !important;
+    padding-block: 0.5rem !important;
+  }
+  .dropdown {
+    .select-search-trigger {
+      font-size: 1rem !important;
+      font-weight: 300 !important;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+
+      display: flex;
+      align-items: center;
+      &::after {
+        display: none;
+      }
+      &::before {
+        content: "";
+        background-repeat: no-repeat;
+        background-image: url("/images/icons/chevronDown.svg") !important;
+        background-size: contain;
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+    }
+  }
+}
 /* End Filter Style */
 
 /* Start Tabiba and Center Styles */

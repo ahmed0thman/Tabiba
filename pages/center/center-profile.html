@@ -1142,119 +1142,132 @@
           <div
             class="col-span-10 md:col-start-1 md:col-span-5 row-start-7 md:row-span-2 lg:row-start-4 lg:row-span-2 lg:col-start-1 lg:col-span-6 mt-12"
           >
-            <div class="flex items-center gap-2 justify-between mb-3">
+            <div class="flex flex-wrap items-center gap-2 justify-between mb-3">
               <h2 class="text-gray-700 text-xl font-medium">الخدمات المقدمة</h2>
 
-              <!-- Custome Select with Search -->
-              <div class="select-search">
-                <input type="hidden" class="select-search-input" name="" />
-                <div
-                  class="dropdown border border-gray-200 rounded-md text-sm px-3 py-2 w-max min-w-44 max-w-52 bg-white"
+              <div class="flex items-center gap-2">
+                <select
+                  name=""
+                  id=""
+                  class="border border-gray-500 rounded-lg text-stone-600"
                 >
-                  <button
-                    class="btn w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
-                    type="button"
-                    id="TabibaServicesSearch"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    كل الخدمات
-                  </button>
+                  <option value="">نوع الخدمة</option>
+                  <option value="">منزل</option>
+                  <option value="">مركز</option>
+                  <option value="">اخري</option>
+                </select>
+
+                <!-- Custome Select with Search -->
+                <div class="select-search">
+                  <input type="hidden" class="select-search-input" name="" />
                   <div
-                    class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !end-0 px-2"
-                    aria-labelledby="TabibaServicesSearch"
+                    class="dropdown border border-gray-200 rounded-lg text-sm px-1 !ps-4 w-max min-w-44 max-w-52 bg-white"
                   >
-                    <input
-                      type="text"
-                      class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
-                      placeholder="ابحث عن خدمة..."
-                    />
-
-                    <div
-                      class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                    <button
+                      class="btn w-full flex items-center justify-between !p-0 dropdown-toggle text-stone-600 select-search-trigger gap-1"
+                      type="button"
+                      id="TabibaServicesSearch"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      <div
-                        data-value="رسم قلب"
-                        class="dropdown-item select-search-option"
-                      >
-                        رسم قلب
-                      </div>
+                      كل الخدمات
+                    </button>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !end-0 px-2"
+                      aria-labelledby="TabibaServicesSearch"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن خدمة..."
+                      />
 
                       <div
-                        data-value="أشعة"
-                        class="dropdown-item select-search-option"
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
                       >
-                        أشعة
-                      </div>
+                        <div
+                          data-value="رسم قلب"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم قلب
+                        </div>
 
-                      <div
-                        data-value="تحاليل طبية"
-                        class="dropdown-item select-search-option"
-                      >
-                        تحاليل طبية
-                      </div>
+                        <div
+                          data-value="أشعة"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة
+                        </div>
 
-                      <div
-                        data-value="أشعة مقطعية"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة مقطعية
-                      </div>
+                        <div
+                          data-value="تحاليل طبية"
+                          class="dropdown-item select-search-option"
+                        >
+                          تحاليل طبية
+                        </div>
 
-                      <div
-                        data-value="أشعة رنين مغناطيسي"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة رنين مغناطيسي
-                      </div>
+                        <div
+                          data-value="أشعة مقطعية"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة مقطعية
+                        </div>
 
-                      <div
-                        data-value="أشعة موجات صوتية (سونار)"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة موجات صوتية (سونار)
-                      </div>
+                        <div
+                          data-value="أشعة رنين مغناطيسي"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة رنين مغناطيسي
+                        </div>
 
-                      <div
-                        data-value="أشعة دوبلر"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة دوبلر
-                      </div>
+                        <div
+                          data-value="أشعة موجات صوتية (سونار)"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة موجات صوتية (سونار)
+                        </div>
 
-                      <div
-                        data-value="أشعة بانوراما أسنان"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة بانوراما أسنان
-                      </div>
+                        <div
+                          data-value="أشعة دوبلر"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة دوبلر
+                        </div>
 
-                      <div
-                        data-value="أشعة ماموجرام للثدي"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة ماموجرام للثدي
-                      </div>
+                        <div
+                          data-value="أشعة بانوراما أسنان"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة بانوراما أسنان
+                        </div>
 
-                      <div
-                        data-value="رسم مخ كهربائي EEG"
-                        class="dropdown-item select-search-option"
-                      >
-                        رسم مخ كهربائي EEG
-                      </div>
+                        <div
+                          data-value="أشعة ماموجرام للثدي"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة ماموجرام للثدي
+                        </div>
 
-                      <div
-                        data-value="رسم عضلات EMG"
-                        class="dropdown-item select-search-option"
-                      >
-                        رسم عضلات EMG
-                      </div>
+                        <div
+                          data-value="رسم مخ كهربائي EEG"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم مخ كهربائي EEG
+                        </div>
 
-                      <div
-                        data-value="أشعة كثافة العظام DEXA"
-                        class="dropdown-item select-search-option"
-                      >
-                        أشعة كثافة العظام DEXA
+                        <div
+                          data-value="رسم عضلات EMG"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم عضلات EMG
+                        </div>
+
+                        <div
+                          data-value="أشعة كثافة العظام DEXA"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة كثافة العظام DEXA
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -2467,7 +2480,7 @@
                     >
                   </summary>
                   <div
-                    class="absolute z-50 bg-white !border p-2 w-full start-1/2 translate-x-1/2"
+                    class="absolute top-0 z-50 bg-white !border p-2 w-full start-1/2 translate-x-1/2"
                   >
                     <input
                       type="text"
