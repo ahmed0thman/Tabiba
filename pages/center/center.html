@@ -228,16 +228,223 @@
           <div class="hidden md:block p-3 p-lg-4 bg-white rounded-full">
             <form action="" class="d-flex gap-1 gap-lg-3">
               <div class="filter bg-gray-100 rounded-full">
-                <select name="" id="" class="bg-transparent flex-1">
+                <select name="" id="" class="select bg-transparent flex-1">
                   <option value="0">نوع الخدمة</option>
                 </select>
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">المحافظة</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">المنطقة</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
+                <!-- Custome Select with Search -->
+                <div class="select-search select bg-transparent flex-1">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerServicesFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      الخدمات
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerServicesFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن خدمة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="رسم قلب"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم قلب
+                        </div>
+
+                        <div
+                          data-value="أشعة"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة
+                        </div>
+
+                        <div
+                          data-value="تحاليل طبية"
+                          class="dropdown-item select-search-option"
+                        >
+                          تحاليل طبية
+                        </div>
+
+                        <div
+                          data-value="أشعة مقطعية"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة مقطعية
+                        </div>
+
+                        <div
+                          data-value="أشعة رنين مغناطيسي"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة رنين مغناطيسي
+                        </div>
+
+                        <div
+                          data-value="أشعة موجات صوتية (سونار)"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة موجات صوتية (سونار)
+                        </div>
+
+                        <div
+                          data-value="أشعة دوبلر"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة دوبلر
+                        </div>
+
+                        <div
+                          data-value="أشعة بانوراما أسنان"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة بانوراما أسنان
+                        </div>
+
+                        <div
+                          data-value="أشعة ماموجرام للثدي"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة ماموجرام للثدي
+                        </div>
+
+                        <div
+                          data-value="رسم مخ كهربائي EEG"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم مخ كهربائي EEG
+                        </div>
+
+                        <div
+                          data-value="رسم عضلات EMG"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم عضلات EMG
+                        </div>
+
+                        <div
+                          data-value="أشعة كثافة العظام DEXA"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة كثافة العظام DEXA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custome Select with Search -->
+                <div class="select-search select bg-transparent flex-1">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerGovernatesFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المحافظة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerGovernatesFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن محافظة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custome Select with Search -->
+                <div class="select-search select bg-transparent flex-1">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerAreasFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المنطقة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerAreasFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن منطقة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <select name="" id="" class="select bg-transparent flex-1">
                   <option value="0">ترتيب بواسطة</option>
                 </select>
               </div>
@@ -268,28 +475,227 @@
                 <select
                   name=""
                   id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
+                  class="select border-gray-500 rounded-full"
                 >
                   <option value="0">نوع الخدمة</option>
                 </select>
+                <!-- Custome Select with Search -->
+                <div class="select-search select border-gray-500 rounded-full">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerServicesFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      الخدمات
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerServicesFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن خدمة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="رسم قلب"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم قلب
+                        </div>
+
+                        <div
+                          data-value="أشعة"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة
+                        </div>
+
+                        <div
+                          data-value="تحاليل طبية"
+                          class="dropdown-item select-search-option"
+                        >
+                          تحاليل طبية
+                        </div>
+
+                        <div
+                          data-value="أشعة مقطعية"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة مقطعية
+                        </div>
+
+                        <div
+                          data-value="أشعة رنين مغناطيسي"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة رنين مغناطيسي
+                        </div>
+
+                        <div
+                          data-value="أشعة موجات صوتية (سونار)"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة موجات صوتية (سونار)
+                        </div>
+
+                        <div
+                          data-value="أشعة دوبلر"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة دوبلر
+                        </div>
+
+                        <div
+                          data-value="أشعة بانوراما أسنان"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة بانوراما أسنان
+                        </div>
+
+                        <div
+                          data-value="أشعة ماموجرام للثدي"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة ماموجرام للثدي
+                        </div>
+
+                        <div
+                          data-value="رسم مخ كهربائي EEG"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم مخ كهربائي EEG
+                        </div>
+
+                        <div
+                          data-value="رسم عضلات EMG"
+                          class="dropdown-item select-search-option"
+                        >
+                          رسم عضلات EMG
+                        </div>
+
+                        <div
+                          data-value="أشعة كثافة العظام DEXA"
+                          class="dropdown-item select-search-option"
+                        >
+                          أشعة كثافة العظام DEXA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custome Select with Search -->
+                <div class="select-search select border-gray-500 rounded-full">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerGovernatesFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المحافظة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerGovernatesFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن محافظة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custome Select with Search -->
+                <div class="select-search select border-gray-500 rounded-full">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerAreasFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المنطقة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerAreasFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن منطقة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <select
                   name=""
                   id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">المحافظة</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">المنطقة</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
+                  class="select border-gray-500 rounded-full"
                 >
                   <option value="0">ترتيب بواسطة</option>
                 </select>
@@ -679,5 +1085,6 @@
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="/js/filter.js"></script>
+    <script type="module" src="/js/searchSelect.js"></script>
   </body>
 </html>

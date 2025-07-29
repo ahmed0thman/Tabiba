@@ -228,19 +228,178 @@
           <div class="hidden md:block p-3 p-lg-4 bg-white rounded-full">
             <form action="" class="d-flex gap-1 gap-lg-3">
               <div class="filter bg-gray-100 rounded-full">
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">التخصص</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">المحافظة</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
-                  <option value="0">المنطقة</option>
-                </select>
-                <select name="" id="" class="bg-transparent flex-1">
+                <!-- Custome Select with Search -->
+                <div class="select-search select bg-transparent flex-1">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="tabibaSpecializationFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      التخصص
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="tabibaSpecializationFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن تخصص..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="نساء و توليد"
+                          class="dropdown-item select-search-option"
+                        >
+                          نساء و توليد
+                        </div>
+                        <div
+                          data-value="جلدية وتجميل"
+                          class="dropdown-item select-search-option"
+                        >
+                          جلدية وتجميل
+                        </div>
+                        <div
+                          data-value="باطنة"
+                          class="dropdown-item select-search-option"
+                        >
+                          باطنة
+                        </div>
+                        <div
+                          data-value="أطفال وحديثي الولادة"
+                          class="dropdown-item select-search-option"
+                        >
+                          أطفال وحديثي الولادة
+                        </div>
+                        <div
+                          data-value="أسنان"
+                          class="dropdown-item select-search-option"
+                        >
+                          أسنان
+                        </div>
+                        <div
+                          data-value="عظام"
+                          class="dropdown-item select-search-option"
+                        >
+                          عظام
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custome Select with Search -->
+                <div class="select-search select bg-transparent flex-1">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="tabibaGovernatesFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المحافظة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="tabibaGovernatesFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن محافظة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Custome Select with Search -->
+                <div class="select-search select bg-transparent flex-1">
+                  <input type="hidden" class="select-search-input" name="" />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="centerAreasFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المنطقة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="centerAreasFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن منطقة..."
+                      />
+
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <select name="" id="" class="select bg-transparent flex-1">
                   <option value="0">اللقب</option>
                 </select>
-                <select name="" id="" class="bg-transparent flex-1">
+
+                <select name="" id="" class="select bg-transparent flex-1">
                   <option value="0">ترتيب بواسطة</option>
                 </select>
               </div>
@@ -268,42 +427,193 @@
                 class="btn-close absolute top-4 end-4 cursor-pointer"
               ></span>
               <form class="flex flex-col gap-4 px-4 max-w-[400px] mx-auto">
+                <!-- Specialization Filter -->
+                <div class="select-search select border-gray-500 rounded-full">
+                  <input
+                    type="hidden"
+                    class="select-search-input"
+                    name="specialization"
+                  />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="mobileSpecializationFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      التخصص
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="mobileSpecializationFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن تخصص..."
+                      />
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="نساء و توليد"
+                          class="dropdown-item select-search-option"
+                        >
+                          نساء و توليد
+                        </div>
+                        <div
+                          data-value="جلدية وتجميل"
+                          class="dropdown-item select-search-option"
+                        >
+                          جلدية وتجميل
+                        </div>
+                        <div
+                          data-value="باطنة"
+                          class="dropdown-item select-search-option"
+                        >
+                          باطنة
+                        </div>
+                        <div
+                          data-value="أطفال وحديثي الولادة"
+                          class="dropdown-item select-search-option"
+                        >
+                          أطفال وحديثي الولادة
+                        </div>
+                        <div
+                          data-value="أسنان"
+                          class="dropdown-item select-search-option"
+                        >
+                          أسنان
+                        </div>
+                        <div
+                          data-value="عظام"
+                          class="dropdown-item select-search-option"
+                        >
+                          عظام
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Governorates Filter -->
+                <div class="select-search select border-gray-500 rounded-full">
+                  <input
+                    type="hidden"
+                    class="select-search-input"
+                    name="governorate"
+                  />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="mobileGovernoratesFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المحافظة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="mobileGovernoratesFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن محافظة..."
+                      />
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Areas Filter -->
+                <div class="select-search select border-gray-500 rounded-full">
+                  <input
+                    type="hidden"
+                    class="select-search-input"
+                    name="area"
+                  />
+                  <div class="dropdown">
+                    <span
+                      class="w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                      type="button"
+                      id="mobileAreasFilter"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      المنطقة
+                    </span>
+                    <div
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !start-0 px-2"
+                      aria-labelledby="mobileAreasFilter"
+                    >
+                      <input
+                        type="text"
+                        class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                        placeholder="ابحث عن منطقة..."
+                      />
+                      <div
+                        class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                      >
+                        <div
+                          data-value="القاهرة"
+                          class="dropdown-item select-search-option"
+                        >
+                          القاهرة
+                        </div>
+                        <div
+                          data-value="الجيزة"
+                          class="dropdown-item select-search-option"
+                        >
+                          الجيزة
+                        </div>
+                        <div
+                          data-value="الدقهلية"
+                          class="dropdown-item select-search-option"
+                        >
+                          الدقهلية
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Title Filter -->
                 <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
+                  name="title"
+                  id="mobileTitleFilter"
+                  class="select border-gray-500 rounded-full"
                 >
-                  <option value="0">التخصص</option>
+                  <option value="0">اللقب</option>
                 </select>
+                <!-- Sort Filter -->
                 <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">المحافظة</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">المنطقة</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
-                >
-                  <option value="0">الدرجةالعلمية</option>
-                </select>
-                <select
-                  name=""
-                  id=""
-                  class="border-gray-500 rounded-full focus:!ring-gray-500"
+                  name="sort"
+                  id="mobileSortFilter"
+                  class="select border-gray-500 rounded-full"
                 >
                   <option value="0">ترتيب بواسطة</option>
                 </select>
-
                 <button class="btn btn-green-500">بحث</button>
               </form>
             </div>

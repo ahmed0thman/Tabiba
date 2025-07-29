@@ -254,7 +254,7 @@
                 <div class="h-0">
                   <img
                     src="/images/cairo-scan.png"
-                    class="rounded-full border-2 bg-white border-white max-w-20 sm:max-w-28 lg:max-w-32 -translate-y-8 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
+                    class="rounded-full border-2 bg-white border-white max-w-24 sm:max-w-28 lg:max-w-32 -translate-y-8 sm:translate-y-[-50%] object-contain object-center aspect-square shadow-sm"
                     alt=""
                   />
                 </div>
@@ -363,31 +363,70 @@
                 </span>
                 <div class="flex flex-col gap-4">
                   <div class="flex flex-col sm:gap-2">
-                    <span
-                      class="text-gray-500 text-sm sm:text-base font-medium"
+                    <h4
+                      class="text-gray-500 text-base sm:text-lg font-semibold mb-2"
                     >
-                      نبذة عن المركز
-                    </span>
-                    <p
-                      class="text-gray-500 text-xs sm:text-sm leading-6 sm:leading-7"
-                    >
-                      <span>
-                        كايرو سكان للأشعة والتحاليل هي واحدة من أبرز المؤسسات
-                        الطبية الخاصة في مصر، تأسست عام 1983 بهدف إحداث نقلة
-                        نوعية في مجال الأشعة التشخيصية والتداخلية. تقدم كايرو
-                        سكان خدمات طبية متكاملة تشمل أحدث تقنيات التصوير الطبي
-                        والتحاليل المعملية، مع التركيز على الجودة والدقة في
-                        التشخيص تعتمد كايرو سكان على كايرو سكان للأشعة والتحاليل
-                        هي واحدة من أبرز المؤسسات الطبية الخاصة في مصر، تأسست
-                        عام 1983 بهدف إحداث نقلة نوعية في مجال الأشعة التشخيصية
-                        والتداخلية. تقدم كايرو سكان خدمات طبية متكاملة تشمل أحدث
-                        تقنيات التصوير الطبي والتحاليل المعملية، مع التركيز على
-                        الجودة والدقة في التشخيص تعتمد كايرو سكان على
-                      </span>
-                      <span class="text-green-500 cursor-pointer">
-                        المزيد
-                      </span>
-                    </p>
+                      الملف التعريفي
+                    </h4>
+                    <div class="space-y-2 divide-y divide-stone-200/50">
+                      <div class="text-gray-500 space-y-1 pt-3">
+                        <h6
+                          class="text-sm sm:text-base !ps-2 border-s-2 border-teal-500/50 text-teal-600 font-medium"
+                        >
+                          عن المركز
+                        </h6>
+                        <p
+                          class="text-xs sm:text-sm leading-6 sm:leading-7 px-2"
+                        >
+                          <span>
+                            أخصائية امراض النساء و التوليد و العقم و الحقن
+                            المجهري اخصائية بمستشفى شربين العام حاليا ومستشفى
+                            المنصورة العام
+                          </span>
+                          <span class="text-green-500 cursor-pointer">
+                            المزيد
+                          </span>
+                        </p>
+                      </div>
+                      <div class="text-gray-500 space-y-1 pt-3">
+                        <h6
+                          class="text-sm sm:text-base !ps-2 border-s-2 border-teal-500/50 text-teal-600 font-medium"
+                        >
+                          الشهادات
+                        </h6>
+                        <p
+                          class="text-xs sm:text-sm leading-6 sm:leading-7 px-2"
+                        >
+                          <span>
+                            أخصائية امراض النساء و التوليد و العقم و الحقن
+                            المجهري اخصائية بمستشفى شربين العام حاليا ومستشفى
+                            المنصورة العام
+                          </span>
+                          <span class="text-green-500 cursor-pointer">
+                            المزيد
+                          </span>
+                        </p>
+                      </div>
+                      <div class="text-gray-500 space-y-1 pt-3">
+                        <h6
+                          class="text-sm sm:text-base !ps-2 border-s-2 border-teal-500/50 text-teal-600 font-medium"
+                        >
+                          اخرى
+                        </h6>
+                        <p
+                          class="text-xs sm:text-sm leading-6 sm:leading-7 px-2"
+                        >
+                          <span>
+                            أخصائية امراض النساء و التوليد و العقم و الحقن
+                            المجهري اخصائية بمستشفى شربين العام حاليا ومستشفى
+                            المنصورة العام
+                          </span>
+                          <span class="text-green-500 cursor-pointer">
+                            المزيد
+                          </span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <!-- Card Rate and Comments -->
                   <div class="flex flex-col gap-3 mt-auto">
@@ -1105,18 +1144,122 @@
           >
             <div class="flex items-center gap-2 justify-between mb-3">
               <h2 class="text-gray-700 text-xl font-medium">الخدمات المقدمة</h2>
-              <!-- search input -->
-              <select
-                class="border border-gray-200 rounded-md text-sm px-2 py-1 w-20"
-                id="serviceCategoryFilter"
-              >
-                <option value="">كل الخدمات</option>
-                <option value="radiology">الأشعة</option>
-                <option value="analysis">تحاليل طبية</option>
-                <option value="cardiology">رسم قلب</option>
-                <option value="neurology">رسم مخ/عضلات</option>
-                <option value="dental">أسنان</option>
-              </select>
+
+              <!-- Custome Select with Search -->
+              <div class="select-search">
+                <input type="hidden" class="select-search-input" name="" />
+                <div
+                  class="dropdown border border-gray-200 rounded-md text-sm px-3 py-2 w-max min-w-44 max-w-52 bg-white"
+                >
+                  <button
+                    class="btn w-full flex items-center justify-between !p-0 dropdown-toggle select-search-trigger gap-1"
+                    type="button"
+                    id="TabibaServicesSearch"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    كل الخدمات
+                  </button>
+                  <div
+                    class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !end-0 px-2"
+                    aria-labelledby="TabibaServicesSearch"
+                  >
+                    <input
+                      type="text"
+                      class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                      placeholder="ابحث عن خدمة..."
+                    />
+
+                    <div
+                      class="space-y-1 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                    >
+                      <div
+                        data-value="رسم قلب"
+                        class="dropdown-item select-search-option"
+                      >
+                        رسم قلب
+                      </div>
+
+                      <div
+                        data-value="أشعة"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة
+                      </div>
+
+                      <div
+                        data-value="تحاليل طبية"
+                        class="dropdown-item select-search-option"
+                      >
+                        تحاليل طبية
+                      </div>
+
+                      <div
+                        data-value="أشعة مقطعية"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة مقطعية
+                      </div>
+
+                      <div
+                        data-value="أشعة رنين مغناطيسي"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة رنين مغناطيسي
+                      </div>
+
+                      <div
+                        data-value="أشعة موجات صوتية (سونار)"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة موجات صوتية (سونار)
+                      </div>
+
+                      <div
+                        data-value="أشعة دوبلر"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة دوبلر
+                      </div>
+
+                      <div
+                        data-value="أشعة بانوراما أسنان"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة بانوراما أسنان
+                      </div>
+
+                      <div
+                        data-value="أشعة ماموجرام للثدي"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة ماموجرام للثدي
+                      </div>
+
+                      <div
+                        data-value="رسم مخ كهربائي EEG"
+                        class="dropdown-item select-search-option"
+                      >
+                        رسم مخ كهربائي EEG
+                      </div>
+
+                      <div
+                        data-value="رسم عضلات EMG"
+                        class="dropdown-item select-search-option"
+                      >
+                        رسم عضلات EMG
+                      </div>
+
+                      <div
+                        data-value="أشعة كثافة العظام DEXA"
+                        class="dropdown-item select-search-option"
+                      >
+                        أشعة كثافة العظام DEXA
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- Services List -->
             <div
@@ -2297,6 +2440,336 @@
             <h3 class="text-xl font-bold">قومي بتأكيد الحجز الان!</h3>
 
             <form class="space-y-3" onsubmit="event.preventDefault()">
+              <select
+                name=""
+                id=""
+                class="border border-gray-500 rounded-lg text-sm text-stone-600 w-full"
+              >
+                <option value="">نوع الخدمة</option>
+                <option value="">منزل</option>
+                <option value="">مركز</option>
+                <option value="">اخري</option>
+              </select>
+              <div class="select-search w-full relative">
+                <input
+                  type="hidden"
+                  class="select-search-input relative"
+                  name=""
+                />
+                <details class="">
+                  <summary
+                    class="border border-gray-300 rounded-md px-3 py-2 text-sm cursor-pointer flex items-center justify-between select-search-trigger"
+                    type="button"
+                  >
+                    <span> اختاري الخدمات </span>
+                    <span class="material-icons text-gray-400 text-base"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <div
+                    class="absolute z-50 bg-white !border p-2 w-full start-1/2 translate-x-1/2"
+                  >
+                    <input
+                      type="text"
+                      class="form-control w-full mb-2 px-2 py-1 border border-gray-200 rounded select-search-filter"
+                      placeholder="ابحث عن خدمة..."
+                    />
+
+                    <div
+                      class="space-y-2 divide-y divide-gray-100 max-h-36 overflow-y-auto"
+                    >
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="cardiology"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="cardiology"
+                        >
+                          رسم قلب (مثال: ECG)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="neurology"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="neurology"
+                        >
+                          رسم مخ/عضلات (مثال: EEG, EMG)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input type="checkbox" name="serviceType" id="dental" />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="dental"
+                        >
+                          أسنان (مثال: بانوراما أسنان)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="ct_scan"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="ct_scan"
+                        >
+                          أشعة مقطعية (CT Scan)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input type="checkbox" name="serviceType" id="mri" />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="mri"
+                        >
+                          أشعة رنين مغناطيسي (MRI)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="ultrasound"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="ultrasound"
+                        >
+                          موجات صوتية (سونار)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="doppler"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="doppler"
+                        >
+                          أشعة دوبلر
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="panorama"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="panorama"
+                        >
+                          أشعة بانوراما أسنان
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input
+                          type="checkbox"
+                          name="serviceType"
+                          id="mammogram"
+                        />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="mammogram"
+                        >
+                          أشعة ماموجرام للثدي
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input type="checkbox" name="serviceType" id="ecg" />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="ecg"
+                        >
+                          رسم قلب كهربائي (ECG)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input type="checkbox" name="serviceType" id="eeg" />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="eeg"
+                        >
+                          رسم مخ كهربائي (EEG)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input type="checkbox" name="serviceType" id="emg" />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="emg"
+                        >
+                          رسم عضلات (EMG)
+                        </label>
+                      </span>
+                      <span class="btn-option-radion">
+                        <input type="checkbox" name="serviceType" id="dexa" />
+                        <label
+                          class="text-gray-500 text-sm font-medium"
+                          for="dexa"
+                        >
+                          أشعة كثافة العظام (DEXA)
+                        </label>
+                      </span>
+                    </div>
+                    <p
+                      class="select-search-close w-full pt-2 border-t !text-end text-teal-600 underline cursor-pointer"
+                    >
+                      حفظ
+                    </p>
+                  </div>
+                </details>
+              </div>
+              <details
+                class="min-w-[180px] flex-grow hidden"
+                id="serviceTypesDropdown"
+              >
+                <summary
+                  class="border border-gray-300 rounded-md px-3 py-2 text-sm cursor-pointer flex items-center justify-between"
+                >
+                  <span>اختر نوع الخدمة</span>
+                  <span class="material-icons text-gray-400 text-base"
+                    >expand_more</span
+                  >
+                </summary>
+                <div
+                  class="absolute translate-x-20 max-h-[200px] overflow-auto z-10 bg-white border border-gray-200 rounded-md mt-2 w-max max-w-[340px] shadow-lg flex flex-col gap-2 p-2 divide-y divide-gray-200"
+                >
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="radiology" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="radiology"
+                    >
+                      أشعة (مثال: أشعة سينية، رنين مغناطيسي)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="analysis" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="analysis"
+                    >
+                      تحاليل (مثال: تحليل دم، تحليل بول)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="cardiology" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="cardiology"
+                    >
+                      رسم قلب (مثال: ECG)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="neurology" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="neurology"
+                    >
+                      رسم مخ/عضلات (مثال: EEG, EMG)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="dental" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="dental"
+                    >
+                      أسنان (مثال: بانوراما أسنان)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="ct_scan" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="ct_scan"
+                    >
+                      أشعة مقطعية (CT Scan)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="mri" />
+                    <label class="text-gray-500 text-sm font-medium" for="mri">
+                      أشعة رنين مغناطيسي (MRI)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="ultrasound" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="ultrasound"
+                    >
+                      موجات صوتية (سونار)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="doppler" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="doppler"
+                    >
+                      أشعة دوبلر
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="panorama" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="panorama"
+                    >
+                      أشعة بانوراما أسنان
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="mammogram" />
+                    <label
+                      class="text-gray-500 text-sm font-medium"
+                      for="mammogram"
+                    >
+                      أشعة ماموجرام للثدي
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="ecg" />
+                    <label class="text-gray-500 text-sm font-medium" for="ecg">
+                      رسم قلب كهربائي (ECG)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="eeg" />
+                    <label class="text-gray-500 text-sm font-medium" for="eeg">
+                      رسم مخ كهربائي (EEG)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="emg" />
+                    <label class="text-gray-500 text-sm font-medium" for="emg">
+                      رسم عضلات (EMG)
+                    </label>
+                  </span>
+                  <span class="btn-option-radion">
+                    <input type="checkbox" name="serviceType" id="dexa" />
+                    <label class="text-gray-500 text-sm font-medium" for="dexa">
+                      أشعة كثافة العظام (DEXA)
+                    </label>
+                  </span>
+                </div>
+              </details>
+
               <!-- Start Custome Datpicker -->
               <div class="relative flatpicker mb-3">
                 <input
@@ -2312,181 +2785,7 @@
                 />
               </div>
               <!-- End Custome Datpicker -->
-              <div class="flex items-center gap-3">
-                <span> نوع الخدمة : </span>
-                <details
-                  class="relative min-w-[180px] flex-grow"
-                  id="serviceTypesDropdown"
-                >
-                  <summary
-                    class="border border-gray-300 rounded-md px-3 py-2 text-sm cursor-pointer flex items-center justify-between"
-                  >
-                    <span>اختر نوع الخدمة</span>
-                    <span class="material-icons text-gray-400 text-base"
-                      >expand_more</span
-                    >
-                  </summary>
-                  <div
-                    class="absolute translate-x-20 max-h-[200px] overflow-auto z-10 bg-white border border-gray-200 rounded-md mt-2 w-max max-w-[340px] shadow-lg flex flex-col gap-2 p-2 divide-y divide-gray-200"
-                  >
-                    <span class="btn-option-radion">
-                      <input
-                        type="checkbox"
-                        name="serviceType"
-                        id="radiology"
-                      />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="radiology"
-                      >
-                        أشعة (مثال: أشعة سينية، رنين مغناطيسي)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="analysis" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="analysis"
-                      >
-                        تحاليل (مثال: تحليل دم، تحليل بول)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input
-                        type="checkbox"
-                        name="serviceType"
-                        id="cardiology"
-                      />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="cardiology"
-                      >
-                        رسم قلب (مثال: ECG)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input
-                        type="checkbox"
-                        name="serviceType"
-                        id="neurology"
-                      />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="neurology"
-                      >
-                        رسم مخ/عضلات (مثال: EEG, EMG)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="dental" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="dental"
-                      >
-                        أسنان (مثال: بانوراما أسنان)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="ct_scan" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="ct_scan"
-                      >
-                        أشعة مقطعية (CT Scan)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="mri" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="mri"
-                      >
-                        أشعة رنين مغناطيسي (MRI)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input
-                        type="checkbox"
-                        name="serviceType"
-                        id="ultrasound"
-                      />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="ultrasound"
-                      >
-                        موجات صوتية (سونار)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="doppler" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="doppler"
-                      >
-                        أشعة دوبلر
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="panorama" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="panorama"
-                      >
-                        أشعة بانوراما أسنان
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input
-                        type="checkbox"
-                        name="serviceType"
-                        id="mammogram"
-                      />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="mammogram"
-                      >
-                        أشعة ماموجرام للثدي
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="ecg" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="ecg"
-                      >
-                        رسم قلب كهربائي (ECG)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="eeg" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="eeg"
-                      >
-                        رسم مخ كهربائي (EEG)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="emg" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="emg"
-                      >
-                        رسم عضلات (EMG)
-                      </label>
-                    </span>
-                    <span class="btn-option-radion">
-                      <input type="checkbox" name="serviceType" id="dexa" />
-                      <label
-                        class="text-gray-500 text-sm font-medium"
-                        for="dexa"
-                      >
-                        أشعة كثافة العظام (DEXA)
-                      </label>
-                    </span>
-                  </div>
-                </details>
-              </div>
+
               <div class="flex items-center justify-between gap-3">
                 <span
                   class="btn-modal-toggler"
@@ -2623,5 +2922,6 @@
     <script type="module" src="/js/contractor.js"></script>
     <script type="module" src="/js/addRate.js"></script>
     <script type="module" src="/js/flatpicker.js"></script>
+    <script type="module" src="/js/searchSelect.js"></script>
   </body>
 </html>

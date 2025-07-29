@@ -904,3 +904,24 @@ span.flatpickr-weekday {
 .flatpickr-prev-month:hover svg {
   fill: #ffffff88 !important;
 }
+
+#mobileFilterMenu {
+  .select {
+    background-image: url("/images/icons/chevronDown.svg");
+    background-position: left 0.5rem center !important;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-inline-start: 1.5rem;
+    print-color-adjust: exact;
+    padding-inline-end: 0.75rem;
+    padding-block: 0.5rem;
+    border: 1px solid !important;
+    outline: none !important;
+
+    .select-search-trigger {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

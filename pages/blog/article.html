@@ -314,6 +314,25 @@
                   <div
                     class="flex items-center gap-1 absolute top-2 end-2 sm:static"
                   >
+                    <!-- Start Articel Save -->
+                    <div
+                      class="rounded-full w-9 h-9 flex justify-center items-center shadow-md"
+                    >
+                      <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
+                      <span
+                        class="hidden material-icons text-gray-500 text-2l md:text-3xl cursor-pointer"
+                      >
+                        bookmark_border
+                      </span>
+                      <!-- visible if Article was Saved to Favorites "use the hidden class"-->
+                      <span
+                        class="material-icons text-pink-500 text-xl md:text-3xl"
+                      >
+                        bookmark
+                      </span>
+                    </div>
+
+                    <!-- End Articel Save -->
                     <!-- Start Share Article -->
                     <div class="share-list !ms-auto">
                       <button
@@ -354,26 +373,6 @@
                     </div>
 
                     <!-- End Share Article -->
-
-                    <!-- Start Articel Save -->
-                    <div
-                      class="rounded-full w-9 h-9 flex justify-center items-center shadow-md"
-                    >
-                      <!-- visible if Article was not Saved to Favorites "use the hidden class" -->
-                      <span
-                        class="hidden material-icons text-gray-500 text-2l md:text-3xl cursor-pointer"
-                      >
-                        bookmark_border
-                      </span>
-                      <!-- visible if Article was Saved to Favorites "use the hidden class"-->
-                      <span
-                        class="material-icons text-pink-500 text-xl md:text-3xl"
-                      >
-                        bookmark
-                      </span>
-                    </div>
-
-                    <!-- End Articel Save -->
                   </div>
                 </div>
                 <!-- Article Title -->
@@ -388,7 +387,7 @@
                 <!-- Article Image -->
                 <img
                   src="/images/derma-article.jpg"
-                  class="w-full max-w-[600px] object-fit-contain"
+                  class="w-full max-w-[400px] object-fit-contain"
                   alt=""
                 />
 
