@@ -919,8 +919,12 @@ span.flatpickr-weekday {
     outline: none !important;
 
     .select-search-trigger {
+      padding: 0 !important;
       &::after {
         display: none;
+      }
+      &::before {
+        opacity: 0;
       }
     }
   }

@@ -1145,7 +1145,7 @@
             <div class="flex flex-wrap items-center gap-2 justify-between mb-3">
               <h2 class="text-gray-700 text-xl font-medium">الخدمات المقدمة</h2>
 
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 flex-grow sm:flex-grow-0">
                 <select
                   name=""
                   id=""
@@ -1158,13 +1158,13 @@
                 </select>
 
                 <!-- Custome Select with Search -->
-                <div class="select-search">
+                <div class="select-search flex-grow">
                   <input type="hidden" class="select-search-input" name="" />
                   <div
-                    class="dropdown border border-gray-200 rounded-lg text-sm px-1 !ps-4 w-max min-w-44 max-w-52 bg-white"
+                    class="dropdown border border-gray-200 rounded-lg text-sm px-1 max-w-40 sm:min-w-44 sm:max-w-52 !ps-4 bg-white"
                   >
                     <button
-                      class="btn w-full flex items-center justify-between !p-0 dropdown-toggle text-stone-600 select-search-trigger gap-1"
+                      class="btn w-full flex items-center justify-between !p-0 dropdown-toggle text-stone-600 select-search-trigger gap-1 overflow-hidden"
                       type="button"
                       id="TabibaServicesSearch"
                       data-bs-toggle="dropdown"
@@ -1173,7 +1173,7 @@
                       كل الخدمات
                     </button>
                     <div
-                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !end-0 px-2"
+                      class="dropdown-menu !inset-auto !transform-none !w-max !top-10 !end-0 px-2 !min-w-[250px]"
                       aria-labelledby="TabibaServicesSearch"
                     >
                       <input
@@ -2438,14 +2438,14 @@
     <!-- Modal form confirm reservation -->
     <div id="modalConfrimReservation" class="modal">
       <div class="modal-view p-4 flex flex-col overflow-visible">
-        <button
+        <!-- <button
           data-target="modalConfrimReservation"
           data-action="close"
-          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 mb-3 block !ms-auto"
-        ></button>
+          class="btn-close focus:shadow-none btn-modal-toggler bg-gray-500/10 aspect-square rounded-full p-2 block !ms-auto"
+        ></button> -->
         <div class="flex flex-col items-center gap-6">
           <img
-            class="h-28"
+            class="h-16"
             src="/images/icons/doctor-female-staff.png"
             alt=""
           />

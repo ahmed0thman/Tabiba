@@ -828,6 +828,10 @@
         &::after {
           display: none;
         }
+
+        &::before {
+          opacity: 0;
+        }
       }
     }
   }
@@ -867,6 +871,10 @@
     padding-block: 0.5rem !important;
   }
   .dropdown {
+    .dropdown-menu {
+      width: 100% !important;
+      min-width: 200px;
+    }
     .select-search-trigger {
       font-size: 1rem !important;
       font-weight: 300 !important;
@@ -886,6 +894,11 @@
         width: 1.4rem;
         height: 1.4rem;
       }
+    }
+
+    .select-search-option {
+      white-space: normal;
+      text-align: start;
     }
   }
 }
